@@ -1,9 +1,9 @@
 # ACCLAM Launch Quest
 
-Local, read-only Launch Quest for the locked ACCLAM v3.0 scope: **610 objectives,
+Read-only Launch Quest for the locked ACCLAM v3.0 scope: **610 objectives,
 20 milestones, 77 collections**, with dependencies, evidence links and dated
-history. The transferred register records three verified source/preparation
-objectives. It makes no claim that Wix has been implemented, imported or released.
+history. The current register records four verified source/preparation
+objectives; ACA-SCHEMA-ALIGN is complete and ACA-BOOTSTRAP is current. It makes no claim that Wix has been implemented, imported or released.
 
 ## Run the saved dashboard
 
@@ -27,17 +27,17 @@ its exact original bytes, all task histories, IDs, source/evidence paths, proofs
 and existing checkpoints are preserved. `COPY_MANIFEST.json` pins the files
 copied unchanged and identifies runtime/documentation adaptations.
 
-This repository is a transfer snapshot. The original local Website workspace is
-unchanged. The transfer creates no automatic synchronization or second live
-status store. Before later progress edits, explicitly choose the working master
-and synchronize the other copy with a reviewed checkpoint. Browser interactions
-never complete objectives.
+The user selected this repository as the working master. WORKING_AUTHORITY.json
+records that transition. The original local Website Launch Quest remains an
+untouched historical snapshot; progress is not written back into it. Initial
+transfer bytes remain pinned through immutable checkpoints/transfer archives.
+Browser interactions never complete objectives.
 
 ## Private dependencies
 
 This is a public code repository. Client PDFs/workbooks, CMS record exports,
 Drive inventories/text, handoff documents and full schema/PDF extracts are
-excluded. `EXTERNAL_SOURCES.json` records101 missing private files by exact
+excluded. `EXTERNAL_SOURCES.json` records the missing private files by exact
 workspace-relative path and hash, preserving every evidence link without
 publishing its contents. A source link without its private dependency returns
 HTTP424 with an explanation.
@@ -79,5 +79,21 @@ The optional historical research scripts `extract_locked.py` and
 requires `pypdf`; it is not a dashboard runtime dependency. Seed/audit/localization
 scripts are retained as provenance and must not be replayed over the register.
 
-No hosting, deployment, Wix/Drive write, notifications or recurring automation
-was added by this repository transfer.
+## Online viewer
+
+Open [ACCLAM Launch Quest](https://acclam-launch-quest.leafycoin.chatgpt.site)
+while signed into the owning ChatGPT account. The Site remains owner-private.
+The verified deployment and source revision are recorded in online/DEPLOYMENT.json.
+
+The online build is a derived, read-only projection. Generate it with
+`python work/launch-quest/scripts/build_online.py` and verify with
+`python work/launch-quest/scripts/test_online.py`. Its five static files contain
+no private documents, raw register, source map, source paths, hashes or proofs.
+Online evidence links explain how to consult the local source instead of
+downloading it. The generated online/dist folder stays out of Git.
+
+The Sites identity is retained in online/.openai/hosting.json. The Sites
+deployment checkout is an ignored, sanitized copy; clementepg/acclam stays the
+working repository. Publishing this viewer does not publish or implement the
+ACCLAM Wix website. No Wix/Drive writes, notifications or recurring automation
+were added.

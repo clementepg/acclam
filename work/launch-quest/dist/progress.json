@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
-  "asOf": "2026-10-26T10:43:34-07:00",
+  "asOf": "2026-10-26T11:44:31-07:00",
   "project": {
     "title": "ACCLAM · Launch Quest",
     "subtitle": "De la arquitectura congelada a una oficina virtual operable.",
     "scopeNote": "El avance cuenta objetivos verificados del alcance registrado. No mide esfuerzo, tiempo transcurrido ni preparación para lanzar. Roles y revisores son propuestos hasta confirmación institucional. Wix no se ha inspeccionado en esta ejecución.",
-    "checkpointSummary": "Registro inicial auditado: fuentes y preparación local verificadas; dependencias de todos los flujos incluidas y fuentes originales fijadas por hash. Wix sigue sin inspección independiente.",
-    "nextGate": "Completar el cruce integral del esquema antes de preparar imports finales o construir Wix.",
-    "workspaceLabel": "ACCLAM / Website / work / launch-quest",
+    "checkpointSummary": "Alineación de fuentes cerrada para 77 colecciones y 1,083 campos, con originales preservados. El siguiente trabajo es el bootstrap local; Wix continúa sin implementación ni pruebas verificadas.",
+    "nextGate": "Diseñar y ensayar el plan de bootstrap y referencias por pasadas antes de preparar importaciones finales.",
+    "workspaceLabel": "clementepg/acclam · main · registro autoritativo",
     "continuityUrl": "/source/work%2Flaunch-quest%2FREADME.txt",
     "staleAfterDays": 7
   },
@@ -189,7 +189,7 @@
         {
           "id": "ACA-SCHEMA-ALIGN",
           "title": "Cerrar la comparación integral PDF · XLSX · CSV",
-          "status": "current",
+          "status": "done",
           "phase": "design",
           "owner": "Technical Admin / responsable propuesto",
           "reviewer": "Data Steward ACCLAM / por confirmar",
@@ -199,14 +199,19 @@
             "Lista de diferencias, decisiones del responsable y campos pendientes; no sustituir tipos/relaciones por aproximaciones.",
             "Fuentes y revisiones fijadas por hash; confirmar alcance de equivalencia y límites."
           ],
-          "nextAction": "Abrir el Collection Kit y comparar Help Text, primary display, índices y permisos de cada colección con las páginas del PDF; registrar diferencias sin editar las fuentes bloqueadas.",
+          "nextAction": "Usar el cruce verificado para preparar el bootstrap local; conservar los controles de exposición e índices para las pruebas de construcción correspondientes.",
           "blockers": [],
-          "evidenceSummary": "El cruce automático ya cubre nombres, conteos, claves, etiquetas, tipos, requerido y targets de referencia; falta la comparación integral y su revisión semántica.",
+          "evidenceSummary": "77 colecciones y 1,083 campos reconciliados. Coinciden 1,083 Help Text, 47,652 celdas compartidas y 616 celdas de permisos; cero discrepancias bloqueantes de comparación documental. Los originales no se modificaron. La configuración y seguridad efectiva de Wix siguen sin verificar.",
           "history": [
             {
               "date": "2026-10-26T10:37:54-07:00",
               "status": "current",
               "note": "Alta inicial desde fuentes bloqueadas; estado sustentado únicamente por la evidencia explícita."
+            },
+            {
+              "date": "2026-10-26T11:36:11-07:00",
+              "status": "done",
+              "note": "Comparación integral cerrada con auditorías documentales locales: Help Text, metadatos, referencias, primary display, permisos e índices de apoyo. Los controles de ejecución/exposición se conservan como aceptación futura."
             }
           ],
           "dependencies": [
@@ -238,7 +243,23 @@
               "url": "/source/Website%20architecture%2Fschema_v3_0%2FACCLAM_V3_CSV_Templates%2FACCLAM_V3_Field_Dictionary.csv"
             }
           ],
-          "evidence": []
+          "evidence": [
+            {
+              "label": "Resumen verificado de alineación",
+              "locator": "resultado, métricas, decisiones y límites de la comparación",
+              "url": "/source/work%2Flaunch-quest%2Fevidence%2FSCHEMA_ALIGNMENT_SUMMARY.json"
+            },
+            {
+              "label": "Auditoría privada de XLSX y Help Text",
+              "locator": "/summary; /artifacts; cruces de celdas y páginas físicas",
+              "url": "/source/work%2Flaunch-quest-private%2Fschema-align-20261026%2Fworkbook%2FFINAL_AUDIT.json"
+            },
+            {
+              "label": "Auditoría privada de controles",
+              "locator": "/summary; /sourceInterpretationAndFutureAcceptance; /collections; /fields",
+              "url": "/source/work%2Flaunch-quest-private%2Fschema-align-20261026%2Fcontrols%2Fcontrols_audit.json"
+            }
+          ]
         }
       ]
     },
@@ -358,7 +379,7 @@
             {
               "id": "ACA-SCHEMA-ALIGN",
               "title": "Cerrar la comparación integral PDF · XLSX · CSV",
-              "status": "current"
+              "status": "done"
             }
           ],
           "sources": [
@@ -518,7 +539,8 @@
           "reviewer": "Data Steward ACCLAM / por confirmar",
           "scope": "Probar URL/API directa, anónimo, miembro ajeno, rol equivocado, acceso revocado y nombramiento vencido.",
           "acceptance": [
-            "Resultados por actor/acción/estado con datos sintéticos; ningún acceso indebido ni campos privados en DTO."
+            "Resultados por actor/acción/estado con datos sintéticos; ningún acceso indebido ni campos privados en DTO.",
+            "Checkpoint de DirectoryProfiles: probar lectura anónima/API y drafts para entityRef, recordCode, statusRef, personRef y perfiles ocultos/no aprobados; escalar cualquier conflicto efectivo antes de publicar."
           ],
           "nextAction": "Revisar la fuente indicada y preparar la evidencia del resultado descrito.",
           "blockers": [],
@@ -528,6 +550,11 @@
               "date": "2026-10-26T10:37:54-07:00",
               "status": "upcoming",
               "note": "Alta inicial desde fuentes bloqueadas; estado sustentado únicamente por la evidencia explícita."
+            },
+            {
+              "date": "2026-10-26T11:36:11-07:00",
+              "status": "upcoming",
+              "note": "Handoff explícito de la auditoría de fuentes: exposición de DirectoryProfiles pendiente de prueba efectiva, sin modificar esquema congelado."
             }
           ],
           "dependencies": [
@@ -549,7 +576,7 @@
         {
           "id": "ACA-BOOTSTRAP",
           "title": "Diseñar bootstrap y pasadas de referencias",
-          "status": "upcoming",
+          "status": "current",
           "phase": "design",
           "owner": "Technical Admin / responsable propuesto",
           "reviewer": "Data Steward ACCLAM / por confirmar",
@@ -558,7 +585,7 @@
             "Orden concreto de creación y carga por pasadas con identidad de destino, relaciones requeridas y autociclos; ensayo planificado.",
             "Cada excepción de bootstrap documentada sin relajar silenciosamente el esquema."
           ],
-          "nextAction": "Revisar la fuente indicada y preparar la evidencia del resultado descrito.",
+          "nextAction": "Preparar en local el orden de creación y carga por pasadas: catálogos y campos requeridos primero, EntityRegistry/sourceItemId y enlaces opcionales después; conservar referencias y requiredness del esquema bloqueado.",
           "blockers": [],
           "evidenceSummary": "Requisito del plan bloqueado; ejecución y resultado aún sin verificar.",
           "history": [
@@ -566,13 +593,18 @@
               "date": "2026-10-26T10:37:54-07:00",
               "status": "upcoming",
               "note": "Alta inicial desde fuentes bloqueadas; estado sustentado únicamente por la evidencia explícita."
+            },
+            {
+              "date": "2026-10-26T11:36:11-07:00",
+              "status": "current",
+              "note": "Siguiente objetivo documental tras cerrar ACA-SCHEMA-ALIGN; todavía sin cambios en Wix."
             }
           ],
           "dependencies": [
             {
               "id": "ACA-SCHEMA-ALIGN",
               "title": "Cerrar la comparación integral PDF · XLSX · CSV",
-              "status": "current"
+              "status": "done"
             }
           ],
           "sources": [
@@ -662,7 +694,7 @@
             {
               "id": "ACA-SCHEMA-ALIGN",
               "title": "Cerrar la comparación integral PDF · XLSX · CSV",
-              "status": "current"
+              "status": "done"
             },
             {
               "id": "ACA-MIG-SOURCES",
@@ -849,7 +881,7 @@
             {
               "id": "ACA-BOOTSTRAP",
               "title": "Diseñar bootstrap y pasadas de referencias",
-              "status": "upcoming"
+              "status": "current"
             }
           ],
           "sources": [
@@ -962,7 +994,7 @@
             {
               "id": "ACA-SCHEMA-ALIGN",
               "title": "Cerrar la comparación integral PDF · XLSX · CSV",
-              "status": "current"
+              "status": "done"
             },
             {
               "id": "ACA-MIG-SOURCES",
@@ -1154,7 +1186,7 @@
             {
               "id": "ACA-BOOTSTRAP",
               "title": "Diseñar bootstrap y pasadas de referencias",
-              "status": "upcoming"
+              "status": "current"
             }
           ],
           "sources": [
@@ -1267,7 +1299,7 @@
             {
               "id": "ACA-SCHEMA-ALIGN",
               "title": "Cerrar la comparación integral PDF · XLSX · CSV",
-              "status": "current"
+              "status": "done"
             },
             {
               "id": "ACA-MIG-SOURCES",
@@ -1374,7 +1406,8 @@
           "acceptance": [
             "Registro sintético válido y casos inválidos/requeridos/referencias; round trip sin pérdidas.",
             "Anónimo, miembro, creador, rol pertinente y admin: lecturas/escrituras positivas/negativas con evidencia.",
-            "Confirmar primary display e índices y ausencia de exposición privada antes de cargar datos reales."
+            "Confirmar primary display e índices y ausencia de exposición privada antes de cargar datos reales.",
+            "Checkpoint de DirectoryProfiles: probar lectura anónima/API y drafts para entityRef, recordCode, statusRef, personRef y perfiles ocultos/no aprobados; escalar cualquier conflicto efectivo antes de publicar."
           ],
           "nextAction": "Revisar la fuente indicada y preparar la evidencia del resultado descrito.",
           "blockers": [],
@@ -1384,6 +1417,11 @@
               "date": "2026-10-26T10:37:54-07:00",
               "status": "upcoming",
               "note": "Alta inicial desde fuentes bloqueadas; estado sustentado únicamente por la evidencia explícita."
+            },
+            {
+              "date": "2026-10-26T11:36:11-07:00",
+              "status": "upcoming",
+              "note": "Handoff explícito de la auditoría de fuentes: exposición de DirectoryProfiles pendiente de prueba efectiva, sin modificar esquema congelado."
             }
           ],
           "dependencies": [
@@ -1459,7 +1497,7 @@
             {
               "id": "ACA-BOOTSTRAP",
               "title": "Diseñar bootstrap y pasadas de referencias",
-              "status": "upcoming"
+              "status": "current"
             }
           ],
           "sources": [
@@ -1567,7 +1605,7 @@
             {
               "id": "ACA-SCHEMA-ALIGN",
               "title": "Cerrar la comparación integral PDF · XLSX · CSV",
-              "status": "current"
+              "status": "done"
             },
             {
               "id": "ACA-MIG-SOURCES",
@@ -1754,7 +1792,7 @@
             {
               "id": "ACA-BOOTSTRAP",
               "title": "Diseñar bootstrap y pasadas de referencias",
-              "status": "upcoming"
+              "status": "current"
             }
           ],
           "sources": [
@@ -1862,7 +1900,7 @@
             {
               "id": "ACA-SCHEMA-ALIGN",
               "title": "Cerrar la comparación integral PDF · XLSX · CSV",
-              "status": "current"
+              "status": "done"
             },
             {
               "id": "ACA-MIG-SOURCES",
@@ -2049,7 +2087,7 @@
             {
               "id": "ACA-BOOTSTRAP",
               "title": "Diseñar bootstrap y pasadas de referencias",
-              "status": "upcoming"
+              "status": "current"
             }
           ],
           "sources": [
@@ -2157,7 +2195,7 @@
             {
               "id": "ACA-SCHEMA-ALIGN",
               "title": "Cerrar la comparación integral PDF · XLSX · CSV",
-              "status": "current"
+              "status": "done"
             },
             {
               "id": "ACA-MIG-SOURCES",
@@ -2344,7 +2382,7 @@
             {
               "id": "ACA-BOOTSTRAP",
               "title": "Diseñar bootstrap y pasadas de referencias",
-              "status": "upcoming"
+              "status": "current"
             }
           ],
           "sources": [
@@ -2452,7 +2490,7 @@
             {
               "id": "ACA-SCHEMA-ALIGN",
               "title": "Cerrar la comparación integral PDF · XLSX · CSV",
-              "status": "current"
+              "status": "done"
             },
             {
               "id": "ACA-MIG-SOURCES",
@@ -2639,7 +2677,7 @@
             {
               "id": "ACA-BOOTSTRAP",
               "title": "Diseñar bootstrap y pasadas de referencias",
-              "status": "upcoming"
+              "status": "current"
             }
           ],
           "sources": [
@@ -2747,7 +2785,7 @@
             {
               "id": "ACA-SCHEMA-ALIGN",
               "title": "Cerrar la comparación integral PDF · XLSX · CSV",
-              "status": "current"
+              "status": "done"
             },
             {
               "id": "ACA-MIG-SOURCES",
@@ -2934,7 +2972,7 @@
             {
               "id": "ACA-BOOTSTRAP",
               "title": "Diseñar bootstrap y pasadas de referencias",
-              "status": "upcoming"
+              "status": "current"
             }
           ],
           "sources": [
@@ -3042,7 +3080,7 @@
             {
               "id": "ACA-SCHEMA-ALIGN",
               "title": "Cerrar la comparación integral PDF · XLSX · CSV",
-              "status": "current"
+              "status": "done"
             },
             {
               "id": "ACA-MIG-SOURCES",
@@ -3229,7 +3267,7 @@
             {
               "id": "ACA-BOOTSTRAP",
               "title": "Diseñar bootstrap y pasadas de referencias",
-              "status": "upcoming"
+              "status": "current"
             }
           ],
           "sources": [
@@ -3337,7 +3375,7 @@
             {
               "id": "ACA-SCHEMA-ALIGN",
               "title": "Cerrar la comparación integral PDF · XLSX · CSV",
-              "status": "current"
+              "status": "done"
             },
             {
               "id": "ACA-MIG-SOURCES",
@@ -3524,7 +3562,7 @@
             {
               "id": "ACA-BOOTSTRAP",
               "title": "Diseñar bootstrap y pasadas de referencias",
-              "status": "upcoming"
+              "status": "current"
             }
           ],
           "sources": [
@@ -3640,7 +3678,7 @@
             {
               "id": "ACA-SCHEMA-ALIGN",
               "title": "Cerrar la comparación integral PDF · XLSX · CSV",
-              "status": "current"
+              "status": "done"
             },
             {
               "id": "ACA-MIG-SOURCES",
@@ -3827,7 +3865,7 @@
             {
               "id": "ACA-BOOTSTRAP",
               "title": "Diseñar bootstrap y pasadas de referencias",
-              "status": "upcoming"
+              "status": "current"
             }
           ],
           "sources": [
@@ -3935,7 +3973,7 @@
             {
               "id": "ACA-SCHEMA-ALIGN",
               "title": "Cerrar la comparación integral PDF · XLSX · CSV",
-              "status": "current"
+              "status": "done"
             },
             {
               "id": "ACA-MIG-SOURCES",
@@ -4122,7 +4160,7 @@
             {
               "id": "ACA-BOOTSTRAP",
               "title": "Diseñar bootstrap y pasadas de referencias",
-              "status": "upcoming"
+              "status": "current"
             }
           ],
           "sources": [
@@ -4230,7 +4268,7 @@
             {
               "id": "ACA-SCHEMA-ALIGN",
               "title": "Cerrar la comparación integral PDF · XLSX · CSV",
-              "status": "current"
+              "status": "done"
             },
             {
               "id": "ACA-MIG-SOURCES",
@@ -4417,7 +4455,7 @@
             {
               "id": "ACA-BOOTSTRAP",
               "title": "Diseñar bootstrap y pasadas de referencias",
-              "status": "upcoming"
+              "status": "current"
             }
           ],
           "sources": [
@@ -4525,7 +4563,7 @@
             {
               "id": "ACA-SCHEMA-ALIGN",
               "title": "Cerrar la comparación integral PDF · XLSX · CSV",
-              "status": "current"
+              "status": "done"
             },
             {
               "id": "ACA-MIG-SOURCES",
@@ -4712,7 +4750,7 @@
             {
               "id": "ACA-BOOTSTRAP",
               "title": "Diseñar bootstrap y pasadas de referencias",
-              "status": "upcoming"
+              "status": "current"
             }
           ],
           "sources": [
@@ -4820,7 +4858,7 @@
             {
               "id": "ACA-SCHEMA-ALIGN",
               "title": "Cerrar la comparación integral PDF · XLSX · CSV",
-              "status": "current"
+              "status": "done"
             },
             {
               "id": "ACA-MIG-SOURCES",
@@ -5007,7 +5045,7 @@
             {
               "id": "ACA-BOOTSTRAP",
               "title": "Diseñar bootstrap y pasadas de referencias",
-              "status": "upcoming"
+              "status": "current"
             }
           ],
           "sources": [
@@ -5115,7 +5153,7 @@
             {
               "id": "ACA-SCHEMA-ALIGN",
               "title": "Cerrar la comparación integral PDF · XLSX · CSV",
-              "status": "current"
+              "status": "done"
             },
             {
               "id": "ACA-MIG-SOURCES",
@@ -5302,7 +5340,7 @@
             {
               "id": "ACA-BOOTSTRAP",
               "title": "Diseñar bootstrap y pasadas de referencias",
-              "status": "upcoming"
+              "status": "current"
             }
           ],
           "sources": [
@@ -5410,7 +5448,7 @@
             {
               "id": "ACA-SCHEMA-ALIGN",
               "title": "Cerrar la comparación integral PDF · XLSX · CSV",
-              "status": "current"
+              "status": "done"
             },
             {
               "id": "ACA-MIG-SOURCES",
@@ -5597,7 +5635,7 @@
             {
               "id": "ACA-BOOTSTRAP",
               "title": "Diseñar bootstrap y pasadas de referencias",
-              "status": "upcoming"
+              "status": "current"
             }
           ],
           "sources": [
@@ -5713,7 +5751,7 @@
             {
               "id": "ACA-SCHEMA-ALIGN",
               "title": "Cerrar la comparación integral PDF · XLSX · CSV",
-              "status": "current"
+              "status": "done"
             },
             {
               "id": "ACA-MIG-SOURCES",
@@ -5900,7 +5938,7 @@
             {
               "id": "ACA-BOOTSTRAP",
               "title": "Diseñar bootstrap y pasadas de referencias",
-              "status": "upcoming"
+              "status": "current"
             }
           ],
           "sources": [
@@ -6008,7 +6046,7 @@
             {
               "id": "ACA-SCHEMA-ALIGN",
               "title": "Cerrar la comparación integral PDF · XLSX · CSV",
-              "status": "current"
+              "status": "done"
             },
             {
               "id": "ACA-MIG-SOURCES",
@@ -6195,7 +6233,7 @@
             {
               "id": "ACA-BOOTSTRAP",
               "title": "Diseñar bootstrap y pasadas de referencias",
-              "status": "upcoming"
+              "status": "current"
             }
           ],
           "sources": [
@@ -6303,7 +6341,7 @@
             {
               "id": "ACA-SCHEMA-ALIGN",
               "title": "Cerrar la comparación integral PDF · XLSX · CSV",
-              "status": "current"
+              "status": "done"
             },
             {
               "id": "ACA-MIG-SOURCES",
@@ -6490,7 +6528,7 @@
             {
               "id": "ACA-BOOTSTRAP",
               "title": "Diseñar bootstrap y pasadas de referencias",
-              "status": "upcoming"
+              "status": "current"
             }
           ],
           "sources": [
@@ -6598,7 +6636,7 @@
             {
               "id": "ACA-SCHEMA-ALIGN",
               "title": "Cerrar la comparación integral PDF · XLSX · CSV",
-              "status": "current"
+              "status": "done"
             },
             {
               "id": "ACA-MIG-SOURCES",
@@ -6785,7 +6823,7 @@
             {
               "id": "ACA-BOOTSTRAP",
               "title": "Diseñar bootstrap y pasadas de referencias",
-              "status": "upcoming"
+              "status": "current"
             }
           ],
           "sources": [
@@ -6893,7 +6931,7 @@
             {
               "id": "ACA-SCHEMA-ALIGN",
               "title": "Cerrar la comparación integral PDF · XLSX · CSV",
-              "status": "current"
+              "status": "done"
             },
             {
               "id": "ACA-MIG-SOURCES",
@@ -7080,7 +7118,7 @@
             {
               "id": "ACA-BOOTSTRAP",
               "title": "Diseñar bootstrap y pasadas de referencias",
-              "status": "upcoming"
+              "status": "current"
             }
           ],
           "sources": [
@@ -7188,7 +7226,7 @@
             {
               "id": "ACA-SCHEMA-ALIGN",
               "title": "Cerrar la comparación integral PDF · XLSX · CSV",
-              "status": "current"
+              "status": "done"
             },
             {
               "id": "ACA-MIG-SOURCES",
@@ -7375,7 +7413,7 @@
             {
               "id": "ACA-BOOTSTRAP",
               "title": "Diseñar bootstrap y pasadas de referencias",
-              "status": "upcoming"
+              "status": "current"
             }
           ],
           "sources": [
@@ -7483,7 +7521,7 @@
             {
               "id": "ACA-SCHEMA-ALIGN",
               "title": "Cerrar la comparación integral PDF · XLSX · CSV",
-              "status": "current"
+              "status": "done"
             },
             {
               "id": "ACA-MIG-SOURCES",
@@ -7670,7 +7708,7 @@
             {
               "id": "ACA-BOOTSTRAP",
               "title": "Diseñar bootstrap y pasadas de referencias",
-              "status": "upcoming"
+              "status": "current"
             }
           ],
           "sources": [
@@ -7778,7 +7816,7 @@
             {
               "id": "ACA-SCHEMA-ALIGN",
               "title": "Cerrar la comparación integral PDF · XLSX · CSV",
-              "status": "current"
+              "status": "done"
             },
             {
               "id": "ACA-MIG-SOURCES",
@@ -7965,7 +8003,7 @@
             {
               "id": "ACA-BOOTSTRAP",
               "title": "Diseñar bootstrap y pasadas de referencias",
-              "status": "upcoming"
+              "status": "current"
             }
           ],
           "sources": [
@@ -8073,7 +8111,7 @@
             {
               "id": "ACA-SCHEMA-ALIGN",
               "title": "Cerrar la comparación integral PDF · XLSX · CSV",
-              "status": "current"
+              "status": "done"
             },
             {
               "id": "ACA-MIG-SOURCES",
@@ -8260,7 +8298,7 @@
             {
               "id": "ACA-BOOTSTRAP",
               "title": "Diseñar bootstrap y pasadas de referencias",
-              "status": "upcoming"
+              "status": "current"
             }
           ],
           "sources": [
@@ -8368,7 +8406,7 @@
             {
               "id": "ACA-SCHEMA-ALIGN",
               "title": "Cerrar la comparación integral PDF · XLSX · CSV",
-              "status": "current"
+              "status": "done"
             },
             {
               "id": "ACA-MIG-SOURCES",
@@ -8555,7 +8593,7 @@
             {
               "id": "ACA-BOOTSTRAP",
               "title": "Diseñar bootstrap y pasadas de referencias",
-              "status": "upcoming"
+              "status": "current"
             }
           ],
           "sources": [
@@ -8663,7 +8701,7 @@
             {
               "id": "ACA-SCHEMA-ALIGN",
               "title": "Cerrar la comparación integral PDF · XLSX · CSV",
-              "status": "current"
+              "status": "done"
             },
             {
               "id": "ACA-MIG-SOURCES",
@@ -8850,7 +8888,7 @@
             {
               "id": "ACA-BOOTSTRAP",
               "title": "Diseñar bootstrap y pasadas de referencias",
-              "status": "upcoming"
+              "status": "current"
             }
           ],
           "sources": [
@@ -8958,7 +8996,7 @@
             {
               "id": "ACA-SCHEMA-ALIGN",
               "title": "Cerrar la comparación integral PDF · XLSX · CSV",
-              "status": "current"
+              "status": "done"
             },
             {
               "id": "ACA-MIG-SOURCES",
@@ -9145,7 +9183,7 @@
             {
               "id": "ACA-BOOTSTRAP",
               "title": "Diseñar bootstrap y pasadas de referencias",
-              "status": "upcoming"
+              "status": "current"
             }
           ],
           "sources": [
@@ -9253,7 +9291,7 @@
             {
               "id": "ACA-SCHEMA-ALIGN",
               "title": "Cerrar la comparación integral PDF · XLSX · CSV",
-              "status": "current"
+              "status": "done"
             },
             {
               "id": "ACA-MIG-SOURCES",
@@ -9440,7 +9478,7 @@
             {
               "id": "ACA-BOOTSTRAP",
               "title": "Diseñar bootstrap y pasadas de referencias",
-              "status": "upcoming"
+              "status": "current"
             }
           ],
           "sources": [
@@ -9556,7 +9594,7 @@
             {
               "id": "ACA-SCHEMA-ALIGN",
               "title": "Cerrar la comparación integral PDF · XLSX · CSV",
-              "status": "current"
+              "status": "done"
             },
             {
               "id": "ACA-MIG-SOURCES",
@@ -9743,7 +9781,7 @@
             {
               "id": "ACA-BOOTSTRAP",
               "title": "Diseñar bootstrap y pasadas de referencias",
-              "status": "upcoming"
+              "status": "current"
             }
           ],
           "sources": [
@@ -9851,7 +9889,7 @@
             {
               "id": "ACA-SCHEMA-ALIGN",
               "title": "Cerrar la comparación integral PDF · XLSX · CSV",
-              "status": "current"
+              "status": "done"
             },
             {
               "id": "ACA-MIG-SOURCES",
@@ -10038,7 +10076,7 @@
             {
               "id": "ACA-BOOTSTRAP",
               "title": "Diseñar bootstrap y pasadas de referencias",
-              "status": "upcoming"
+              "status": "current"
             }
           ],
           "sources": [
@@ -10146,7 +10184,7 @@
             {
               "id": "ACA-SCHEMA-ALIGN",
               "title": "Cerrar la comparación integral PDF · XLSX · CSV",
-              "status": "current"
+              "status": "done"
             },
             {
               "id": "ACA-MIG-SOURCES",
@@ -10333,7 +10371,7 @@
             {
               "id": "ACA-BOOTSTRAP",
               "title": "Diseñar bootstrap y pasadas de referencias",
-              "status": "upcoming"
+              "status": "current"
             }
           ],
           "sources": [
@@ -10441,7 +10479,7 @@
             {
               "id": "ACA-SCHEMA-ALIGN",
               "title": "Cerrar la comparación integral PDF · XLSX · CSV",
-              "status": "current"
+              "status": "done"
             },
             {
               "id": "ACA-MIG-SOURCES",
@@ -10628,7 +10666,7 @@
             {
               "id": "ACA-BOOTSTRAP",
               "title": "Diseñar bootstrap y pasadas de referencias",
-              "status": "upcoming"
+              "status": "current"
             }
           ],
           "sources": [
@@ -10736,7 +10774,7 @@
             {
               "id": "ACA-SCHEMA-ALIGN",
               "title": "Cerrar la comparación integral PDF · XLSX · CSV",
-              "status": "current"
+              "status": "done"
             },
             {
               "id": "ACA-MIG-SOURCES",
@@ -10923,7 +10961,7 @@
             {
               "id": "ACA-BOOTSTRAP",
               "title": "Diseñar bootstrap y pasadas de referencias",
-              "status": "upcoming"
+              "status": "current"
             }
           ],
           "sources": [
@@ -11031,7 +11069,7 @@
             {
               "id": "ACA-SCHEMA-ALIGN",
               "title": "Cerrar la comparación integral PDF · XLSX · CSV",
-              "status": "current"
+              "status": "done"
             },
             {
               "id": "ACA-MIG-SOURCES",
@@ -11218,7 +11256,7 @@
             {
               "id": "ACA-BOOTSTRAP",
               "title": "Diseñar bootstrap y pasadas de referencias",
-              "status": "upcoming"
+              "status": "current"
             }
           ],
           "sources": [
@@ -11334,7 +11372,7 @@
             {
               "id": "ACA-SCHEMA-ALIGN",
               "title": "Cerrar la comparación integral PDF · XLSX · CSV",
-              "status": "current"
+              "status": "done"
             },
             {
               "id": "ACA-MIG-SOURCES",
@@ -11521,7 +11559,7 @@
             {
               "id": "ACA-BOOTSTRAP",
               "title": "Diseñar bootstrap y pasadas de referencias",
-              "status": "upcoming"
+              "status": "current"
             }
           ],
           "sources": [
@@ -11629,7 +11667,7 @@
             {
               "id": "ACA-SCHEMA-ALIGN",
               "title": "Cerrar la comparación integral PDF · XLSX · CSV",
-              "status": "current"
+              "status": "done"
             },
             {
               "id": "ACA-MIG-SOURCES",
@@ -11816,7 +11854,7 @@
             {
               "id": "ACA-BOOTSTRAP",
               "title": "Diseñar bootstrap y pasadas de referencias",
-              "status": "upcoming"
+              "status": "current"
             }
           ],
           "sources": [
@@ -11924,7 +11962,7 @@
             {
               "id": "ACA-SCHEMA-ALIGN",
               "title": "Cerrar la comparación integral PDF · XLSX · CSV",
-              "status": "current"
+              "status": "done"
             },
             {
               "id": "ACA-MIG-SOURCES",
@@ -12111,7 +12149,7 @@
             {
               "id": "ACA-BOOTSTRAP",
               "title": "Diseñar bootstrap y pasadas de referencias",
-              "status": "upcoming"
+              "status": "current"
             }
           ],
           "sources": [
@@ -12219,7 +12257,7 @@
             {
               "id": "ACA-SCHEMA-ALIGN",
               "title": "Cerrar la comparación integral PDF · XLSX · CSV",
-              "status": "current"
+              "status": "done"
             },
             {
               "id": "ACA-MIG-SOURCES",
@@ -12406,7 +12444,7 @@
             {
               "id": "ACA-BOOTSTRAP",
               "title": "Diseñar bootstrap y pasadas de referencias",
-              "status": "upcoming"
+              "status": "current"
             }
           ],
           "sources": [
@@ -12514,7 +12552,7 @@
             {
               "id": "ACA-SCHEMA-ALIGN",
               "title": "Cerrar la comparación integral PDF · XLSX · CSV",
-              "status": "current"
+              "status": "done"
             },
             {
               "id": "ACA-MIG-SOURCES",
@@ -12701,7 +12739,7 @@
             {
               "id": "ACA-BOOTSTRAP",
               "title": "Diseñar bootstrap y pasadas de referencias",
-              "status": "upcoming"
+              "status": "current"
             }
           ],
           "sources": [
@@ -12809,7 +12847,7 @@
             {
               "id": "ACA-SCHEMA-ALIGN",
               "title": "Cerrar la comparación integral PDF · XLSX · CSV",
-              "status": "current"
+              "status": "done"
             },
             {
               "id": "ACA-MIG-SOURCES",
@@ -12996,7 +13034,7 @@
             {
               "id": "ACA-BOOTSTRAP",
               "title": "Diseñar bootstrap y pasadas de referencias",
-              "status": "upcoming"
+              "status": "current"
             }
           ],
           "sources": [
@@ -13104,7 +13142,7 @@
             {
               "id": "ACA-SCHEMA-ALIGN",
               "title": "Cerrar la comparación integral PDF · XLSX · CSV",
-              "status": "current"
+              "status": "done"
             },
             {
               "id": "ACA-MIG-SOURCES",
@@ -13291,7 +13329,7 @@
             {
               "id": "ACA-BOOTSTRAP",
               "title": "Diseñar bootstrap y pasadas de referencias",
-              "status": "upcoming"
+              "status": "current"
             }
           ],
           "sources": [
@@ -13412,7 +13450,7 @@
             {
               "id": "ACA-SCHEMA-ALIGN",
               "title": "Cerrar la comparación integral PDF · XLSX · CSV",
-              "status": "current"
+              "status": "done"
             },
             {
               "id": "ACA-MIG-SOURCES",
@@ -13604,7 +13642,7 @@
             {
               "id": "ACA-BOOTSTRAP",
               "title": "Diseñar bootstrap y pasadas de referencias",
-              "status": "upcoming"
+              "status": "current"
             }
           ],
           "sources": [
@@ -13712,7 +13750,7 @@
             {
               "id": "ACA-SCHEMA-ALIGN",
               "title": "Cerrar la comparación integral PDF · XLSX · CSV",
-              "status": "current"
+              "status": "done"
             },
             {
               "id": "ACA-MIG-SOURCES",
@@ -13899,7 +13937,7 @@
             {
               "id": "ACA-BOOTSTRAP",
               "title": "Diseñar bootstrap y pasadas de referencias",
-              "status": "upcoming"
+              "status": "current"
             }
           ],
           "sources": [
@@ -14012,7 +14050,7 @@
             {
               "id": "ACA-SCHEMA-ALIGN",
               "title": "Cerrar la comparación integral PDF · XLSX · CSV",
-              "status": "current"
+              "status": "done"
             },
             {
               "id": "ACA-MIG-SOURCES",
@@ -14204,7 +14242,7 @@
             {
               "id": "ACA-BOOTSTRAP",
               "title": "Diseñar bootstrap y pasadas de referencias",
-              "status": "upcoming"
+              "status": "current"
             }
           ],
           "sources": [
@@ -14317,7 +14355,7 @@
             {
               "id": "ACA-SCHEMA-ALIGN",
               "title": "Cerrar la comparación integral PDF · XLSX · CSV",
-              "status": "current"
+              "status": "done"
             },
             {
               "id": "ACA-MIG-SOURCES",
@@ -14509,7 +14547,7 @@
             {
               "id": "ACA-BOOTSTRAP",
               "title": "Diseñar bootstrap y pasadas de referencias",
-              "status": "upcoming"
+              "status": "current"
             }
           ],
           "sources": [
@@ -14617,7 +14655,7 @@
             {
               "id": "ACA-SCHEMA-ALIGN",
               "title": "Cerrar la comparación integral PDF · XLSX · CSV",
-              "status": "current"
+              "status": "done"
             },
             {
               "id": "ACA-MIG-SOURCES",
@@ -14804,7 +14842,7 @@
             {
               "id": "ACA-BOOTSTRAP",
               "title": "Diseñar bootstrap y pasadas de referencias",
-              "status": "upcoming"
+              "status": "current"
             }
           ],
           "sources": [
@@ -14912,7 +14950,7 @@
             {
               "id": "ACA-SCHEMA-ALIGN",
               "title": "Cerrar la comparación integral PDF · XLSX · CSV",
-              "status": "current"
+              "status": "done"
             },
             {
               "id": "ACA-MIG-SOURCES",
@@ -15099,7 +15137,7 @@
             {
               "id": "ACA-BOOTSTRAP",
               "title": "Diseñar bootstrap y pasadas de referencias",
-              "status": "upcoming"
+              "status": "current"
             }
           ],
           "sources": [
@@ -15207,7 +15245,7 @@
             {
               "id": "ACA-SCHEMA-ALIGN",
               "title": "Cerrar la comparación integral PDF · XLSX · CSV",
-              "status": "current"
+              "status": "done"
             },
             {
               "id": "ACA-MIG-SOURCES",
@@ -15394,7 +15432,7 @@
             {
               "id": "ACA-BOOTSTRAP",
               "title": "Diseñar bootstrap y pasadas de referencias",
-              "status": "upcoming"
+              "status": "current"
             }
           ],
           "sources": [
@@ -15502,7 +15540,7 @@
             {
               "id": "ACA-SCHEMA-ALIGN",
               "title": "Cerrar la comparación integral PDF · XLSX · CSV",
-              "status": "current"
+              "status": "done"
             },
             {
               "id": "ACA-MIG-SOURCES",
@@ -15689,7 +15727,7 @@
             {
               "id": "ACA-BOOTSTRAP",
               "title": "Diseñar bootstrap y pasadas de referencias",
-              "status": "upcoming"
+              "status": "current"
             }
           ],
           "sources": [
@@ -15797,7 +15835,7 @@
             {
               "id": "ACA-SCHEMA-ALIGN",
               "title": "Cerrar la comparación integral PDF · XLSX · CSV",
-              "status": "current"
+              "status": "done"
             },
             {
               "id": "ACA-MIG-SOURCES",
@@ -15984,7 +16022,7 @@
             {
               "id": "ACA-BOOTSTRAP",
               "title": "Diseñar bootstrap y pasadas de referencias",
-              "status": "upcoming"
+              "status": "current"
             }
           ],
           "sources": [
@@ -16092,7 +16130,7 @@
             {
               "id": "ACA-SCHEMA-ALIGN",
               "title": "Cerrar la comparación integral PDF · XLSX · CSV",
-              "status": "current"
+              "status": "done"
             },
             {
               "id": "ACA-MIG-SOURCES",
@@ -16279,7 +16317,7 @@
             {
               "id": "ACA-BOOTSTRAP",
               "title": "Diseñar bootstrap y pasadas de referencias",
-              "status": "upcoming"
+              "status": "current"
             }
           ],
           "sources": [
@@ -16387,7 +16425,7 @@
             {
               "id": "ACA-SCHEMA-ALIGN",
               "title": "Cerrar la comparación integral PDF · XLSX · CSV",
-              "status": "current"
+              "status": "done"
             },
             {
               "id": "ACA-MIG-SOURCES",
@@ -16574,7 +16612,7 @@
             {
               "id": "ACA-BOOTSTRAP",
               "title": "Diseñar bootstrap y pasadas de referencias",
-              "status": "upcoming"
+              "status": "current"
             }
           ],
           "sources": [
@@ -16682,7 +16720,7 @@
             {
               "id": "ACA-SCHEMA-ALIGN",
               "title": "Cerrar la comparación integral PDF · XLSX · CSV",
-              "status": "current"
+              "status": "done"
             },
             {
               "id": "ACA-MIG-SOURCES",
@@ -16869,7 +16907,7 @@
             {
               "id": "ACA-BOOTSTRAP",
               "title": "Diseñar bootstrap y pasadas de referencias",
-              "status": "upcoming"
+              "status": "current"
             }
           ],
           "sources": [
@@ -16985,7 +17023,7 @@
             {
               "id": "ACA-SCHEMA-ALIGN",
               "title": "Cerrar la comparación integral PDF · XLSX · CSV",
-              "status": "current"
+              "status": "done"
             },
             {
               "id": "ACA-MIG-SOURCES",
@@ -17172,7 +17210,7 @@
             {
               "id": "ACA-BOOTSTRAP",
               "title": "Diseñar bootstrap y pasadas de referencias",
-              "status": "upcoming"
+              "status": "current"
             }
           ],
           "sources": [
@@ -17280,7 +17318,7 @@
             {
               "id": "ACA-SCHEMA-ALIGN",
               "title": "Cerrar la comparación integral PDF · XLSX · CSV",
-              "status": "current"
+              "status": "done"
             },
             {
               "id": "ACA-MIG-SOURCES",
@@ -17467,7 +17505,7 @@
             {
               "id": "ACA-BOOTSTRAP",
               "title": "Diseñar bootstrap y pasadas de referencias",
-              "status": "upcoming"
+              "status": "current"
             }
           ],
           "sources": [
@@ -17575,7 +17613,7 @@
             {
               "id": "ACA-SCHEMA-ALIGN",
               "title": "Cerrar la comparación integral PDF · XLSX · CSV",
-              "status": "current"
+              "status": "done"
             },
             {
               "id": "ACA-MIG-SOURCES",
@@ -17762,7 +17800,7 @@
             {
               "id": "ACA-BOOTSTRAP",
               "title": "Diseñar bootstrap y pasadas de referencias",
-              "status": "upcoming"
+              "status": "current"
             }
           ],
           "sources": [
@@ -17870,7 +17908,7 @@
             {
               "id": "ACA-SCHEMA-ALIGN",
               "title": "Cerrar la comparación integral PDF · XLSX · CSV",
-              "status": "current"
+              "status": "done"
             },
             {
               "id": "ACA-MIG-SOURCES",
@@ -18057,7 +18095,7 @@
             {
               "id": "ACA-BOOTSTRAP",
               "title": "Diseñar bootstrap y pasadas de referencias",
-              "status": "upcoming"
+              "status": "current"
             }
           ],
           "sources": [
@@ -18165,7 +18203,7 @@
             {
               "id": "ACA-SCHEMA-ALIGN",
               "title": "Cerrar la comparación integral PDF · XLSX · CSV",
-              "status": "current"
+              "status": "done"
             },
             {
               "id": "ACA-MIG-SOURCES",
@@ -18352,7 +18390,7 @@
             {
               "id": "ACA-BOOTSTRAP",
               "title": "Diseñar bootstrap y pasadas de referencias",
-              "status": "upcoming"
+              "status": "current"
             }
           ],
           "sources": [
@@ -18460,7 +18498,7 @@
             {
               "id": "ACA-SCHEMA-ALIGN",
               "title": "Cerrar la comparación integral PDF · XLSX · CSV",
-              "status": "current"
+              "status": "done"
             },
             {
               "id": "ACA-MIG-SOURCES",
@@ -18647,7 +18685,7 @@
             {
               "id": "ACA-BOOTSTRAP",
               "title": "Diseñar bootstrap y pasadas de referencias",
-              "status": "upcoming"
+              "status": "current"
             }
           ],
           "sources": [
@@ -18755,7 +18793,7 @@
             {
               "id": "ACA-SCHEMA-ALIGN",
               "title": "Cerrar la comparación integral PDF · XLSX · CSV",
-              "status": "current"
+              "status": "done"
             },
             {
               "id": "ACA-MIG-SOURCES",
@@ -18942,7 +18980,7 @@
             {
               "id": "ACA-BOOTSTRAP",
               "title": "Diseñar bootstrap y pasadas de referencias",
-              "status": "upcoming"
+              "status": "current"
             }
           ],
           "sources": [
@@ -19050,7 +19088,7 @@
             {
               "id": "ACA-SCHEMA-ALIGN",
               "title": "Cerrar la comparación integral PDF · XLSX · CSV",
-              "status": "current"
+              "status": "done"
             },
             {
               "id": "ACA-MIG-SOURCES",
@@ -19237,7 +19275,7 @@
             {
               "id": "ACA-BOOTSTRAP",
               "title": "Diseñar bootstrap y pasadas de referencias",
-              "status": "upcoming"
+              "status": "current"
             }
           ],
           "sources": [
@@ -19345,7 +19383,7 @@
             {
               "id": "ACA-SCHEMA-ALIGN",
               "title": "Cerrar la comparación integral PDF · XLSX · CSV",
-              "status": "current"
+              "status": "done"
             },
             {
               "id": "ACA-MIG-SOURCES",
@@ -19532,7 +19570,7 @@
             {
               "id": "ACA-BOOTSTRAP",
               "title": "Diseñar bootstrap y pasadas de referencias",
-              "status": "upcoming"
+              "status": "current"
             }
           ],
           "sources": [
@@ -19640,7 +19678,7 @@
             {
               "id": "ACA-SCHEMA-ALIGN",
               "title": "Cerrar la comparación integral PDF · XLSX · CSV",
-              "status": "current"
+              "status": "done"
             },
             {
               "id": "ACA-MIG-SOURCES",
@@ -19827,7 +19865,7 @@
             {
               "id": "ACA-BOOTSTRAP",
               "title": "Diseñar bootstrap y pasadas de referencias",
-              "status": "upcoming"
+              "status": "current"
             }
           ],
           "sources": [
@@ -19943,7 +19981,7 @@
             {
               "id": "ACA-SCHEMA-ALIGN",
               "title": "Cerrar la comparación integral PDF · XLSX · CSV",
-              "status": "current"
+              "status": "done"
             },
             {
               "id": "ACA-MIG-SOURCES",
@@ -20130,7 +20168,7 @@
             {
               "id": "ACA-BOOTSTRAP",
               "title": "Diseñar bootstrap y pasadas de referencias",
-              "status": "upcoming"
+              "status": "current"
             }
           ],
           "sources": [
@@ -20238,7 +20276,7 @@
             {
               "id": "ACA-SCHEMA-ALIGN",
               "title": "Cerrar la comparación integral PDF · XLSX · CSV",
-              "status": "current"
+              "status": "done"
             },
             {
               "id": "ACA-MIG-SOURCES",
@@ -20425,7 +20463,7 @@
             {
               "id": "ACA-BOOTSTRAP",
               "title": "Diseñar bootstrap y pasadas de referencias",
-              "status": "upcoming"
+              "status": "current"
             }
           ],
           "sources": [
@@ -20533,7 +20571,7 @@
             {
               "id": "ACA-SCHEMA-ALIGN",
               "title": "Cerrar la comparación integral PDF · XLSX · CSV",
-              "status": "current"
+              "status": "done"
             },
             {
               "id": "ACA-MIG-SOURCES",
@@ -20720,7 +20758,7 @@
             {
               "id": "ACA-BOOTSTRAP",
               "title": "Diseñar bootstrap y pasadas de referencias",
-              "status": "upcoming"
+              "status": "current"
             }
           ],
           "sources": [
@@ -20828,7 +20866,7 @@
             {
               "id": "ACA-SCHEMA-ALIGN",
               "title": "Cerrar la comparación integral PDF · XLSX · CSV",
-              "status": "current"
+              "status": "done"
             },
             {
               "id": "ACA-MIG-SOURCES",
@@ -21015,7 +21053,7 @@
             {
               "id": "ACA-BOOTSTRAP",
               "title": "Diseñar bootstrap y pasadas de referencias",
-              "status": "upcoming"
+              "status": "current"
             }
           ],
           "sources": [
@@ -21123,7 +21161,7 @@
             {
               "id": "ACA-SCHEMA-ALIGN",
               "title": "Cerrar la comparación integral PDF · XLSX · CSV",
-              "status": "current"
+              "status": "done"
             },
             {
               "id": "ACA-MIG-SOURCES",
@@ -21310,7 +21348,7 @@
             {
               "id": "ACA-BOOTSTRAP",
               "title": "Diseñar bootstrap y pasadas de referencias",
-              "status": "upcoming"
+              "status": "current"
             }
           ],
           "sources": [
@@ -21426,7 +21464,7 @@
             {
               "id": "ACA-SCHEMA-ALIGN",
               "title": "Cerrar la comparación integral PDF · XLSX · CSV",
-              "status": "current"
+              "status": "done"
             },
             {
               "id": "ACA-MIG-SOURCES",
@@ -21613,7 +21651,7 @@
             {
               "id": "ACA-BOOTSTRAP",
               "title": "Diseñar bootstrap y pasadas de referencias",
-              "status": "upcoming"
+              "status": "current"
             }
           ],
           "sources": [
@@ -21721,7 +21759,7 @@
             {
               "id": "ACA-SCHEMA-ALIGN",
               "title": "Cerrar la comparación integral PDF · XLSX · CSV",
-              "status": "current"
+              "status": "done"
             },
             {
               "id": "ACA-MIG-SOURCES",
@@ -21908,7 +21946,7 @@
             {
               "id": "ACA-BOOTSTRAP",
               "title": "Diseñar bootstrap y pasadas de referencias",
-              "status": "upcoming"
+              "status": "current"
             }
           ],
           "sources": [
@@ -22016,7 +22054,7 @@
             {
               "id": "ACA-SCHEMA-ALIGN",
               "title": "Cerrar la comparación integral PDF · XLSX · CSV",
-              "status": "current"
+              "status": "done"
             },
             {
               "id": "ACA-MIG-SOURCES",
@@ -22203,7 +22241,7 @@
             {
               "id": "ACA-BOOTSTRAP",
               "title": "Diseñar bootstrap y pasadas de referencias",
-              "status": "upcoming"
+              "status": "current"
             }
           ],
           "sources": [
@@ -22311,7 +22349,7 @@
             {
               "id": "ACA-SCHEMA-ALIGN",
               "title": "Cerrar la comparación integral PDF · XLSX · CSV",
-              "status": "current"
+              "status": "done"
             },
             {
               "id": "ACA-MIG-SOURCES",
@@ -22498,7 +22536,7 @@
             {
               "id": "ACA-BOOTSTRAP",
               "title": "Diseñar bootstrap y pasadas de referencias",
-              "status": "upcoming"
+              "status": "current"
             }
           ],
           "sources": [
@@ -22606,7 +22644,7 @@
             {
               "id": "ACA-SCHEMA-ALIGN",
               "title": "Cerrar la comparación integral PDF · XLSX · CSV",
-              "status": "current"
+              "status": "done"
             },
             {
               "id": "ACA-MIG-SOURCES",
@@ -22793,7 +22831,7 @@
             {
               "id": "ACA-BOOTSTRAP",
               "title": "Diseñar bootstrap y pasadas de referencias",
-              "status": "upcoming"
+              "status": "current"
             }
           ],
           "sources": [
@@ -22901,7 +22939,7 @@
             {
               "id": "ACA-SCHEMA-ALIGN",
               "title": "Cerrar la comparación integral PDF · XLSX · CSV",
-              "status": "current"
+              "status": "done"
             },
             {
               "id": "ACA-MIG-SOURCES",
@@ -23088,7 +23126,7 @@
             {
               "id": "ACA-BOOTSTRAP",
               "title": "Diseñar bootstrap y pasadas de referencias",
-              "status": "upcoming"
+              "status": "current"
             }
           ],
           "sources": [
@@ -23196,7 +23234,7 @@
             {
               "id": "ACA-SCHEMA-ALIGN",
               "title": "Cerrar la comparación integral PDF · XLSX · CSV",
-              "status": "current"
+              "status": "done"
             },
             {
               "id": "ACA-MIG-SOURCES",
@@ -23383,7 +23421,7 @@
             {
               "id": "ACA-BOOTSTRAP",
               "title": "Diseñar bootstrap y pasadas de referencias",
-              "status": "upcoming"
+              "status": "current"
             }
           ],
           "sources": [
@@ -23541,7 +23579,7 @@
             {
               "id": "ACA-BOOTSTRAP",
               "title": "Diseñar bootstrap y pasadas de referencias",
-              "status": "upcoming"
+              "status": "current"
             }
           ],
           "sources": [
@@ -26380,7 +26418,7 @@
             {
               "id": "ACA-SCHEMA-ALIGN",
               "title": "Cerrar la comparación integral PDF · XLSX · CSV",
-              "status": "current"
+              "status": "done"
             }
           ],
           "sources": [
@@ -26559,7 +26597,7 @@
             {
               "id": "ACA-SCHEMA-ALIGN",
               "title": "Cerrar la comparación integral PDF · XLSX · CSV",
-              "status": "current"
+              "status": "done"
             }
           ],
           "sources": [
@@ -26723,7 +26761,7 @@
             {
               "id": "ACA-SCHEMA-ALIGN",
               "title": "Cerrar la comparación integral PDF · XLSX · CSV",
-              "status": "current"
+              "status": "done"
             }
           ],
           "sources": [
@@ -26917,7 +26955,7 @@
             {
               "id": "ACA-SCHEMA-ALIGN",
               "title": "Cerrar la comparación integral PDF · XLSX · CSV",
-              "status": "current"
+              "status": "done"
             }
           ],
           "sources": [
@@ -27111,7 +27149,7 @@
             {
               "id": "ACA-SCHEMA-ALIGN",
               "title": "Cerrar la comparación integral PDF · XLSX · CSV",
-              "status": "current"
+              "status": "done"
             }
           ],
           "sources": [
@@ -27270,7 +27308,7 @@
             {
               "id": "ACA-SCHEMA-ALIGN",
               "title": "Cerrar la comparación integral PDF · XLSX · CSV",
-              "status": "current"
+              "status": "done"
             }
           ],
           "sources": [
@@ -27434,7 +27472,7 @@
             {
               "id": "ACA-SCHEMA-ALIGN",
               "title": "Cerrar la comparación integral PDF · XLSX · CSV",
-              "status": "current"
+              "status": "done"
             }
           ],
           "sources": [
@@ -27623,7 +27661,7 @@
             {
               "id": "ACA-SCHEMA-ALIGN",
               "title": "Cerrar la comparación integral PDF · XLSX · CSV",
-              "status": "current"
+              "status": "done"
             }
           ],
           "sources": [
@@ -27812,7 +27850,7 @@
             {
               "id": "ACA-SCHEMA-ALIGN",
               "title": "Cerrar la comparación integral PDF · XLSX · CSV",
-              "status": "current"
+              "status": "done"
             }
           ],
           "sources": [
@@ -27991,7 +28029,7 @@
             {
               "id": "ACA-SCHEMA-ALIGN",
               "title": "Cerrar la comparación integral PDF · XLSX · CSV",
-              "status": "current"
+              "status": "done"
             }
           ],
           "sources": [
@@ -28170,7 +28208,7 @@
             {
               "id": "ACA-SCHEMA-ALIGN",
               "title": "Cerrar la comparación integral PDF · XLSX · CSV",
-              "status": "current"
+              "status": "done"
             }
           ],
           "sources": [
@@ -28324,7 +28362,7 @@
             {
               "id": "ACA-SCHEMA-ALIGN",
               "title": "Cerrar la comparación integral PDF · XLSX · CSV",
-              "status": "current"
+              "status": "done"
             }
           ],
           "sources": [
@@ -32341,7 +32379,8 @@
           "reviewer": "Responsable institucional ACCLAM / por confirmar",
           "scope": "Revisar consentimiento, vigencia, campos públicos y mecanismo efectivo de publicación con prueba de acceso; People permanece privado.",
           "acceptance": [
-            "Resultado revisable con prueba funcional o aprobación humana acorde a la fase; decisiones y versiones fechadas."
+            "Resultado revisable con prueba funcional o aprobación humana acorde a la fase; decisiones y versiones fechadas.",
+            "Checkpoint de DirectoryProfiles: probar lectura anónima/API y drafts para entityRef, recordCode, statusRef, personRef y perfiles ocultos/no aprobados; escalar cualquier conflicto efectivo antes de publicar."
           ],
           "nextAction": "Revisar la fuente indicada y preparar la evidencia del resultado descrito.",
           "blockers": [],
@@ -32351,6 +32390,11 @@
               "date": "2026-10-26T10:37:54-07:00",
               "status": "upcoming",
               "note": "Alta inicial desde fuentes bloqueadas; estado sustentado únicamente por la evidencia explícita."
+            },
+            {
+              "date": "2026-10-26T11:36:11-07:00",
+              "status": "upcoming",
+              "note": "Handoff explícito de la auditoría de fuentes: exposición de DirectoryProfiles pendiente de prueba efectiva, sin modificar esquema congelado."
             }
           ],
           "dependencies": [
@@ -34914,15 +34958,15 @@
   ],
   "counts": {
     "total": 610,
-    "done": 3,
+    "done": 4,
     "current": 1,
-    "upcoming": 606,
+    "upcoming": 605,
     "byPhase": [
       {
         "id": "design",
         "label": "Diseño y esquema",
         "total": 20,
-        "done": 2
+        "done": 3
       },
       {
         "id": "preparation",
@@ -34962,5 +35006,5 @@
       }
     ]
   },
-  "revision": "411c50e8c2b53b558af4969885a095953171ccbb3daff3019e227ea2bd98dc95"
+  "revision": "0e9c481559cafae76e47b2c56652a8d2f19ea29a6f8496ad4a9c6af7d8da3359"
 }

@@ -1,10 +1,13 @@
 # ACCLAM Launch Quest repository
 
-This is a privacy-filtered copy of the existing local Launch Quest. Preserve
+This is the active ACCLAM Launch Quest working repository, selected by the user.
+The authority transition is recorded in work/launch-quest/WORKING_AUTHORITY.json.
+Preserve
 `work/launch-quest/PROJECT_REGISTER.json`, baseline IDs, task histories, proofs,
 source paths and historical checkpoints. The original private Website workspace
-remains intact. This transfer does not authorize task completion or create
-automatic synchronization between copies.
+remains an untouched historical snapshot. Do not write progress back into it or
+create automatic synchronization between copies. Task completion still requires
+evidence supporting its actual phase and scope.
 
 Read README.md and work/launch-quest/README.txt before editing. Do not run the
 one-time seed/localization/audit migration scripts to regenerate the register.
@@ -25,4 +28,7 @@ private sources: `python work/launch-quest/scripts/quest.py validate`.
 Keep the register as the single state artifact. Generated progress/source maps
 and transfer manifests are projections/audits, never competing task registers.
 Make any future authority change or synchronization explicit before independently
-editing multiple copies. No Wix/Drive writes or website deployment are implied.
+editing multiple copies. The user authorized online Launch Quest publication;
+build its allowlisted static projection with scripts/build_online.py. Never
+publish the raw register, source map, private source paths, proofs or documents
+as Site assets. Wix/Drive implementation writes remain outside this request.

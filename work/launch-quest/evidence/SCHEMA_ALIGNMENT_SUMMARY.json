@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-10-26T11:36:11-07:00",
+  "result": "source_alignment_complete",
+  "scope": "Comparación documental y reconciliación de fuentes del esquema v3.0. No acredita implementación, permisos efectivos, importación, revisión humana ACCLAM ni lanzamiento de Wix.",
+  "collections": 77,
+  "fields": 1083,
+  "helpTextMatches": 1083,
+  "sharedWorkbookDictionaryCellsCompared": 47652,
+  "sharedWorkbookDictionaryDifferences": 0,
+  "collectionMetadataComparisons": 770,
+  "collectionMetadataDifferences": 0,
+  "relationshipRowsCompared": 912,
+  "relationshipDifferences": 0,
+  "folderMappingsCompared": 77,
+  "folderDifferences": 0,
+  "primaryDisplaysMapped": 77,
+  "permissionCellComparisons": 616,
+  "permissionCellMatches": 616,
+  "validationRulesCompared": 207,
+  "validationRulesMatches": 207,
+  "indexRecommendations": {
+    "Unique": 95,
+    "Index": 153,
+    "unspecified": 835
+  },
+  "sourceDisposition": [
+    "El PDF bloqueado conserva autoridad para números globales, carpetas, primary display y permisos explícitos.",
+    "El XLSX de construcción aporta Help Text en su columna W; el XLSX frozen y el CSV tienen 22 columnas y no incluyen esa columna.",
+    "La falta de columnas explícitas de número global/primary display en los XLSX se resuelve con un cruce derivado privado citado al PDF, sin editar originales.",
+    "Las 248 recomendaciones de índice se conservan como apoyo; el PDF no enumera una lista exhaustiva por campo ni prueba índices activos.",
+    "La exposición de DirectoryProfiles queda como aceptación de seguridad futura. La clasificación de privacidad y los booleanos no configuran permisos efectivos.",
+    "Los catálogos geográficos públicos y Certificates restringido conservan las excepciones explícitas del PDF."
+  ],
+  "blockingSourceComparisonDiscrepancies": 0,
+  "lockedOriginalsModified": false,
+  "privateEvidence": "Las matrices completas, celdas exactas, páginas físicas y hashes de fuentes permanecen en el archivo local privado."
+}

@@ -28,3 +28,7 @@
 **/.venv/
 **/*.tmp
 **/repository-test-results.txt
+# Generated online view and isolated Sites deployment checkout/artifacts.
+/online/dist/
+/.sites-source/
+/.artifacts/

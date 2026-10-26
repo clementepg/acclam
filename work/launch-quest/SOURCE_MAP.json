@@ -1,6 +1,6 @@
 {
   "note": "Generated map; PROJECT_REGISTER.json is authoritative.",
-  "revision": "411c50e8c2b53b558af4969885a095953171ccbb3daff3019e227ea2bd98dc95",
+  "revision": "0e9c481559cafae76e47b2c56652a8d2f19ea29a6f8496ad4a9c6af7d8da3359",
   "tasks": [
     {
       "id": "ACA-BASELINE",
@@ -95,7 +95,23 @@
           "locator": "1,083 filas de datos; columnas exactas"
         }
       ],
-      "evidence": []
+      "evidence": [
+        {
+          "path": "work/launch-quest/evidence/SCHEMA_ALIGNMENT_SUMMARY.json",
+          "label": "Resumen verificado de alineación",
+          "locator": "resultado, métricas, decisiones y límites de la comparación"
+        },
+        {
+          "path": "work/launch-quest-private/schema-align-20261026/workbook/FINAL_AUDIT.json",
+          "label": "Auditoría privada de XLSX y Help Text",
+          "locator": "/summary; /artifacts; cruces de celdas y páginas físicas"
+        },
+        {
+          "path": "work/launch-quest-private/schema-align-20261026/controls/controls_audit.json",
+          "label": "Auditoría privada de controles",
+          "locator": "/summary; /sourceInterpretationAndFutureAcceptance; /collections; /fields"
+        }
+      ]
     },
     {
       "id": "ACA-WIX-INVENTORY",

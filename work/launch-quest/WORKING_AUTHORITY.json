@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "selectedAt": "2026-10-26T11:33:48-07:00",
+  "workingRepository": "clementepg/acclam",
+  "branch": "main",
+  "authoritativeRegister": "work/launch-quest/PROJECT_REGISTER.json",
+  "instruction": "User explicitly selected clementepg/acclam as the working repository and authorized continuing ACA-SCHEMA-ALIGN plus online Launch Quest publication.",
+  "previousLocalQuestRole": "Untouched historical snapshot; not a competing live register.",
+  "privateSources": "Remain local; attach only via ACCLAM_SOURCE_ROOT. Locked source files are read-only.",
+  "transferCommit": "c686f1839550d8fe0ef4a9e41164ac76ff163b31",
+  "transferArchives": {
+    "work/launch-quest/PROJECT_REGISTER.json": "work/launch-quest/checkpoints/411c50e8c2b53b55/PROJECT_REGISTER.json",
+    "work/launch-quest/dist/progress.json": "work/launch-quest/checkpoints/411c50e8c2b53b55/progress.json",
+    "work/launch-quest/SOURCE_MAP.json": "work/launch-quest/history/transfer-c686f18/SOURCE_MAP.json",
+    "work/launch-quest/evidence/REGISTER_VERIFICATION.json": "work/launch-quest/history/transfer-c686f18/REGISTER_VERIFICATION.json"
+  },
+  "onlineView": "Derived read-only display only; does not change task state or publish source documents."
+}

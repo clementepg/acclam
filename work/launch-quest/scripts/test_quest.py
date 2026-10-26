@@ -31,12 +31,13 @@ class RegisterTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError,text):validate(self.r,allow_missing_external=True)
     def test_valid_source_bounded_state(self):
         result=validate(self.r,allow_missing_external=True)
-        self.assertEqual(result['done'],3)
+        self.assertEqual(result['done'],sum(t['status']=='done' for m in self.r['milestones'] for t in m['objectives']))
         self.assertGreaterEqual(result['objectives'],610)
     def test_duplicate_id_rejected(self):
         self.r['milestones'][0]['objectives'][1]['id']='ACA-BASELINE';self.reject('Duplicate task IDs')
     def test_missing_current_rejected(self):
-        self.task('ACA-SCHEMA-ALIGN')['status']='upcoming';self.reject('Exactly one current')
+        current=next(t for m in self.r['milestones'] for t in m['objectives'] if t['status']=='current')
+        current['status']='upcoming';self.reject('Exactly one current')
     def test_cycle_rejected(self):
         self.task('ACA-BASELINE')['dependencies']=['ACA-SCHEMA-ALIGN'];self.reject('Dependency cycle')
     def test_done_with_open_dependency_rejected(self):
@@ -90,7 +91,8 @@ class RegisterTests(unittest.TestCase):
         self.assertEqual(before,{p:p.read_bytes() for p in paths})
     def test_strict_evidence_check_remains_strict(self):
         if os.environ.get('ACCLAM_SOURCE_ROOT'):
-            result=validate(self.r);self.assertEqual(result['verifiedProofs'],4)
+            result=validate(self.r)
+            self.assertEqual(result['verifiedProofs'],sum(len(t['proofs']) for m in self.r['milestones'] for t in m['objectives'] if t['status']=='done'))
         else:
             with self.assertRaisesRegex(ValueError,'Private dependency unavailable'):validate(self.r)
     def test_copy_validation_does_not_hide_unlisted_missing_files(self):

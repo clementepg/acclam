@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
-  "asOf": "2026-10-26T10:43:34-07:00",
+  "asOf": "2026-10-26T11:44:31-07:00",
   "project": {
     "title": "ACCLAM · Launch Quest",
     "subtitle": "De la arquitectura congelada a una oficina virtual operable.",
     "scopeNote": "El avance cuenta objetivos verificados del alcance registrado. No mide esfuerzo, tiempo transcurrido ni preparación para lanzar. Roles y revisores son propuestos hasta confirmación institucional. Wix no se ha inspeccionado en esta ejecución.",
-    "checkpointSummary": "Registro inicial auditado: fuentes y preparación local verificadas; dependencias de todos los flujos incluidas y fuentes originales fijadas por hash. Wix sigue sin inspección independiente.",
-    "nextGate": "Completar el cruce integral del esquema antes de preparar imports finales o construir Wix.",
-    "workspaceLabel": "ACCLAM / Website / work / launch-quest",
+    "checkpointSummary": "Alineación de fuentes cerrada para 77 colecciones y 1,083 campos, con originales preservados. El siguiente trabajo es el bootstrap local; Wix continúa sin implementación ni pruebas verificadas.",
+    "nextGate": "Diseñar y ensayar el plan de bootstrap y referencias por pasadas antes de preparar importaciones finales.",
+    "workspaceLabel": "clementepg/acclam · main · registro autoritativo",
     "continuityUrl": "/source/work%2Flaunch-quest%2FREADME.txt",
     "staleAfterDays": 7
   },
@@ -16,7 +16,7 @@
     "sha256": "47d2f15ef1dbb25e2d276c0d89e7265543640c81f90b88f374857c93e32f8275",
     "physicalPages": 252
   },
-  "authorization": "Solo archivos y visor local; ninguna acción externa se deriva de tareas futuras.",
+  "authorization": "El usuario autorizó usar clementepg/acclam como repositorio de trabajo, actualizar main en GitHub y publicar una vista en línea de solo lectura del Launch Quest. Las fuentes privadas permanecen locales y los originales bloqueados se preservan. Esto no autoriza cambios en Wix ni acciones institucionales derivadas de tareas futuras.",
   "inputSnapshots": [
     {
       "path": "Website architecture/schema_v3_0/ACCLAM_V3_CSV_Templates/ACCLAM_V3_Field_Dictionary.csv",
@@ -415,6 +415,18 @@
     {
       "path": "CMS/Draft preparation/outputs/01a17904-81c8-7fe3-8ac4-e3efb7e3fa16/CSV_preliminares/Pendientes.csv",
       "sha256": "988686233c71f613d882d5b210ea25369c3bb9977641adc88d4ec299a4ca6fbd"
+    },
+    {
+      "path": "work/launch-quest-private/schema-align-20261026/workbook/FINAL_AUDIT.json",
+      "sha256": "bb7e196db0af35ca5e34ab76ee56431aaf7d9566b716ff736ffcc02f8c9c0e9e"
+    },
+    {
+      "path": "work/launch-quest-private/schema-align-20261026/controls/controls_audit.json",
+      "sha256": "68aec6c99bc586e6e4746152b38ee6593ad4afbddbb7328cc1d35deddf1239b4"
+    },
+    {
+      "path": "Website architecture/schema_v3_0/ACCLAM_V3_Compendio_Maestro_CONSTRUCCION_FINAL/ACCLAM_V3_FROZEN_Collection_Kit_CONSTRUCTION.xlsx",
+      "sha256": "60dede56382098658232d85fc197b76d272eb81a6df623f11a3ada03fab82385"
     }
   ],
   "milestones": [
@@ -668,7 +680,7 @@
           "id": "ACA-SCHEMA-ALIGN",
           "title": "Cerrar la comparación integral PDF · XLSX · CSV",
           "phase": "design",
-          "status": "current",
+          "status": "done",
           "scope": "Completar la matriz de los 1,083 campos: Field ID, tipo, requerido, etiqueta, Help Text, primary display, referencias, índices, permisos y reglas. Conservar diferencias con decisión explícita.",
           "owner": "Technical Admin / responsable propuesto",
           "reviewer": "Data Steward ACCLAM / por confirmar",
@@ -677,7 +689,7 @@
             "Lista de diferencias, decisiones del responsable y campos pendientes; no sustituir tipos/relaciones por aproximaciones.",
             "Fuentes y revisiones fijadas por hash; confirmar alcance de equivalencia y límites."
           ],
-          "nextAction": "Abrir el Collection Kit y comparar Help Text, primary display, índices y permisos de cada colección con las páginas del PDF; registrar diferencias sin editar las fuentes bloqueadas.",
+          "nextAction": "Usar el cruce verificado para preparar el bootstrap local; conservar los controles de exposición e índices para las pruebas de construcción correspondientes.",
           "dependencies": [
             "ACA-SCHEMA-MAP"
           ],
@@ -705,14 +717,107 @@
               "locator": "1,083 filas de datos; columnas exactas"
             }
           ],
-          "evidence": [],
-          "proofs": [],
-          "evidenceSummary": "El cruce automático ya cubre nombres, conteos, claves, etiquetas, tipos, requerido y targets de referencia; falta la comparación integral y su revisión semántica.",
+          "evidence": [
+            {
+              "path": "work/launch-quest/evidence/SCHEMA_ALIGNMENT_SUMMARY.json",
+              "label": "Resumen verificado de alineación",
+              "locator": "resultado, métricas, decisiones y límites de la comparación"
+            },
+            {
+              "path": "work/launch-quest-private/schema-align-20261026/workbook/FINAL_AUDIT.json",
+              "label": "Auditoría privada de XLSX y Help Text",
+              "locator": "/summary; /artifacts; cruces de celdas y páginas físicas"
+            },
+            {
+              "path": "work/launch-quest-private/schema-align-20261026/controls/controls_audit.json",
+              "label": "Auditoría privada de controles",
+              "locator": "/summary; /sourceInterpretationAndFutureAcceptance; /collections; /fields"
+            }
+          ],
+          "proofs": [
+            {
+              "path": "work/launch-quest/evidence/SCHEMA_ALIGNMENT_SUMMARY.json",
+              "sha256": "700594885da4ecaf218ae37d6b8a8dde9fa24e99022d00877643f9ae38923025",
+              "class": "source_review",
+              "reviewedBy": "Codex · auditoría documental local del 26 de octubre de 2026",
+              "finding": "Resumen acotado a la comparación de fuentes y sus límites.",
+              "assertions": [
+                {
+                  "pointer": "/result",
+                  "equals": "source_alignment_complete"
+                },
+                {
+                  "pointer": "/blockingSourceComparisonDiscrepancies",
+                  "equals": 0
+                },
+                {
+                  "pointer": "/lockedOriginalsModified",
+                  "equals": false
+                },
+                {
+                  "pointer": "/fields",
+                  "equals": 1083
+                }
+              ]
+            },
+            {
+              "path": "work/launch-quest-private/schema-align-20261026/workbook/FINAL_AUDIT.json",
+              "sha256": "bb7e196db0af35ca5e34ab76ee56431aaf7d9566b716ff736ffcc02f8c9c0e9e",
+              "class": "source_review",
+              "reviewedBy": "Codex · auditoría documental local del 26 de octubre de 2026",
+              "finding": "Se compararon los dos XLSX, el CSV y el PDF con localizadores por campo/celda/página y sin modificar fuentes.",
+              "assertions": [
+                {
+                  "pointer": "/summary/lockedPdfHelpTextMatches",
+                  "equals": 1083
+                },
+                {
+                  "pointer": "/summary/lockedPdfHelpAndUseMismatches",
+                  "equals": 0
+                },
+                {
+                  "pointer": "/summary/collectionMetadataMismatches",
+                  "equals": 0
+                },
+                {
+                  "pointer": "/summary/sourceFilesUnchanged",
+                  "equals": true
+                }
+              ]
+            },
+            {
+              "path": "work/launch-quest-private/schema-align-20261026/controls/controls_audit.json",
+              "sha256": "68aec6c99bc586e6e4746152b38ee6593ad4afbddbb7328cc1d35deddf1239b4",
+              "class": "source_review",
+              "reviewedBy": "Codex · auditoría documental local del 26 de octubre de 2026",
+              "finding": "Se revisaron las 77 matrices; las interpretaciones y pruebas futuras quedan explícitas sin acreditar comportamiento Wix.",
+              "assertions": [
+                {
+                  "pointer": "/summary/permissionCellsExactMatches",
+                  "equals": 616
+                },
+                {
+                  "pointer": "/summary/validationRulesIncludedVerbatimWhitespaceNormalized",
+                  "equals": 207
+                },
+                {
+                  "pointer": "/summary/exceptions",
+                  "equals": 0
+                }
+              ]
+            }
+          ],
+          "evidenceSummary": "77 colecciones y 1,083 campos reconciliados. Coinciden 1,083 Help Text, 47,652 celdas compartidas y 616 celdas de permisos; cero discrepancias bloqueantes de comparación documental. Los originales no se modificaron. La configuración y seguridad efectiva de Wix siguen sin verificar.",
           "history": [
             {
               "date": "2026-10-26T10:37:54-07:00",
               "status": "current",
               "note": "Alta inicial desde fuentes bloqueadas; estado sustentado únicamente por la evidencia explícita."
+            },
+            {
+              "date": "2026-10-26T11:36:11-07:00",
+              "status": "done",
+              "note": "Comparación integral cerrada con auditorías documentales locales: Help Text, metadatos, referencias, primary display, permisos e índices de apoyo. Los controles de ejecución/exposición se conservan como aceptación futura."
             }
           ]
         }
@@ -958,7 +1063,8 @@
           "owner": "Technical Admin / responsable propuesto",
           "reviewer": "Data Steward ACCLAM / por confirmar",
           "acceptance": [
-            "Resultados por actor/acción/estado con datos sintéticos; ningún acceso indebido ni campos privados en DTO."
+            "Resultados por actor/acción/estado con datos sintéticos; ningún acceso indebido ni campos privados en DTO.",
+            "Checkpoint de DirectoryProfiles: probar lectura anónima/API y drafts para entityRef, recordCode, statusRef, personRef y perfiles ocultos/no aprobados; escalar cualquier conflicto efectivo antes de publicar."
           ],
           "nextAction": "Revisar la fuente indicada y preparar la evidencia del resultado descrito.",
           "dependencies": [
@@ -981,6 +1087,11 @@
               "date": "2026-10-26T10:37:54-07:00",
               "status": "upcoming",
               "note": "Alta inicial desde fuentes bloqueadas; estado sustentado únicamente por la evidencia explícita."
+            },
+            {
+              "date": "2026-10-26T11:36:11-07:00",
+              "status": "upcoming",
+              "note": "Handoff explícito de la auditoría de fuentes: exposición de DirectoryProfiles pendiente de prueba efectiva, sin modificar esquema congelado."
             }
           ]
         },
@@ -988,7 +1099,7 @@
           "id": "ACA-BOOTSTRAP",
           "title": "Diseñar bootstrap y pasadas de referencias",
           "phase": "design",
-          "status": "upcoming",
+          "status": "current",
           "scope": "Resolver ciclos y auto referencias, EntityRegistry, TaxonomyTerms, People e ImportBatches. Crear estructuras vacías antes de sembrar catálogos y fijar requiredness.",
           "owner": "Technical Admin / responsable propuesto",
           "reviewer": "Data Steward ACCLAM / por confirmar",
@@ -996,7 +1107,7 @@
             "Orden concreto de creación y carga por pasadas con identidad de destino, relaciones requeridas y autociclos; ensayo planificado.",
             "Cada excepción de bootstrap documentada sin relajar silenciosamente el esquema."
           ],
-          "nextAction": "Revisar la fuente indicada y preparar la evidencia del resultado descrito.",
+          "nextAction": "Preparar en local el orden de creación y carga por pasadas: catálogos y campos requeridos primero, EntityRegistry/sourceItemId y enlaces opcionales después; conservar referencias y requiredness del esquema bloqueado.",
           "dependencies": [
             "ACA-SCHEMA-ALIGN"
           ],
@@ -1022,6 +1133,11 @@
               "date": "2026-10-26T10:37:54-07:00",
               "status": "upcoming",
               "note": "Alta inicial desde fuentes bloqueadas; estado sustentado únicamente por la evidencia explícita."
+            },
+            {
+              "date": "2026-10-26T11:36:11-07:00",
+              "status": "current",
+              "note": "Siguiente objetivo documental tras cerrar ACA-SCHEMA-ALIGN; todavía sin cambios en Wix."
             }
           ]
         },
@@ -1728,7 +1844,8 @@
           "acceptance": [
             "Registro sintético válido y casos inválidos/requeridos/referencias; round trip sin pérdidas.",
             "Anónimo, miembro, creador, rol pertinente y admin: lecturas/escrituras positivas/negativas con evidencia.",
-            "Confirmar primary display e índices y ausencia de exposición privada antes de cargar datos reales."
+            "Confirmar primary display e índices y ausencia de exposición privada antes de cargar datos reales.",
+            "Checkpoint de DirectoryProfiles: probar lectura anónima/API y drafts para entityRef, recordCode, statusRef, personRef y perfiles ocultos/no aprobados; escalar cualquier conflicto efectivo antes de publicar."
           ],
           "nextAction": "Revisar la fuente indicada y preparar la evidencia del resultado descrito.",
           "dependencies": [
@@ -1766,6 +1883,11 @@
               "date": "2026-10-26T10:37:54-07:00",
               "status": "upcoming",
               "note": "Alta inicial desde fuentes bloqueadas; estado sustentado únicamente por la evidencia explícita."
+            },
+            {
+              "date": "2026-10-26T11:36:11-07:00",
+              "status": "upcoming",
+              "note": "Handoff explícito de la auditoría de fuentes: exposición de DirectoryProfiles pendiente de prueba efectiva, sin modificar esquema congelado."
             }
           ]
         },
@@ -28541,7 +28663,8 @@
           "owner": "Technical Admin / responsable propuesto",
           "reviewer": "Responsable institucional ACCLAM / por confirmar",
           "acceptance": [
-            "Resultado revisable con prueba funcional o aprobación humana acorde a la fase; decisiones y versiones fechadas."
+            "Resultado revisable con prueba funcional o aprobación humana acorde a la fase; decisiones y versiones fechadas.",
+            "Checkpoint de DirectoryProfiles: probar lectura anónima/API y drafts para entityRef, recordCode, statusRef, personRef y perfiles ocultos/no aprobados; escalar cualquier conflicto efectivo antes de publicar."
           ],
           "nextAction": "Revisar la fuente indicada y preparar la evidencia del resultado descrito.",
           "dependencies": [
@@ -28565,6 +28688,11 @@
               "date": "2026-10-26T10:37:54-07:00",
               "status": "upcoming",
               "note": "Alta inicial desde fuentes bloqueadas; estado sustentado únicamente por la evidencia explícita."
+            },
+            {
+              "date": "2026-10-26T11:36:11-07:00",
+              "status": "upcoming",
+              "note": "Handoff explícito de la auditoría de fuentes: exposición de DirectoryProfiles pendiente de prueba efectiva, sin modificar esquema congelado."
             }
           ]
         },
@@ -29924,8 +30052,17 @@
     {
       "date": "2026-10-26T10:43:34-07:00",
       "note": "Presentación institucional en español, conservando IDs y etiquetas técnicas Wix; sin cambios de estado/evidencia."
+    },
+    {
+      "date": "2026-10-26T11:36:11-07:00",
+      "note": "Repositorio clementepg/acclam seleccionado como master por el usuario. ACA-SCHEMA-ALIGN cerrado con evidencia documental; ACA-BOOTSTRAP pasa a current. Publicar el visor no lanza el sitio Wix."
+    },
+    {
+      "date": "2026-10-26T11:44:31-07:00",
+      "note": "Alcance de autorización actualizado según la instrucción vigente del usuario: repositorio clementepg/acclam, actualizaciones de main y visor en línea de solo lectura. Fuentes privadas locales y originales bloqueados preservados; sin cambios de estado, pruebas o autorización de acciones Wix/institucionales."
     }
   ],
   "initialAuditApplied": true,
-  "spanishPresentationApplied": true
+  "spanishPresentationApplied": true,
+  "schemaAlignmentRecorded": true
 }
