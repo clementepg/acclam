@@ -1,0 +1,193 @@
+{
+  "schemaVersion": 1,
+  "meaning": "Byte-preserved original files and documented runtime-only adaptations. This is a transfer audit, not another task register.",
+  "sourceRelativeRoot": "work/launch-quest",
+  "authoritativeRegister": "work/launch-quest/PROJECT_REGISTER.json",
+  "files": [
+    {
+      "path": "work/launch-quest/BASELINE_IDS.json",
+      "sha256": "112ad6d15bddd46e7633b4269d021ec973bb43406b8ca8a4add2d4a9d6d1759b"
+    },
+    {
+      "path": "work/launch-quest/checkpoints/0fb50970b8edc7d2/progress.json",
+      "sha256": "0502a5127a6ee5754b7e68ecbd8623f55ef817ae5b7d3da13c7a6c1b9486553c"
+    },
+    {
+      "path": "work/launch-quest/checkpoints/0fb50970b8edc7d2/PROJECT_REGISTER.json",
+      "sha256": "cced5ae93c6097bdda8c9554c8485910b43b78c0a79950626b450b67a844e196"
+    },
+    {
+      "path": "work/launch-quest/checkpoints/0fb50970b8edc7d2/receipt.json",
+      "sha256": "b1cc0c40a824bf5ff0293ecb6c6604ca9f7818dadfd8e6247ced79f2ffff87ac"
+    },
+    {
+      "path": "work/launch-quest/checkpoints/411c50e8c2b53b55/progress.json",
+      "sha256": "beab784588cd7fb6e00345b05fb687a2c094f0eb324b986232377158f9e2d333"
+    },
+    {
+      "path": "work/launch-quest/checkpoints/411c50e8c2b53b55/PROJECT_REGISTER.json",
+      "sha256": "17f151bd83d9da8414fc583fd8caa20bc8ddecbe2fe5e15e25b67bc76454bbf8"
+    },
+    {
+      "path": "work/launch-quest/checkpoints/411c50e8c2b53b55/receipt.json",
+      "sha256": "9722e08528baf0612855410b90ef04d53a92c805602186669589a9ddd6ea8cf5"
+    },
+    {
+      "path": "work/launch-quest/checkpoints/5d2a96260470d2ef/progress.json",
+      "sha256": "36753e5cd573215bb43d9c439623848c6847ffb67490cfb7dd8795fa78c18ba7"
+    },
+    {
+      "path": "work/launch-quest/checkpoints/5d2a96260470d2ef/PROJECT_REGISTER.json",
+      "sha256": "c047ea88f3f834e0d0ed60c05e66035b7b79b7e453afdf735f9194c69eb276ae"
+    },
+    {
+      "path": "work/launch-quest/checkpoints/5d2a96260470d2ef/receipt.json",
+      "sha256": "cf915e083069a8aa3534828876ff92fdb4ac7e4a685f68d600eb6aff58495ca4"
+    },
+    {
+      "path": "work/launch-quest/dist/app.js",
+      "sha256": "1e8769d047599d688e68787b22f64462dca2ca16b456ac5ac7792f95c92a1c19"
+    },
+    {
+      "path": "work/launch-quest/dist/progress.json",
+      "sha256": "beab784588cd7fb6e00345b05fb687a2c094f0eb324b986232377158f9e2d333"
+    },
+    {
+      "path": "work/launch-quest/dist/style.css",
+      "sha256": "6a66fd5289eae323e7c7cda736753ba032f173291ae4675cbf9a6880c854fa97"
+    },
+    {
+      "path": "work/launch-quest/evidence/dashboard-desktop.jpg",
+      "sha256": "309f4a5f369f340a82dcbfb4efa2acbc8268a17778e227f304e9f01476f1055d"
+    },
+    {
+      "path": "work/launch-quest/evidence/dashboard-mobile.jpg",
+      "sha256": "2e9c7570f4fdd987c0e5e4b1b090399ab45dab42ba4f2e41c0f5a8b772b91169"
+    },
+    {
+      "path": "work/launch-quest/evidence/INITIAL_LOCAL_AUDIT.json",
+      "sha256": "d556a34e8ca53bd9e0d92a1655265c88f895cae74fa588cd706e098f78a2a163"
+    },
+    {
+      "path": "work/launch-quest/evidence/LOCAL_QA.json",
+      "sha256": "af04aaaab008901e3eb2ed17ee230dbd61344d7470ba153dbb7d42ac28f7cb07"
+    },
+    {
+      "path": "work/launch-quest/evidence/REGISTER_VERIFICATION.json",
+      "sha256": "80ffab4224afa04c4409a90d7053a6c55592c982f258a7dada0379e5532eba3f"
+    },
+    {
+      "path": "work/launch-quest/evidence/test-results.txt",
+      "sha256": "31b3dfb06405867c86132a8dff123bdd234936f8c5391ea3d4aed86310a11118"
+    },
+    {
+      "path": "work/launch-quest/PROJECT_REGISTER.json",
+      "sha256": "17f151bd83d9da8414fc583fd8caa20bc8ddecbe2fe5e15e25b67bc76454bbf8"
+    },
+    {
+      "path": "work/launch-quest/scripts/apply_initial_audit.py",
+      "sha256": "137f829ce319ed49dbc498c81a9081f0af3b251a3629fba117ccf118e0800971"
+    },
+    {
+      "path": "work/launch-quest/scripts/checkpoint.py",
+      "sha256": "6c76c82be6d120a127aec2536ba6bb7c2937884eb6330d32721c31b94dfe5868"
+    },
+    {
+      "path": "work/launch-quest/scripts/extract_locked.py",
+      "sha256": "1d7cfb813e99d3ff426b11e8d88ea748d8d0cf78931067f302edff9dc79181e3"
+    },
+    {
+      "path": "work/launch-quest/scripts/localize_initial_register.py",
+      "sha256": "981e257ca901317a3f9a64d1985e5a33e16c4af055161dff3e528776308ab644"
+    },
+    {
+      "path": "work/launch-quest/scripts/schema_inventory.py",
+      "sha256": "877281447373bd2611ceb8e83cb07e81fe0cdfc7cdbfdf5e9cffe485d708912e"
+    },
+    {
+      "path": "work/launch-quest/scripts/seed_register.py",
+      "sha256": "7179192a750e3ae2d6c837a57a589edd2a5806a9121f1fe81ce1e08cef047ca4"
+    },
+    {
+      "path": "work/launch-quest/SOURCE_MAP.json",
+      "sha256": "fe0a885c18977399a2132b9acf1a23be1d16274d5cf795f0cf745f54a491f844"
+    }
+  ],
+  "runtimeAdaptations": [
+    {
+      "path": "work/launch-quest/Abrir Launch Quest.cmd",
+      "originalSha256": "de17b593b6e95fca7b2439a6e67881ced455d48160647c5cc5da71311c17d9eb",
+      "policy": "Adapt portable runtime/documentation only; authoritative state and history unchanged."
+    },
+    {
+      "path": "work/launch-quest/Abrir-Launch-Quest.ps1",
+      "originalSha256": "99583486a832edf4215c0a33f32471350731f19032e63c58f1640ec11dee8383",
+      "policy": "Adapt portable runtime/documentation only; authoritative state and history unchanged."
+    },
+    {
+      "path": "work/launch-quest/Actualizar Launch Quest.cmd",
+      "originalSha256": "be54d87a6119fc95f095f669aa71b139944fb4c1bfaeb841521e3a444829e2b3",
+      "policy": "Adapt portable runtime/documentation only; authoritative state and history unchanged."
+    },
+    {
+      "path": "work/launch-quest/Actualizar-Launch-Quest.ps1",
+      "originalSha256": "b746a4576e08d19a152b356bbc5b99471bf9b1199e23a85717b36e1b7fa37ffa",
+      "policy": "Adapt portable runtime/documentation only; authoritative state and history unchanged."
+    },
+    {
+      "path": "work/launch-quest/Cerrar Launch Quest.cmd",
+      "originalSha256": "824e20a6fc9089f5f70267a2e0352069c6b274b817442b983219d6daa5536ac4",
+      "policy": "Adapt portable runtime/documentation only; authoritative state and history unchanged."
+    },
+    {
+      "path": "work/launch-quest/Cerrar-Launch-Quest.ps1",
+      "originalSha256": "98e8ab58d3857407df8b7f7d4d5053b3af0f0cb8dada63b201a1e25f4787ce10",
+      "policy": "Adapt portable runtime/documentation only; authoritative state and history unchanged."
+    },
+    {
+      "path": "work/launch-quest/dist/index.html",
+      "originalSha256": "eb9121dabbd0363e32b230d8ad544bfd6e826ddbe831509ad55629de27b75124",
+      "policy": "Adapt portable runtime/documentation only; authoritative state and history unchanged."
+    },
+    {
+      "path": "work/launch-quest/launch.mjs",
+      "originalSha256": "f4c717c5c92f776b0a9dc1749dd0deeb8882e7bbb4313b5b43275401e277e712",
+      "policy": "Adapt portable runtime/documentation only; authoritative state and history unchanged."
+    },
+    {
+      "path": "work/launch-quest/README.txt",
+      "originalSha256": "2717670e9871843e7d277075ffa66903143f01eead4861dabb5d8878221f6dbf",
+      "policy": "Adapt portable runtime/documentation only; authoritative state and history unchanged."
+    },
+    {
+      "path": "work/launch-quest/scripts/quest.py",
+      "originalSha256": "23e1a1710d20323baa7fb7a44f838e31eb86c777b5a6e49b956b4e064f4f1c82",
+      "policy": "Adapt portable runtime/documentation only; authoritative state and history unchanged."
+    },
+    {
+      "path": "work/launch-quest/scripts/test_quest.py",
+      "originalSha256": "7da8010ae655c99cc334b5b80eb11babc263d107f08c807949291a997519ea13",
+      "policy": "Adapt portable runtime/documentation only; authoritative state and history unchanged."
+    },
+    {
+      "path": "work/launch-quest/scripts/verify_local.py",
+      "originalSha256": "3460b330db5ff11d69523d23502bdd1c3c743b836d28ebfe88893ef5f9adcca5",
+      "policy": "Adapt portable runtime/documentation only; authoritative state and history unchanged."
+    },
+    {
+      "path": "work/launch-quest/server.mjs",
+      "originalSha256": "bdb68bf6de23be9a989dd3d21936819db699d84d23b0ecef0db9a5d4c28eef7e",
+      "policy": "Adapt portable runtime/documentation only; authoritative state and history unchanged."
+    }
+  ],
+  "excluded": [
+    "Private Website/CMS/handoff documents",
+    "sources/locked_pages.json",
+    "sources/schema_inventory.json",
+    "sources/scope_inventory.json",
+    ".viewer.json",
+    "viewer*.log",
+    "__pycache__",
+    "*.pyc"
+  ]
+}

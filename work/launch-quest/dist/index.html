@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#102d3b">
+  <meta name="description" content="Registro local y verificable del proyecto Plataforma Digital ACCLAM v3.0.">
+  <title>ACCLAM · Launch Quest</title>
+  <link rel="stylesheet" href="./style.css">
+  <script src="./app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Ir al contenido</a>
+  <header class="masthead">
+    <a class="brand" href="#main" aria-label="ACCLAM, inicio del registro">
+      <span class="brand-name">ACCLAM<span class="brand-dot" aria-hidden="true">.</span></span>
+      <span class="brand-description">Plataforma digital <b>v3.0</b></span>
+    </a>
+    <div class="masthead-title"><span class="small-label">Espacio de trabajo local</span><strong>Launch Quest</strong></div>
+    <a class="continuity-link" id="continuity-link" href="/source/work%2Flaunch-quest%2FREADME.txt" target="_blank" rel="noopener">Continuar el trabajo <span aria-hidden="true">↗</span></a>
+  </header>
+
+  <main id="main">
+    <p class="freshness-banner" role="note" id="repository-copy-note">Copia de repositorio: se conserva el punto de control original. Los documentos privados de evidencia permanecen fuera de Git; su disponibilidad y verificación se revisan por separado. Abrir esta vista no acredita una nueva revisión de esas fuentes.</p>
+    <div class="loading-state" id="loading-state" role="status"><span class="loading-dot" aria-hidden="true"></span>Abriendo el punto de control del proyecto…</div>
+    <div class="fatal-state" id="fatal-state" hidden>
+      <p class="eyebrow">Registro no disponible</p>
+      <h1>No se pudo abrir el punto de control.</h1>
+      <p id="fatal-message">El visor necesita el archivo progress.json generado desde el registro local.</p>
+      <button class="button primary" id="retry-button" type="button">Volver a leer</button>
+    </div>
+
+    <div id="dashboard" hidden>
+      <div class="page-heading">
+        <div><p class="eyebrow">ACCLAM / Seguimiento de implementación</p><h1 id="project-title">Launch Quest</h1><p class="page-subtitle" id="project-subtitle"></p></div>
+        <div class="connection-indicator" id="connection-indicator" role="status" aria-live="polite"></div>
+      </div>
+      <div class="freshness-banner" id="freshness-banner" hidden></div>
+
+      <section class="focus-grid" aria-label="Siguiente acción y punto de control">
+        <article class="current-card" id="current-card"></article>
+        <aside class="checkpoint-card" aria-labelledby="checkpoint-title">
+          <p class="eyebrow">Continuidad del proyecto</p>
+          <h2 id="checkpoint-title">Punto de control</h2>
+          <dl class="checkpoint-meta"><div><dt>Revisado el</dt><dd id="checkpoint-date"></dd></div><div><dt>Revisión</dt><dd><code id="checkpoint-revision"></code></dd></div></dl>
+          <p class="checkpoint-summary" id="checkpoint-summary"></p>
+          <div class="gate"><span class="small-label">Próxima condición de avance</span><p id="next-gate"></p></div>
+          <p class="workspace-label" id="workspace-label"></p>
+        </aside>
+      </section>
+
+      <section class="progress-panel" aria-labelledby="progress-title">
+        <div class="progress-heading"><div><p class="eyebrow">Avance con evidencia</p><h2 id="progress-title">Objetivos verificados</h2></div><div class="completion-count" id="completion-count"></div></div>
+        <div class="overall-track" id="overall-track" role="img"></div>
+        <div class="progress-caption"><p id="ratio-description">La proporción cuenta objetivos con resultado verificado. No mide esfuerzo, tiempo ni preparación para el lanzamiento.</p><div class="status-legend" id="status-legend"></div></div>
+        <div class="phase-grid" id="phase-grid"></div>
+      </section>
+
+      <section class="journey-section" aria-labelledby="journey-title">
+        <div class="section-heading"><div><p class="eyebrow">De la definición a la publicación</p><h2 id="journey-title">Mapa del proyecto</h2><p id="scope-note"></p></div><span class="readonly-label">Vista de lectura</span></div>
+        <nav class="milestone-map" id="milestone-map" aria-label="Ir a un hito del proyecto"></nav>
+        <div class="filter-panel" role="search" aria-label="Buscar objetivos">
+          <div class="search-field"><label for="search-input">Buscar en el registro</label><div class="search-input-wrap"><span aria-hidden="true">⌕</span><input id="search-input" type="search" placeholder="Objetivo, colección, responsable o ID…" autocomplete="off"></div></div>
+          <div class="select-field"><label for="phase-filter">Etapa</label><select id="phase-filter"><option value="all">Todas las etapas</option></select></div>
+          <div class="select-field"><label for="status-filter">Estado</label><select id="status-filter"><option value="all">Todos los estados</option><option value="done">Verificado</option><option value="current">En curso</option><option value="upcoming">Pendiente</option></select></div>
+          <div class="select-field"><label for="milestone-filter">Hito</label><select id="milestone-filter"><option value="all">Todos los hitos</option></select></div>
+        </div>
+        <div class="list-toolbar"><p id="results-count" role="status" aria-live="polite"></p><div><button class="text-button" id="clear-filters" type="button" hidden>Limpiar filtros</button><button class="text-button" id="expand-all" type="button">Abrir hitos</button><button class="text-button" id="collapse-all" type="button">Cerrar todo</button></div></div>
+        <div id="milestone-list"></div>
+        <div class="empty-state" id="empty-state" hidden><h3>No hay objetivos con estos filtros.</h3><p>Prueba otro término o vuelve a mostrar el registro completo.</p><button class="button secondary" id="clear-empty-filters" type="button">Mostrar todo</button></div>
+      </section>
+      <footer class="page-footer"><p>Los cambios de estado se registran con evidencia en el archivo autoritativo. Abrir un objetivo o actualizar esta vista no cambia el avance.</p><p>ACCLAM · v3.0 <span aria-hidden="true">/</span> Registro local</p></footer>
+    </div>
+  </main>
+  <noscript><p class="noscript">Activa JavaScript para leer el registro. El archivo autoritativo y las instrucciones están en <a href="/source/work%2Flaunch-quest%2FREADME.txt">work/launch-quest/README.txt</a>.</p></noscript>
+</body>
+</html>

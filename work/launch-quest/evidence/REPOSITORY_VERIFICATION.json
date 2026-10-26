@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "reviewedAtUtc": "2026-10-26T18:13:13+00:00",
+  "purpose": "Initial privacy-filtered repository transfer verification; no task state changes.",
+  "result": "passed",
+  "copy": {
+    "result": "passed",
+    "scope": "Repository transfer, saved snapshot and available evidence only; private proof bodies deliberately unavailable.",
+    "registerSha256": "17f151bd83d9da8414fc583fd8caa20bc8ddecbe2fe5e15e25b67bc76454bbf8",
+    "projectionRevision": "411c50e8c2b53b558af4969885a095953171ccbb3daff3019e227ea2bd98dc95",
+    "objectives": 610,
+    "milestones": 20,
+    "done": 3,
+    "preservedOriginalFiles": 27,
+    "excludedPrivateSourceFiles": 101,
+    "candidateFilesScanned": 51,
+    "secretAndContactPatternFindings": 0,
+    "fullPrivateEvidenceValidation": false,
+    "runtimeVersions": {
+      "node": "v24.21.0",
+      "python": "3.14.8"
+    },
+    "limits": "File allowlist, byte checks and high-confidence pattern scan support the transfer; private documents remain external. Original full evidence validation is a separate command."
+  },
+  "originalPreservation": {
+    "filesChecked": 43,
+    "changedFiles": 0,
+    "note": "Original Website register, source files and code remained outside this transfer and unchanged. Runtime logs/process state excluded from preservation comparison."
+  },
+  "strictAttachedEvidence": {
+    "result": "passed",
+    "objectives": 610,
+    "milestones": 20,
+    "verifiedProofs": 4,
+    "done": 3,
+    "cycles": 0,
+    "errors": 0,
+    "note": "Original private sources were attached read-only on the user PC for this check. Their contents and absolute root are not included in Git."
+  },
+  "standaloneRuntime": {
+    "result": "passed",
+    "testSummary": "test_all_scope_connects_to_release (__main__.RegisterTests.test_all_scope_connects_to_release) ... ok\ntest_baseline_id_cannot_disappear (__main__.RegisterTests.test_baseline_id_cannot_disappear) ... ok\ntest_changed_source_snapshot_rejected (__main__.RegisterTests.test_changed_source_snapshot_rejected) ... ok\ntest_copy_validation_does_not_hide_unlisted_missing_files (__main__.RegisterTests.test_copy_validation_does_not_hide_unlisted_missing_files) ... ok\ntest_cycle_rejected (__main__.RegisterTests.test_cycle_rejected) ... ok\ntest_done_with_open_dependency_rejected (__main__.RegisterTests.test_done_with_open_dependency_rejected) ... ok\ntest_done_without_proof_rejected (__main__.RegisterTests.test_done_without_proof_rejected) ... ok\ntest_duplicate_id_rejected (__main__.RegisterTests.test_duplicate_id_rejected) ... ok\ntest_full_frozen_scope_has_stages (__main__.RegisterTests.test_full_frozen_scope_has_stages) ... ok\ntest_hash_mismatch_rejected (__main__.RegisterTests.test_hash_mismatch_rejected) ... ok\ntest_history_must_match_status (__main__.RegisterTests.test_history_must_match_status) ... ok\ntest_malformed_source_snapshot_rejected (__main__.RegisterTests.test_malformed_source_snapshot_rejected) ... ok\ntest_missing_current_rejected (__main__.RegisterTests.test_missing_current_rejected) ... ok\ntest_projection_is_deterministic_and_allowlisted (__main__.RegisterTests.test_projection_is_deterministic_and_allowlisted) ... ok\ntest_snapshot_check_is_readonly_and_explicit (__main__.RegisterTests.test_snapshot_check_is_readonly_and_explicit) ... ok\ntest_source_traversal_rejected (__main__.RegisterTests.test_source_traversal_rejected) ... ok\ntest_strict_evidence_check_remains_strict (__main__.RegisterTests.test_strict_evidence_check_remains_strict) ... ok\ntest_typed_assertion_rejected (__main__.RegisterTests.test_typed_assertion_rejected) ... ok\ntest_valid_source_bounded_state (__main__.RegisterTests.test_valid_source_bounded_state) ... ok\ntest_wrong_proof_class_rejected (__main__.RegisterTests.test_wrong_proof_class_rejected) ... ok\ntest_absolute_and_traversal_paths_rejected (__main__.SourceResolverTests.test_absolute_and_traversal_paths_rejected) ... ok\ntest_attached_source_hash_is_required (__main__.SourceResolverTests.test_attached_source_hash_is_required) ... ok\ntest_missing_attachment_is_explicit (__main__.SourceResolverTests.test_missing_attachment_is_explicit) ... ok\ntest_only_pinned_paths_can_fall_back_to_attachment (__main__.SourceResolverTests.test_only_pinned_paths_can_fall_back_to_attachment) ... ok\ntest_symlink_cannot_escape_attachment (__main__.SourceResolverTests.test_symlink_cannot_escape_attachment) ... skipped 'This OS user cannot create symbolic links'\ntest_attached_private_evidence_is_available_only_when_pinned (__main__.TransportTests.test_attached_private_evidence_is_available_only_when_pinned) ... ok\ntest_changed_private_evidence_is_conflict (__main__.TransportTests.test_changed_private_evidence_is_conflict) ... ok\ntest_host_bound_to_loopback (__main__.TransportTests.test_host_bound_to_loopback) ... ok\ntest_readonly_and_allowlist (__main__.TransportTests.test_readonly_and_allowlist) ... ok\ntest_server_without_attachment_serves_snapshot_and_explains_missing_source (__main__.TransportTests.test_server_without_attachment_serves_snapshot_and_explains_missing_source) ... ok\ntest_stale_register_rejected (__main__.TransportTests.test_stale_register_rejected) ... ok\ntest_tampered_projection_rejected (__main__.TransportTests.test_tampered_projection_rejected) ... ok\n\n----------------------------------------------------------------------\nRan 32 tests in 14.288s\n\nOK (skipped=1)",
+    "evidenceLinks": 89,
+    "availableLinks": 2,
+    "explicitPrivateDependencyLinks": 87,
+    "writesPerformed": false,
+    "fullEvidenceValidation": false
+  },
+  "browserSpotCheck": {
+    "result": "passed",
+    "source": "evidence/repository-preview.jpg",
+    "checks": [
+      "Saved register snapshot,610objectives/20milestones/3done unchanged",
+      "Repository private-evidence notice visible",
+      "Current-only filter returns1objective",
+      "No browser console warnings/errors observed"
+    ]
+  },
+  "limits": [
+    "One symlink test skipped because Windows did not permit this account to create symbolic links. Traversal/hash/allowlist tests ran.",
+    "Repository snapshot verification does not freshly validate unavailable private evidence.",
+    "No Wix/Drive changes or website deployment performed."
+  ]
+}

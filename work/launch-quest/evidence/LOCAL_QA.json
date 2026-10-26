@@ -1,0 +1,425 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-10-26T10:48:23-07:00",
+  "result": "passed",
+  "registerSha256": "17f151bd83d9da8414fc583fd8caa20bc8ddecbe2fe5e15e25b67bc76454bbf8",
+  "projectionRevision": "411c50e8c2b53b558af4969885a095953171ccbb3daff3019e227ea2bd98dc95",
+  "register": {
+    "objectives": 610,
+    "milestones": 20,
+    "verifiedProofs": 4,
+    "done": 3,
+    "cycles": 0,
+    "errors": 0,
+    "revision": "411c50e8c2b53b558af4969885a095953171ccbb3daff3019e227ea2bd98dc95"
+  },
+  "automatedTests": {
+    "count": 21,
+    "result": "passed",
+    "log": "work/launch-quest/evidence/test-results.txt"
+  },
+  "syntaxChecks": [
+    "server.mjs",
+    "launch.mjs",
+    "dist/app.js"
+  ],
+  "sourceLinks": [
+    {
+      "url": "/source/CMS%2FDraft%20preparation%2Foutputs%2F01a17904-81c8-7fe3-8ac4-e3efb7e3fa16%2FCSV_preliminares%2FPendientes.csv",
+      "status": 200
+    },
+    {
+      "url": "/source/CMS%2FDraft%20preparation%2Foutputs%2F01a17904-81c8-7fe3-8ac4-e3efb7e3fa16%2FLEEME.txt",
+      "status": 200
+    },
+    {
+      "url": "/source/Website%20architecture%2Fschema_v3_0%2FACCLAM_V3_CSV_Templates%2FACCLAM_V3_Field_Dictionary.csv",
+      "status": 200
+    },
+    {
+      "url": "/source/Website%20architecture%2Fschema_v3_0%2FACCLAM_V3_CSV_Templates%2Fcollections%2F01_Countries.csv",
+      "status": 200
+    },
+    {
+      "url": "/source/Website%20architecture%2Fschema_v3_0%2FACCLAM_V3_CSV_Templates%2Fcollections%2F01_EntityRegistry.csv",
+      "status": 200
+    },
+    {
+      "url": "/source/Website%20architecture%2Fschema_v3_0%2FACCLAM_V3_CSV_Templates%2Fcollections%2F01_ImportBatches.csv",
+      "status": 200
+    },
+    {
+      "url": "/source/Website%20architecture%2Fschema_v3_0%2FACCLAM_V3_CSV_Templates%2Fcollections%2F01_Municipalities.csv",
+      "status": 200
+    },
+    {
+      "url": "/source/Website%20architecture%2Fschema_v3_0%2FACCLAM_V3_CSV_Templates%2Fcollections%2F01_States.csv",
+      "status": 200
+    },
+    {
+      "url": "/source/Website%20architecture%2Fschema_v3_0%2FACCLAM_V3_CSV_Templates%2Fcollections%2F01_Taxonomies.csv",
+      "status": 200
+    },
+    {
+      "url": "/source/Website%20architecture%2Fschema_v3_0%2FACCLAM_V3_CSV_Templates%2Fcollections%2F01_TaxonomyTerms.csv",
+      "status": 200
+    },
+    {
+      "url": "/source/Website%20architecture%2Fschema_v3_0%2FACCLAM_V3_CSV_Templates%2Fcollections%2F02_LegacyRecordMap.csv",
+      "status": 200
+    },
+    {
+      "url": "/source/Website%20architecture%2Fschema_v3_0%2FACCLAM_V3_CSV_Templates%2Fcollections%2F02_Organizations.csv",
+      "status": 200
+    },
+    {
+      "url": "/source/Website%20architecture%2Fschema_v3_0%2FACCLAM_V3_CSV_Templates%2Fcollections%2F02_People.csv",
+      "status": 200
+    },
+    {
+      "url": "/source/Website%20architecture%2Fschema_v3_0%2FACCLAM_V3_CSV_Templates%2Fcollections%2F03_AccessRoles.csv",
+      "status": 200
+    },
+    {
+      "url": "/source/Website%20architecture%2Fschema_v3_0%2FACCLAM_V3_CSV_Templates%2Fcollections%2F03_DataQualityIssues.csv",
+      "status": 200
+    },
+    {
+      "url": "/source/Website%20architecture%2Fschema_v3_0%2FACCLAM_V3_CSV_Templates%2Fcollections%2F03_GovernanceBodies.csv",
+      "status": 200
+    },
+    {
+      "url": "/source/Website%20architecture%2Fschema_v3_0%2FACCLAM_V3_CSV_Templates%2Fcollections%2F03_MembershipPlanVersions.csv",
+      "status": 200
+    },
+    {
+      "url": "/source/Website%20architecture%2Fschema_v3_0%2FACCLAM_V3_CSV_Templates%2Fcollections%2F03_OrganizationalRoles.csv",
+      "status": 200
+    },
+    {
+      "url": "/source/Website%20architecture%2Fschema_v3_0%2FACCLAM_V3_CSV_Templates%2Fcollections%2F04_Credentials.csv",
+      "status": 200
+    },
+    {
+      "url": "/source/Website%20architecture%2Fschema_v3_0%2FACCLAM_V3_CSV_Templates%2Fcollections%2F04_EducationCatalog.csv",
+      "status": 200
+    },
+    {
+      "url": "/source/Website%20architecture%2Fschema_v3_0%2FACCLAM_V3_CSV_Templates%2Fcollections%2F04_MembershipApplications.csv",
+      "status": 200
+    },
+    {
+      "url": "/source/Website%20architecture%2Fschema_v3_0%2FACCLAM_V3_CSV_Templates%2Fcollections%2F04_MetricDefinitions.csv",
+      "status": 200
+    },
+    {
+      "url": "/source/Website%20architecture%2Fschema_v3_0%2FACCLAM_V3_CSV_Templates%2Fcollections%2F04_PersonOrganizationRelationships.csv",
+      "status": 200
+    },
+    {
+      "url": "/source/Website%20architecture%2Fschema_v3_0%2FACCLAM_V3_CSV_Templates%2Fcollections%2F04_Programs.csv",
+      "status": 200
+    },
+    {
+      "url": "/source/Website%20architecture%2Fschema_v3_0%2FACCLAM_V3_CSV_Templates%2Fcollections%2F04_RetentionRules.csv",
+      "status": 200
+    },
+    {
+      "url": "/source/Website%20architecture%2Fschema_v3_0%2FACCLAM_V3_CSV_Templates%2Fcollections%2F04_RoleCompetencies.csv",
+      "status": 200
+    },
+    {
+      "url": "/source/Website%20architecture%2Fschema_v3_0%2FACCLAM_V3_CSV_Templates%2Fcollections%2F04_RolePermissions.csv",
+      "status": 200
+    },
+    {
+      "url": "/source/Website%20architecture%2Fschema_v3_0%2FACCLAM_V3_CSV_Templates%2Fcollections%2F05_Appointments.csv",
+      "status": 200
+    },
+    {
+      "url": "/source/Website%20architecture%2Fschema_v3_0%2FACCLAM_V3_CSV_Templates%2Fcollections%2F05_ConsentRecords.csv",
+      "status": 200
+    },
+    {
+      "url": "/source/Website%20architecture%2Fschema_v3_0%2FACCLAM_V3_CSV_Templates%2Fcollections%2F05_Documents.csv",
+      "status": 200
+    },
+    {
+      "url": "/source/Website%20architecture%2Fschema_v3_0%2FACCLAM_V3_CSV_Templates%2Fcollections%2F05_Events.csv",
+      "status": 200
+    },
+    {
+      "url": "/source/Website%20architecture%2Fschema_v3_0%2FACCLAM_V3_CSV_Templates%2Fcollections%2F05_InstitutionalActivities.csv",
+      "status": 200
+    },
+    {
+      "url": "/source/Website%20architecture%2Fschema_v3_0%2FACCLAM_V3_CSV_Templates%2Fcollections%2F05_KnowledgeItems.csv",
+      "status": 200
+    },
+    {
+      "url": "/source/Website%20architecture%2Fschema_v3_0%2FACCLAM_V3_CSV_Templates%2Fcollections%2F05_Memberships.csv",
+      "status": 200
+    },
+    {
+      "url": "/source/Website%20architecture%2Fschema_v3_0%2FACCLAM_V3_CSV_Templates%2Fcollections%2F05_ObligationDefinitions.csv",
+      "status": 200
+    },
+    {
+      "url": "/source/Website%20architecture%2Fschema_v3_0%2FACCLAM_V3_CSV_Templates%2Fcollections%2F05_VerificationEvents.csv",
+      "status": 200
+    },
+    {
+      "url": "/source/Website%20architecture%2Fschema_v3_0%2FACCLAM_V3_CSV_Templates%2Fcollections%2F06_ActivityContributions.csv",
+      "status": 200
+    },
+    {
+      "url": "/source/Website%20architecture%2Fschema_v3_0%2FACCLAM_V3_CSV_Templates%2Fcollections%2F06_Assessments.csv",
+      "status": 200
+    },
+    {
+      "url": "/source/Website%20architecture%2Fschema_v3_0%2FACCLAM_V3_CSV_Templates%2Fcollections%2F06_CertificateTemplates.csv",
+      "status": 200
+    },
+    {
+      "url": "/source/Website%20architecture%2Fschema_v3_0%2FACCLAM_V3_CSV_Templates%2Fcollections%2F06_DirectoryProfiles.csv",
+      "status": 200
+    },
+    {
+      "url": "/source/Website%20architecture%2Fschema_v3_0%2FACCLAM_V3_CSV_Templates%2Fcollections%2F06_DocumentVersions.csv",
+      "status": 200
+    },
+    {
+      "url": "/source/Website%20architecture%2Fschema_v3_0%2FACCLAM_V3_CSV_Templates%2Fcollections%2F06_ExternalAuthorizations.csv",
+      "status": 200
+    },
+    {
+      "url": "/source/Website%20architecture%2Fschema_v3_0%2FACCLAM_V3_CSV_Templates%2Fcollections%2F06_ExternalSystems.csv",
+      "status": 200
+    },
+    {
+      "url": "/source/Website%20architecture%2Fschema_v3_0%2FACCLAM_V3_CSV_Templates%2Fcollections%2F06_Meetings.csv",
+      "status": 200
+    },
+    {
+      "url": "/source/Website%20architecture%2Fschema_v3_0%2FACCLAM_V3_CSV_Templates%2Fcollections%2F06_MembershipPeriods.csv",
+      "status": 200
+    },
+    {
+      "url": "/source/Website%20architecture%2Fschema_v3_0%2FACCLAM_V3_CSV_Templates%2Fcollections%2F06_ProcedureSteps.csv",
+      "status": 200
+    },
+    {
+      "url": "/source/Website%20architecture%2Fschema_v3_0%2FACCLAM_V3_CSV_Templates%2Fcollections%2F06_ScholarshipApplications.csv",
+      "status": 200
+    },
+    {
+      "url": "/source/Website%20architecture%2Fschema_v3_0%2FACCLAM_V3_CSV_Templates%2Fcollections%2F06_Sessions.csv",
+      "status": 200
+    },
+    {
+      "url": "/source/Website%20architecture%2Fschema_v3_0%2FACCLAM_V3_CSV_Templates%2Fcollections%2F06_TaskTemplates.csv",
+      "status": 200
+    },
+    {
+      "url": "/source/Website%20architecture%2Fschema_v3_0%2FACCLAM_V3_CSV_Templates%2Fcollections%2F07_AccessAssignments.csv",
+      "status": 200
+    },
+    {
+      "url": "/source/Website%20architecture%2Fschema_v3_0%2FACCLAM_V3_CSV_Templates%2Fcollections%2F07_Agreements.csv",
+      "status": 200
+    },
+    {
+      "url": "/source/Website%20architecture%2Fschema_v3_0%2FACCLAM_V3_CSV_Templates%2Fcollections%2F07_AuthorityGrants.csv",
+      "status": 200
+    },
+    {
+      "url": "/source/Website%20architecture%2Fschema_v3_0%2FACCLAM_V3_CSV_Templates%2Fcollections%2F07_CandidateAssessments.csv",
+      "status": 200
+    },
+    {
+      "url": "/source/Website%20architecture%2Fschema_v3_0%2FACCLAM_V3_CSV_Templates%2Fcollections%2F07_ConflictDisclosures.csv",
+      "status": 200
+    },
+    {
+      "url": "/source/Website%20architecture%2Fschema_v3_0%2FACCLAM_V3_CSV_Templates%2Fcollections%2F07_ContextLinks.csv",
+      "status": 200
+    },
+    {
+      "url": "/source/Website%20architecture%2Fschema_v3_0%2FACCLAM_V3_CSV_Templates%2Fcollections%2F07_CreditDefinitions.csv",
+      "status": 200
+    },
+    {
+      "url": "/source/Website%20architecture%2Fschema_v3_0%2FACCLAM_V3_CSV_Templates%2Fcollections%2F07_FinancialTransactions.csv",
+      "status": 200
+    },
+    {
+      "url": "/source/Website%20architecture%2Fschema_v3_0%2FACCLAM_V3_CSV_Templates%2Fcollections%2F07_ImpactMetrics.csv",
+      "status": 200
+    },
+    {
+      "url": "/source/Website%20architecture%2Fschema_v3_0%2FACCLAM_V3_CSV_Templates%2Fcollections%2F07_MessageTemplates.csv",
+      "status": 200
+    },
+    {
+      "url": "/source/Website%20architecture%2Fschema_v3_0%2FACCLAM_V3_CSV_Templates%2Fcollections%2F07_Participations.csv",
+      "status": 200
+    },
+    {
+      "url": "/source/Website%20architecture%2Fschema_v3_0%2FACCLAM_V3_CSV_Templates%2Fcollections%2F07_Resolutions.csv",
+      "status": 200
+    },
+    {
+      "url": "/source/Website%20architecture%2Fschema_v3_0%2FACCLAM_V3_CSV_Templates%2Fcollections%2F07_ScholarshipAwards.csv",
+      "status": 200
+    },
+    {
+      "url": "/source/Website%20architecture%2Fschema_v3_0%2FACCLAM_V3_CSV_Templates%2Fcollections%2F07_SpeakerAssignments.csv",
+      "status": 200
+    },
+    {
+      "url": "/source/Website%20architecture%2Fschema_v3_0%2FACCLAM_V3_CSV_Templates%2Fcollections%2F07_SystemSettings.csv",
+      "status": 200
+    },
+    {
+      "url": "/source/Website%20architecture%2Fschema_v3_0%2FACCLAM_V3_CSV_Templates%2Fcollections%2F08_AssessmentAttempts.csv",
+      "status": 200
+    },
+    {
+      "url": "/source/Website%20architecture%2Fschema_v3_0%2FACCLAM_V3_CSV_Templates%2Fcollections%2F08_Assets.csv",
+      "status": 200
+    },
+    {
+      "url": "/source/Website%20architecture%2Fschema_v3_0%2FACCLAM_V3_CSV_Templates%2Fcollections%2F08_AttendanceRecords.csv",
+      "status": 200
+    },
+    {
+      "url": "/source/Website%20architecture%2Fschema_v3_0%2FACCLAM_V3_CSV_Templates%2Fcollections%2F08_Audits.csv",
+      "status": 200
+    },
+    {
+      "url": "/source/Website%20architecture%2Fschema_v3_0%2FACCLAM_V3_CSV_Templates%2Fcollections%2F08_Cases.csv",
+      "status": 200
+    },
+    {
+      "url": "/source/Website%20architecture%2Fschema_v3_0%2FACCLAM_V3_CSV_Templates%2Fcollections%2F08_CreditAwards.csv",
+      "status": 200
+    },
+    {
+      "url": "/source/Website%20architecture%2Fschema_v3_0%2FACCLAM_V3_CSV_Templates%2Fcollections%2F08_Donations.csv",
+      "status": 200
+    },
+    {
+      "url": "/source/Website%20architecture%2Fschema_v3_0%2FACCLAM_V3_CSV_Templates%2Fcollections%2F08_ExternalSystemAccess.csv",
+      "status": 200
+    },
+    {
+      "url": "/source/Website%20architecture%2Fschema_v3_0%2FACCLAM_V3_CSV_Templates%2Fcollections%2F08_FundingAllocations.csv",
+      "status": 200
+    },
+    {
+      "url": "/source/Website%20architecture%2Fschema_v3_0%2FACCLAM_V3_CSV_Templates%2Fcollections%2F08_ObligationInstances.csv",
+      "status": 200
+    },
+    {
+      "url": "/source/Website%20architecture%2Fschema_v3_0%2FACCLAM_V3_CSV_Templates%2Fcollections%2F08_OperationalTasks.csv",
+      "status": 200
+    },
+    {
+      "url": "/source/Website%20architecture%2Fschema_v3_0%2FACCLAM_V3_CSV_Templates%2Fcollections%2F08_TimelineEvents.csv",
+      "status": 200
+    },
+    {
+      "url": "/source/Website%20architecture%2Fschema_v3_0%2FACCLAM_V3_CSV_Templates%2Fcollections%2F09_AuditFindings.csv",
+      "status": 200
+    },
+    {
+      "url": "/source/Website%20architecture%2Fschema_v3_0%2FACCLAM_V3_CSV_Templates%2Fcollections%2F09_Certificates.csv",
+      "status": 200
+    },
+    {
+      "url": "/source/Website%20architecture%2Fschema_v3_0%2FACCLAM_V3_CSV_Templates%2Fcollections%2F09_RecordHolds.csv",
+      "status": 200
+    },
+    {
+      "url": "/source/Website%20architecture%2Fschema_v3_0%2FACCLAM_V3_CSV_Templates%2Fcollections%2F09_Submissions.csv",
+      "status": 200
+    },
+    {
+      "url": "/source/Website%20architecture%2Fschema_v3_0%2FACCLAM_V3_Compendio_Maestro_REV_DTP%2FDesarrollo%20e%20implementaci%C3%B3n%20de%20Plataforma%20Digital%20ACCLAM%20V3.0.pdf",
+      "status": 200
+    },
+    {
+      "url": "/source/Website%20architecture%2Fschema_v3_0%2FACCLAM_V3_FROZEN_Collection_Kit.xlsx",
+      "status": 200
+    },
+    {
+      "url": "/source/handoff%2FCOLLECTION_SOURCE_MAP.json",
+      "status": 200
+    },
+    {
+      "url": "/source/handoff%2FCURRENT_STATE.json",
+      "status": 200
+    },
+    {
+      "url": "/source/handoff%2Fshared_chat_findings.txt",
+      "status": 200
+    },
+    {
+      "url": "/source/work%2Flaunch-quest%2FREADME.txt",
+      "status": 200
+    },
+    {
+      "url": "/source/work%2Flaunch-quest%2Fevidence%2FINITIAL_LOCAL_AUDIT.json",
+      "status": 200
+    },
+    {
+      "url": "/source/work%2Flaunch-quest%2Fsources%2Flocked_pages.json",
+      "status": 200
+    },
+    {
+      "url": "/source/work%2Flaunch-quest%2Fsources%2Fschema_inventory.json",
+      "status": 200
+    }
+  ],
+  "launcherReview": {
+    "result": "passed",
+    "method": "Local CLI start, close, restart and reuse with no browser flag; exact instance/PID verification on close.",
+    "note": "Windows PowerShell default script execution was disabled. Primary CMD/Node launcher avoids changing ExecutionPolicy."
+  },
+  "browserReview": {
+    "method": "Cua IAB screenshots and DOM/UI actions; reviewed by Codex",
+    "desktop": "work/launch-quest/evidence/dashboard-desktop.jpg",
+    "mobile": "work/launch-quest/evidence/dashboard-mobile.jpg",
+    "mobileViewport": {
+      "width": 390,
+      "height": 844,
+      "observedScrollWidth": 375
+    },
+    "checks": [
+      "Recognizable desktop/current action/checkpoint rendering",
+      "Search People and phase/milestone combinations",
+      "No-result empty state and clear filters",
+      "Current-only filter returns one objective",
+      "Current link opens its milestone and objective",
+      "Mobile layout without horizontal overflow",
+      "Offline cache is visibly labeled; online read restores connected state",
+      "No console warnings/errors in inspected runtime"
+    ],
+    "limits": "Manual browser spot checks of representative states, not exhaustive assistive-technology certification."
+  },
+  "implementationLimits": [
+    "No independent Wix inspection, construction or import",
+    "No ACCLAM human content approval",
+    "No external publishing, Drive writes or automation creation"
+  ],
+  "artifactHashes": {
+    "dist/index.html": "eb9121dabbd0363e32b230d8ad544bfd6e826ddbe831509ad55629de27b75124",
+    "dist/app.js": "1e8769d047599d688e68787b22f64462dca2ca16b456ac5ac7792f95c92a1c19",
+    "dist/style.css": "6a66fd5289eae323e7c7cda736753ba032f173291ae4675cbf9a6880c854fa97",
+    "server.mjs": "bdb68bf6de23be9a989dd3d21936819db699d84d23b0ecef0db9a5d4c28eef7e",
+    "launch.mjs": "f4c717c5c92f776b0a9dc1749dd0deeb8882e7bbb4313b5b43275401e277e712",
+    "Abrir Launch Quest.cmd": "de17b593b6e95fca7b2439a6e67881ced455d48160647c5cc5da71311c17d9eb",
+    "scripts/quest.py": "23e1a1710d20323baa7fb7a44f838e31eb86c777b5a6e49b956b4e064f4f1c82",
+    "scripts/test_quest.py": "7da8010ae655c99cc334b5b80eb11babc263d107f08c807949291a997519ea13"
+  }
+}

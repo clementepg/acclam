@@ -1,0 +1,30 @@
+# Private client sources stay outside the public repository.
+/CMS/
+/handoff/
+/Website architecture/
+**/sources/
+**/.private/
+**/*.pdf
+**/*.xlsx
+**/*.xls
+**/*.docx
+**/*.csv
+**/*.zip
+**/*.pfx
+**/*.p12
+**/*.pem
+**/*.key
+**/.env
+**/.env.*
+**/credentials*.json
+**/secrets*.json
+**/*token*.json
+# Machine state and temporary output.
+**/.viewer*
+**/*.log
+**/__pycache__/
+**/*.pyc
+**/node_modules/
+**/.venv/
+**/*.tmp
+**/repository-test-results.txt

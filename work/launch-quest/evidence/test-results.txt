@@ -1,0 +1,26 @@
+test_all_scope_connects_to_release (__main__.RegisterTests.test_all_scope_connects_to_release) ... ok
+test_baseline_id_cannot_disappear (__main__.RegisterTests.test_baseline_id_cannot_disappear) ... ok
+test_changed_source_snapshot_rejected (__main__.RegisterTests.test_changed_source_snapshot_rejected) ... ok
+test_cycle_rejected (__main__.RegisterTests.test_cycle_rejected) ... ok
+test_done_with_open_dependency_rejected (__main__.RegisterTests.test_done_with_open_dependency_rejected) ... ok
+test_done_without_proof_rejected (__main__.RegisterTests.test_done_without_proof_rejected) ... ok
+test_duplicate_id_rejected (__main__.RegisterTests.test_duplicate_id_rejected) ... ok
+test_full_frozen_scope_has_stages (__main__.RegisterTests.test_full_frozen_scope_has_stages) ... ok
+test_hash_mismatch_rejected (__main__.RegisterTests.test_hash_mismatch_rejected) ... ok
+test_history_must_match_status (__main__.RegisterTests.test_history_must_match_status) ... ok
+test_malformed_source_snapshot_rejected (__main__.RegisterTests.test_malformed_source_snapshot_rejected) ... ok
+test_missing_current_rejected (__main__.RegisterTests.test_missing_current_rejected) ... ok
+test_projection_is_deterministic_and_allowlisted (__main__.RegisterTests.test_projection_is_deterministic_and_allowlisted) ... ok
+test_source_traversal_rejected (__main__.RegisterTests.test_source_traversal_rejected) ... ok
+test_typed_assertion_rejected (__main__.RegisterTests.test_typed_assertion_rejected) ... ok
+test_valid_source_bounded_state (__main__.RegisterTests.test_valid_source_bounded_state) ... ok
+test_wrong_proof_class_rejected (__main__.RegisterTests.test_wrong_proof_class_rejected) ... ok
+test_host_bound_to_loopback (__main__.TransportTests.test_host_bound_to_loopback) ... ok
+test_readonly_and_allowlist (__main__.TransportTests.test_readonly_and_allowlist) ... ok
+test_stale_register_rejected (__main__.TransportTests.test_stale_register_rejected) ... ok
+test_tampered_projection_rejected (__main__.TransportTests.test_tampered_projection_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 21 tests in 13.200s
+
+OK

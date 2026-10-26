@@ -1,0 +1,512 @@
+{
+  "schemaVersion": 1,
+  "meaning": "Metadata only. Private documents and derived source extracts remain outside Git. Exact register paths and SHA256 identify required local evidence; hashes do not establish results.",
+  "configuration": "Set ACCLAM_SOURCE_ROOT locally to the private Website workspace. Never commit its absolute path or contents.",
+  "files": [
+    {
+      "path": "CMS/Draft preparation/outputs/01a17904-81c8-7fe3-8ac4-e3efb7e3fa16/CSV_preliminares/Eventos.csv",
+      "sha256": "6d1a719126850ba6b37b2bd4202165154fb3784fb882ef34fd2ca61a41cb4f62",
+      "reason": "private_client_source"
+    },
+    {
+      "path": "CMS/Draft preparation/outputs/01a17904-81c8-7fe3-8ac4-e3efb7e3fa16/CSV_preliminares/Evidencia.csv",
+      "sha256": "ef7a1a7e2d819a323aba0b0e27ae4d2fb070fd8b0c956710c509eea7d35c30e3",
+      "reason": "private_client_source"
+    },
+    {
+      "path": "CMS/Draft preparation/outputs/01a17904-81c8-7fe3-8ac4-e3efb7e3fa16/CSV_preliminares/Pendientes.csv",
+      "sha256": "988686233c71f613d882d5b210ea25369c3bb9977641adc88d4ec299a4ca6fbd",
+      "reason": "private_client_source"
+    },
+    {
+      "path": "CMS/Draft preparation/outputs/01a17904-81c8-7fe3-8ac4-e3efb7e3fa16/CSV_preliminares/Ponentes.csv",
+      "sha256": "923da7f66b92f531c120a9a7649ba4839ee8d8871fe8a37f1508812f1026ce0f",
+      "reason": "private_client_source"
+    },
+    {
+      "path": "CMS/Draft preparation/outputs/01a17904-81c8-7fe3-8ac4-e3efb7e3fa16/CSV_preliminares/Relaciones_sesion_ponente.csv",
+      "sha256": "d856703150af61ce270b8e13439a0fe1ee6327a209509205c200547995653576",
+      "reason": "private_client_source"
+    },
+    {
+      "path": "CMS/Draft preparation/outputs/01a17904-81c8-7fe3-8ac4-e3efb7e3fa16/CSV_preliminares/Sesiones.csv",
+      "sha256": "89b6c198ad2b954ef65679fc41c061be3b1e034c6ff4cd142c384e5024a2d461",
+      "reason": "private_client_source"
+    },
+    {
+      "path": "CMS/Draft preparation/outputs/01a17904-81c8-7fe3-8ac4-e3efb7e3fa16/LEEME.txt",
+      "sha256": "e23a4dc7ecec592ae80b2a9c59489916c7937aff460f5e5f3d25d3481d0e7a70",
+      "reason": "private_client_source"
+    },
+    {
+      "path": "CMS/Draft preparation/sources/complete_inventory.json",
+      "sha256": "598d7c9e0f0fb05c3965f48f8d91ab071570c64d99717fa7ff0f621517c69452",
+      "reason": "private_client_source"
+    },
+    {
+      "path": "CMS/Draft preparation/sources/drive_text.json",
+      "sha256": "7a2f52a077b9b0583485e9d9c2a36959ca0a6ba650a4002bba4825bab187884a",
+      "reason": "private_client_source"
+    },
+    {
+      "path": "Website architecture/schema_v3_0/ACCLAM_V3_CSV_Templates/ACCLAM_V3_Field_Dictionary.csv",
+      "sha256": "1bd63a658b3499f37b961313d0c2a6b5f848cff459e432047583bd7a7a9de5a9",
+      "reason": "private_client_source"
+    },
+    {
+      "path": "Website architecture/schema_v3_0/ACCLAM_V3_CSV_Templates/collections/01_Countries.csv",
+      "sha256": "14aec004c4b0b70b4eedf8b0af152e95aa23f42b2c310c1ef72977a07fdb8eb0",
+      "reason": "private_client_source"
+    },
+    {
+      "path": "Website architecture/schema_v3_0/ACCLAM_V3_CSV_Templates/collections/01_EntityRegistry.csv",
+      "sha256": "2e527ec9e1b32a2344231d4f69b892297cb5a7bef742281cfa4fd988af7bd78f",
+      "reason": "private_client_source"
+    },
+    {
+      "path": "Website architecture/schema_v3_0/ACCLAM_V3_CSV_Templates/collections/01_ImportBatches.csv",
+      "sha256": "4be9086549aecbad801675b6c63f84cc50f5988a566d2d4d565a45d0580a710f",
+      "reason": "private_client_source"
+    },
+    {
+      "path": "Website architecture/schema_v3_0/ACCLAM_V3_CSV_Templates/collections/01_Municipalities.csv",
+      "sha256": "7b3bdda8e2107d34e3fcee2947512e61aae399c771e0181b3287254f077a3a32",
+      "reason": "private_client_source"
+    },
+    {
+      "path": "Website architecture/schema_v3_0/ACCLAM_V3_CSV_Templates/collections/01_States.csv",
+      "sha256": "083e5a7f17be96d29771e6f5e61a1573ac0eba71c9dfb1a621acb424cb30a09f",
+      "reason": "private_client_source"
+    },
+    {
+      "path": "Website architecture/schema_v3_0/ACCLAM_V3_CSV_Templates/collections/01_Taxonomies.csv",
+      "sha256": "5a3c217a02a73c07dcd0dfb15df18b5d9ca398db830204f2a03b7900a6a00ff6",
+      "reason": "private_client_source"
+    },
+    {
+      "path": "Website architecture/schema_v3_0/ACCLAM_V3_CSV_Templates/collections/01_TaxonomyTerms.csv",
+      "sha256": "91219b26efe0d362549e51e8948c96e2c4365e6f91f56de3ed1d4253d8633f49",
+      "reason": "private_client_source"
+    },
+    {
+      "path": "Website architecture/schema_v3_0/ACCLAM_V3_CSV_Templates/collections/02_LegacyRecordMap.csv",
+      "sha256": "c3eaf62f58bc8b8b48562ebcba9fee282aa01569cc77d056f6ee3bb4a3a99ba3",
+      "reason": "private_client_source"
+    },
+    {
+      "path": "Website architecture/schema_v3_0/ACCLAM_V3_CSV_Templates/collections/02_Organizations.csv",
+      "sha256": "6e02051b5b301b2afdb30f2f9291d33fb3460846f930574af23e7d4c76fed708",
+      "reason": "private_client_source"
+    },
+    {
+      "path": "Website architecture/schema_v3_0/ACCLAM_V3_CSV_Templates/collections/02_People.csv",
+      "sha256": "8484bc607035057d6f83059b3a66e9796ac0de8641192144a1f1f1d273981585",
+      "reason": "private_client_source"
+    },
+    {
+      "path": "Website architecture/schema_v3_0/ACCLAM_V3_CSV_Templates/collections/03_AccessRoles.csv",
+      "sha256": "1a4df197421b54c33f89bb130f976e672963e167774437b1abd7ed3613234b9b",
+      "reason": "private_client_source"
+    },
+    {
+      "path": "Website architecture/schema_v3_0/ACCLAM_V3_CSV_Templates/collections/03_DataQualityIssues.csv",
+      "sha256": "38766f1304b795f8a805b3d73bfcfaf5d729ff022d3850800ffac56bc36942c8",
+      "reason": "private_client_source"
+    },
+    {
+      "path": "Website architecture/schema_v3_0/ACCLAM_V3_CSV_Templates/collections/03_GovernanceBodies.csv",
+      "sha256": "ed4975df19f8b1bd5ab1a46a26176ec340fe025a9e581dd09fb74b880c2f7002",
+      "reason": "private_client_source"
+    },
+    {
+      "path": "Website architecture/schema_v3_0/ACCLAM_V3_CSV_Templates/collections/03_MembershipPlanVersions.csv",
+      "sha256": "81a6a752d57d03b02bcc320c4e29895e8230483960618b840a625665ec53c1c2",
+      "reason": "private_client_source"
+    },
+    {
+      "path": "Website architecture/schema_v3_0/ACCLAM_V3_CSV_Templates/collections/03_OrganizationalRoles.csv",
+      "sha256": "0d6e25fb83accf0f9cb85446b14eaf20c92c743f9c564e4c25e635caf39b0d2f",
+      "reason": "private_client_source"
+    },
+    {
+      "path": "Website architecture/schema_v3_0/ACCLAM_V3_CSV_Templates/collections/04_Credentials.csv",
+      "sha256": "af14fe9d745802a557effc089fd7ce1501ac9725a7cacdad2e24cb08b61a3594",
+      "reason": "private_client_source"
+    },
+    {
+      "path": "Website architecture/schema_v3_0/ACCLAM_V3_CSV_Templates/collections/04_EducationCatalog.csv",
+      "sha256": "633357ebcee42616f7bfae0856d3846993996136ab09c5e4777fb2a543d54de8",
+      "reason": "private_client_source"
+    },
+    {
+      "path": "Website architecture/schema_v3_0/ACCLAM_V3_CSV_Templates/collections/04_MembershipApplications.csv",
+      "sha256": "6e0e7a42fc92427b5c9a7fd05338231072f8e7d57722cbf7fe03061d595995c4",
+      "reason": "private_client_source"
+    },
+    {
+      "path": "Website architecture/schema_v3_0/ACCLAM_V3_CSV_Templates/collections/04_MetricDefinitions.csv",
+      "sha256": "d508b8c38c7fe4a90a1f82a41005ec382200e8faccf3e9304dc398b6dd907a51",
+      "reason": "private_client_source"
+    },
+    {
+      "path": "Website architecture/schema_v3_0/ACCLAM_V3_CSV_Templates/collections/04_PersonOrganizationRelationships.csv",
+      "sha256": "9f6e95842cfc022242966516834759ac5d45a8fa37da9197774b65ec6374569e",
+      "reason": "private_client_source"
+    },
+    {
+      "path": "Website architecture/schema_v3_0/ACCLAM_V3_CSV_Templates/collections/04_Programs.csv",
+      "sha256": "7094d43d660a93b972d7f84af9ca83c43f607074e656959074cc4532ff0d7364",
+      "reason": "private_client_source"
+    },
+    {
+      "path": "Website architecture/schema_v3_0/ACCLAM_V3_CSV_Templates/collections/04_RetentionRules.csv",
+      "sha256": "85a91dbb8d89f5fef6983b8fff5857cfe96f070da6ae81b92425294156aed765",
+      "reason": "private_client_source"
+    },
+    {
+      "path": "Website architecture/schema_v3_0/ACCLAM_V3_CSV_Templates/collections/04_RoleCompetencies.csv",
+      "sha256": "2e79cbc20d4b73e1daf55d00eadc39b6af8298fa1f2514b8df70844a6be49032",
+      "reason": "private_client_source"
+    },
+    {
+      "path": "Website architecture/schema_v3_0/ACCLAM_V3_CSV_Templates/collections/04_RolePermissions.csv",
+      "sha256": "c4781d007754ae37ab9a9c03b2b0f52082e0d422742ceef9cd88bf13d7366ab4",
+      "reason": "private_client_source"
+    },
+    {
+      "path": "Website architecture/schema_v3_0/ACCLAM_V3_CSV_Templates/collections/05_Appointments.csv",
+      "sha256": "958c48eb8737ed5b12995fffc4af6dc28b0370624b8d5158af6a1184ee9fe162",
+      "reason": "private_client_source"
+    },
+    {
+      "path": "Website architecture/schema_v3_0/ACCLAM_V3_CSV_Templates/collections/05_ConsentRecords.csv",
+      "sha256": "65ce6c5f3df5f51ed9b943ea5b3261ec3aaccd4977f5da32de7e033cda6675a7",
+      "reason": "private_client_source"
+    },
+    {
+      "path": "Website architecture/schema_v3_0/ACCLAM_V3_CSV_Templates/collections/05_Documents.csv",
+      "sha256": "5557f218e48c18b8b904c9480ac00318f8b1dacc17b2cea2935f7d7fe99b4df8",
+      "reason": "private_client_source"
+    },
+    {
+      "path": "Website architecture/schema_v3_0/ACCLAM_V3_CSV_Templates/collections/05_Events.csv",
+      "sha256": "b2f4177878d9ef3f7f6b8a7f2ed00031b858d65ad56c1e87505a23fbcd58270e",
+      "reason": "private_client_source"
+    },
+    {
+      "path": "Website architecture/schema_v3_0/ACCLAM_V3_CSV_Templates/collections/05_InstitutionalActivities.csv",
+      "sha256": "ea6687cf3114fa0be10830d4a81acad52eac0b1b768dac343aed04c05e5ff1db",
+      "reason": "private_client_source"
+    },
+    {
+      "path": "Website architecture/schema_v3_0/ACCLAM_V3_CSV_Templates/collections/05_KnowledgeItems.csv",
+      "sha256": "c3e481c819ee3177afc2f9ac99237b6b1e1029f3ccb9e31cf631d075ad181403",
+      "reason": "private_client_source"
+    },
+    {
+      "path": "Website architecture/schema_v3_0/ACCLAM_V3_CSV_Templates/collections/05_Memberships.csv",
+      "sha256": "41e277bee3b0b7107a86d865cd81bd77cb270081ca9074e3d818cb50ccfc6664",
+      "reason": "private_client_source"
+    },
+    {
+      "path": "Website architecture/schema_v3_0/ACCLAM_V3_CSV_Templates/collections/05_ObligationDefinitions.csv",
+      "sha256": "13e49f24905420b9f288f005946b98f0b9185467acd46fe3df1d79cbfb83beba",
+      "reason": "private_client_source"
+    },
+    {
+      "path": "Website architecture/schema_v3_0/ACCLAM_V3_CSV_Templates/collections/05_VerificationEvents.csv",
+      "sha256": "dedd3118a0afa8c102ead543d1f431ebad1be50487f0fbdb0d8800f67ec00922",
+      "reason": "private_client_source"
+    },
+    {
+      "path": "Website architecture/schema_v3_0/ACCLAM_V3_CSV_Templates/collections/06_ActivityContributions.csv",
+      "sha256": "55776715af51c24ffc07a2fc34a1c3d15a29d58ec99416d488143931ed3890c4",
+      "reason": "private_client_source"
+    },
+    {
+      "path": "Website architecture/schema_v3_0/ACCLAM_V3_CSV_Templates/collections/06_Assessments.csv",
+      "sha256": "fdd64e6068cc8e495ede5e4714b8efc95f655a8d385aff980baa1a1950383db2",
+      "reason": "private_client_source"
+    },
+    {
+      "path": "Website architecture/schema_v3_0/ACCLAM_V3_CSV_Templates/collections/06_CertificateTemplates.csv",
+      "sha256": "39312e5f6ca2e858bac5be08124133170372bd6723d81366d439ee53b354e150",
+      "reason": "private_client_source"
+    },
+    {
+      "path": "Website architecture/schema_v3_0/ACCLAM_V3_CSV_Templates/collections/06_DirectoryProfiles.csv",
+      "sha256": "688e45efd7236eedf74405889812dacb1513d7c39b5bb599cd603b42c6728594",
+      "reason": "private_client_source"
+    },
+    {
+      "path": "Website architecture/schema_v3_0/ACCLAM_V3_CSV_Templates/collections/06_DocumentVersions.csv",
+      "sha256": "a58ccd33559f50e9643be07121ed3ab35eba2d0f6f67059838259c7f0a87034d",
+      "reason": "private_client_source"
+    },
+    {
+      "path": "Website architecture/schema_v3_0/ACCLAM_V3_CSV_Templates/collections/06_ExternalAuthorizations.csv",
+      "sha256": "b5540d0418d4397da6f9c6c152f6681fc608214d028cdadf4e5c6ae822bd5c07",
+      "reason": "private_client_source"
+    },
+    {
+      "path": "Website architecture/schema_v3_0/ACCLAM_V3_CSV_Templates/collections/06_ExternalSystems.csv",
+      "sha256": "4e3d4aa46ac565e168e47b83604f17273a75ef91c740c3004d7186c667685901",
+      "reason": "private_client_source"
+    },
+    {
+      "path": "Website architecture/schema_v3_0/ACCLAM_V3_CSV_Templates/collections/06_Meetings.csv",
+      "sha256": "c14b868c1880d73c88bd295ed736f4c26629a0e0084cd58bc6df6c57d737a573",
+      "reason": "private_client_source"
+    },
+    {
+      "path": "Website architecture/schema_v3_0/ACCLAM_V3_CSV_Templates/collections/06_MembershipPeriods.csv",
+      "sha256": "493d743aef4e8a0ea7cf43b58495dcc1af8d02c23827a34e3c0c6bfcd7d259ec",
+      "reason": "private_client_source"
+    },
+    {
+      "path": "Website architecture/schema_v3_0/ACCLAM_V3_CSV_Templates/collections/06_ProcedureSteps.csv",
+      "sha256": "e042657ca2b946c17774ec95cad9d01cd29e4e1d51c719ac9757497306d5bfe1",
+      "reason": "private_client_source"
+    },
+    {
+      "path": "Website architecture/schema_v3_0/ACCLAM_V3_CSV_Templates/collections/06_ScholarshipApplications.csv",
+      "sha256": "692b54d7a55a777097bc078a6aa082a25b9a7d989d1c5557e95a7816c0f9e5f2",
+      "reason": "private_client_source"
+    },
+    {
+      "path": "Website architecture/schema_v3_0/ACCLAM_V3_CSV_Templates/collections/06_Sessions.csv",
+      "sha256": "285e9a932fe3a6af042d31a461946216c1585b7ccc0d5065a1d3cc581c6d217b",
+      "reason": "private_client_source"
+    },
+    {
+      "path": "Website architecture/schema_v3_0/ACCLAM_V3_CSV_Templates/collections/06_TaskTemplates.csv",
+      "sha256": "1c400de05751f39f728ae28e2c4303cc10d9f0c62e67e30dfc42752f05aaa87d",
+      "reason": "private_client_source"
+    },
+    {
+      "path": "Website architecture/schema_v3_0/ACCLAM_V3_CSV_Templates/collections/07_AccessAssignments.csv",
+      "sha256": "fb4718c20782f883bc24bd3b5d35b20c34a194e7d6043bedeb24ce66374ebfba",
+      "reason": "private_client_source"
+    },
+    {
+      "path": "Website architecture/schema_v3_0/ACCLAM_V3_CSV_Templates/collections/07_Agreements.csv",
+      "sha256": "1a748c7181249ae353be7a1f984ca51741ee8722da54f788300db521d1d662d2",
+      "reason": "private_client_source"
+    },
+    {
+      "path": "Website architecture/schema_v3_0/ACCLAM_V3_CSV_Templates/collections/07_AuthorityGrants.csv",
+      "sha256": "3ebad5085fe415079ae613c7fb260031bf4d706484a1a6d86311f911f0246b2e",
+      "reason": "private_client_source"
+    },
+    {
+      "path": "Website architecture/schema_v3_0/ACCLAM_V3_CSV_Templates/collections/07_CandidateAssessments.csv",
+      "sha256": "3b0fc05877150cd43ada4abfdc6889f79ae155d97d08a0271d8fc2d522eede10",
+      "reason": "private_client_source"
+    },
+    {
+      "path": "Website architecture/schema_v3_0/ACCLAM_V3_CSV_Templates/collections/07_ConflictDisclosures.csv",
+      "sha256": "c1c0dc57429ea55dca3379f29a068a94409a6134ba6f4804fb6da597fed21fd3",
+      "reason": "private_client_source"
+    },
+    {
+      "path": "Website architecture/schema_v3_0/ACCLAM_V3_CSV_Templates/collections/07_ContextLinks.csv",
+      "sha256": "ece1443576e8796f04e890cdff3dd3c360f828e4e4ab371ec3d8a944c5ef550d",
+      "reason": "private_client_source"
+    },
+    {
+      "path": "Website architecture/schema_v3_0/ACCLAM_V3_CSV_Templates/collections/07_CreditDefinitions.csv",
+      "sha256": "725b045d31cfd4ea7539918c0457f63dcfa608dfe5fa90e7ff149f47d78dbac4",
+      "reason": "private_client_source"
+    },
+    {
+      "path": "Website architecture/schema_v3_0/ACCLAM_V3_CSV_Templates/collections/07_FinancialTransactions.csv",
+      "sha256": "9993c9a645d11548cd5866a1717cfbbf4c5037d216573816d816572c9206e62d",
+      "reason": "private_client_source"
+    },
+    {
+      "path": "Website architecture/schema_v3_0/ACCLAM_V3_CSV_Templates/collections/07_ImpactMetrics.csv",
+      "sha256": "c637a7313e25b2aa7ebae640eb0ba2e978c5e4e23422bcb7e8623c1f9f93ebc6",
+      "reason": "private_client_source"
+    },
+    {
+      "path": "Website architecture/schema_v3_0/ACCLAM_V3_CSV_Templates/collections/07_MessageTemplates.csv",
+      "sha256": "2f83c740c221eac7db1944e64ea07c62b80841673f0628b481a3c55ceffcc4f8",
+      "reason": "private_client_source"
+    },
+    {
+      "path": "Website architecture/schema_v3_0/ACCLAM_V3_CSV_Templates/collections/07_Participations.csv",
+      "sha256": "3c179b877acdf68871ffd7d13b4887b408923054654c204fb4df335df1375cb4",
+      "reason": "private_client_source"
+    },
+    {
+      "path": "Website architecture/schema_v3_0/ACCLAM_V3_CSV_Templates/collections/07_Resolutions.csv",
+      "sha256": "cfa6835f57ef8338b3f008d7cb63e2b42c0af80b4cc09ba12c2a60fb290199a4",
+      "reason": "private_client_source"
+    },
+    {
+      "path": "Website architecture/schema_v3_0/ACCLAM_V3_CSV_Templates/collections/07_ScholarshipAwards.csv",
+      "sha256": "71c77ef871a4dc00c7c1b930ef45abf4e14da4f51d03b07a4510e0b2adb6ad9a",
+      "reason": "private_client_source"
+    },
+    {
+      "path": "Website architecture/schema_v3_0/ACCLAM_V3_CSV_Templates/collections/07_SpeakerAssignments.csv",
+      "sha256": "85644f1a00acdacfea2f3f03f3f4a84b8b16148e7104143f6c076510140b4f90",
+      "reason": "private_client_source"
+    },
+    {
+      "path": "Website architecture/schema_v3_0/ACCLAM_V3_CSV_Templates/collections/07_SystemSettings.csv",
+      "sha256": "70db413f86c51e2d27aa8cf7ff5c4a4f9a8f7ff271b740b2ee21380b9a96f855",
+      "reason": "private_client_source"
+    },
+    {
+      "path": "Website architecture/schema_v3_0/ACCLAM_V3_CSV_Templates/collections/08_AssessmentAttempts.csv",
+      "sha256": "10562f31538519a3062bd2b47b560a41ccfbd3a22b45535cef5072679dda335c",
+      "reason": "private_client_source"
+    },
+    {
+      "path": "Website architecture/schema_v3_0/ACCLAM_V3_CSV_Templates/collections/08_Assets.csv",
+      "sha256": "401f6e5de5e150d31ddea4982a0ae6f64f7e566847ef2a15f115fca8259a8d3e",
+      "reason": "private_client_source"
+    },
+    {
+      "path": "Website architecture/schema_v3_0/ACCLAM_V3_CSV_Templates/collections/08_AttendanceRecords.csv",
+      "sha256": "36814e780399955270ddabacc083d24f7c6616559e55ff89b3dd530e25cbad8b",
+      "reason": "private_client_source"
+    },
+    {
+      "path": "Website architecture/schema_v3_0/ACCLAM_V3_CSV_Templates/collections/08_Audits.csv",
+      "sha256": "3ec59bdaffb404d1fe09c33f0fb6b9166515e6112791a55f3b9f40cffb0af6fa",
+      "reason": "private_client_source"
+    },
+    {
+      "path": "Website architecture/schema_v3_0/ACCLAM_V3_CSV_Templates/collections/08_Cases.csv",
+      "sha256": "694126f086bb76dfbe8809dcdf02f34b4143094bd77533a1afe16703454f20bd",
+      "reason": "private_client_source"
+    },
+    {
+      "path": "Website architecture/schema_v3_0/ACCLAM_V3_CSV_Templates/collections/08_CreditAwards.csv",
+      "sha256": "ab54f541ec0caaa4c570cb2476104ec58eaf181f943599e520962e8eba6e7ce8",
+      "reason": "private_client_source"
+    },
+    {
+      "path": "Website architecture/schema_v3_0/ACCLAM_V3_CSV_Templates/collections/08_Donations.csv",
+      "sha256": "7f84b3226133fd8c2fbed29396fce31b76aea8a48946307262bd521ee5364a1a",
+      "reason": "private_client_source"
+    },
+    {
+      "path": "Website architecture/schema_v3_0/ACCLAM_V3_CSV_Templates/collections/08_ExternalSystemAccess.csv",
+      "sha256": "76d067adfeab0d95c3db7b5ab9012152c854c42a20392e1362a02b81548cf51c",
+      "reason": "private_client_source"
+    },
+    {
+      "path": "Website architecture/schema_v3_0/ACCLAM_V3_CSV_Templates/collections/08_FundingAllocations.csv",
+      "sha256": "c0c505549e01b312535b83530a1813704544e6b58b5c60d9260abee70d774505",
+      "reason": "private_client_source"
+    },
+    {
+      "path": "Website architecture/schema_v3_0/ACCLAM_V3_CSV_Templates/collections/08_ObligationInstances.csv",
+      "sha256": "89b472a69e9519ea315cb171354b0ee49779599d5491481dfd2c5b054eada825",
+      "reason": "private_client_source"
+    },
+    {
+      "path": "Website architecture/schema_v3_0/ACCLAM_V3_CSV_Templates/collections/08_OperationalTasks.csv",
+      "sha256": "fb448d974e50e75defe4a4b37bbaf700706c2c617d01fd4b43bfdd37c40331c4",
+      "reason": "private_client_source"
+    },
+    {
+      "path": "Website architecture/schema_v3_0/ACCLAM_V3_CSV_Templates/collections/08_TimelineEvents.csv",
+      "sha256": "0a546bf537ef5a1948e44f2b757c2ea8d095eed86732300afd419a46611aeade",
+      "reason": "private_client_source"
+    },
+    {
+      "path": "Website architecture/schema_v3_0/ACCLAM_V3_CSV_Templates/collections/09_AuditFindings.csv",
+      "sha256": "9e591aa1a06dd5d8ceb6ed6b43e8705f25daa29d174be3d03354dfa28910387a",
+      "reason": "private_client_source"
+    },
+    {
+      "path": "Website architecture/schema_v3_0/ACCLAM_V3_CSV_Templates/collections/09_Certificates.csv",
+      "sha256": "d0a100acceb94449a24642d8182e8dda6bc7c39b9faa038ae435d791d7c49178",
+      "reason": "private_client_source"
+    },
+    {
+      "path": "Website architecture/schema_v3_0/ACCLAM_V3_CSV_Templates/collections/09_RecordHolds.csv",
+      "sha256": "a3e44eac834f37e4537564ac8271d83835193bb07f91094b36461341c607cecd",
+      "reason": "private_client_source"
+    },
+    {
+      "path": "Website architecture/schema_v3_0/ACCLAM_V3_CSV_Templates/collections/09_Submissions.csv",
+      "sha256": "455bb7a6f6973f3ff2ea2d218cb9f03580fd04086812e7a476940611ab54c641",
+      "reason": "private_client_source"
+    },
+    {
+      "path": "Website architecture/schema_v3_0/ACCLAM_V3_Compendio_Maestro_REV_DTP/Desarrollo e implementación de Plataforma Digital ACCLAM V3.0.pdf",
+      "sha256": "47d2f15ef1dbb25e2d276c0d89e7265543640c81f90b88f374857c93e32f8275",
+      "reason": "private_client_source"
+    },
+    {
+      "path": "Website architecture/schema_v3_0/ACCLAM_V3_FROZEN_Collection_Kit.xlsx",
+      "sha256": "bbbe8ad0b0f20a7debd2f8dfb806dd8b2443353ca15300548714a2f5266953bb",
+      "reason": "private_client_source"
+    },
+    {
+      "path": "handoff/COLLECTION_SOURCE_MAP.json",
+      "sha256": "6038d0b1892ad1b1cb57b008ea63f54a6c922a1141e0834adc3b70afb78e131f",
+      "reason": "private_client_source"
+    },
+    {
+      "path": "handoff/CURRENT_STATE.json",
+      "sha256": "98bafd6c2bd177e0fd47cdb72f046e20d216dad05c346c1f4780220324adb048",
+      "reason": "private_client_source"
+    },
+    {
+      "path": "handoff/HANDOFF_READY.json",
+      "sha256": "fa14ce6f67df0992cbdcf1fffcacb279d20396ad4323a2974f4bea5a92994602",
+      "reason": "private_client_source"
+    },
+    {
+      "path": "handoff/LAUNCH_QUEST_BRIEF.txt",
+      "sha256": "d8b280ff57d0529357da04ac4a14241a4b69a491afd909fef1ef439b62333d4b",
+      "reason": "private_client_source"
+    },
+    {
+      "path": "handoff/START_HERE.txt",
+      "sha256": "0019426e99d22956a2743b28fc195785e8a14ecdb60eaded3b1b1ce8b1c12a80",
+      "reason": "private_client_source"
+    },
+    {
+      "path": "handoff/launch_quest_reference.txt",
+      "sha256": "2e927d20305f84b8171ccca9857b0693281abcd84a0eb3ec741b87c49c544cfe",
+      "reason": "private_client_source"
+    },
+    {
+      "path": "handoff/locked_baseline.txt",
+      "sha256": "719255e606c3b364bcea4beaee993feb9989c02688ce1ada7f874b4a33036d16",
+      "reason": "private_client_source"
+    },
+    {
+      "path": "handoff/locked_baseline_facts.json",
+      "sha256": "22e0a4eadec452d714b8c76e6f695ced3f96bc2a33c226d74c6c3ee07c989ddc",
+      "reason": "private_client_source"
+    },
+    {
+      "path": "handoff/shared_chat_findings.txt",
+      "sha256": "c6d87474aa304d9f62ff0ee6a17b63d0b1551e8a715baa98a0721157953bc570",
+      "reason": "private_client_source"
+    },
+    {
+      "path": "work/launch-quest/sources/locked_pages.json",
+      "sha256": "d4a80496d8e80a7f584392855440fefac1912def812d02382d2610a213debf4f",
+      "reason": "private_client_source"
+    },
+    {
+      "path": "work/launch-quest/sources/schema_inventory.json",
+      "sha256": "1ed11cc7c76f85d1bc9c8137d05e23b98d24f19ecf023828e1935443d63b57c6",
+      "reason": "private_client_source"
+    },
+    {
+      "path": "work/launch-quest/sources/scope_inventory.json",
+      "sha256": "dfb1f5a408ddfcdd69c6c1c32647f150a7d0703f35b78575852233c54303df41",
+      "reason": "private_client_source"
+    }
+  ]
+}

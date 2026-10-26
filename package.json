@@ -1,0 +1,12 @@
+{
+  "name": "acclam-launch-quest",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Local ACCLAM Launch Quest with preserved register and private external evidence dependencies",
+  "engines": { "node": ">=18" },
+  "scripts": {
+    "start": "node work/launch-quest/launch.mjs",
+    "verify": "python work/launch-quest/scripts/verify_repository.py",
+    "test": "python work/launch-quest/scripts/test_quest.py"
+  }
+}

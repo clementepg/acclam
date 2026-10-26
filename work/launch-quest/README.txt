@@ -1,0 +1,108 @@
+REPOSITORY COPY - READ THIS FIRST
+
+This public repository preserves the existing register, projections, evidence
+metadata and historical checkpoints. It excludes private source documents and
+full source extracts. The original Website workspace remains intact.
+
+Run: node work/launch-quest/launch.mjs (from the repository root), or double-click
+Abrir Launch Quest.cmd on Windows. Node18+ and Python3.10+ are required; no npm
+install or Codex installation is required. CMD launchers prefer PATH runtimes.
+
+The default saved-copy viewer checks register/projection integrity and reports
+private evidence dependencies separately. Missing sources are not full evidence
+validation. Links keep their exact original paths and return HTTP424 when their
+private source is unavailable. Set ACCLAM_SOURCE_ROOT locally to the private
+Website workspace only when full validation/source access is authorized. Never
+commit that setting, source files, logs or viewer process state.
+
+Read the root README.md and AGENTS.md. To verify this transfer:
+  python work/launch-quest/scripts/verify_repository.py
+  python work/launch-quest/scripts/quest.py verify-copy
+For full evidence validation with private sources attached:
+  python work/launch-quest/scripts/quest.py validate
+Updates remain strict and fail on missing/changed required evidence.
+
+This transfer does not select a second live master or enable automatic sync.
+Preserve the original master until an explicit authority change. Do not replay
+one-time seed/audit/localization scripts over the register.
+
+The following original continuity text is retained as historical guidance.
+Private handoff documents referenced there remain outside this repository.
+
+--- ORIGINAL LOCAL CONTINUITY INSTRUCTIONS ---
+ACCLAM LAUNCH QUEST - CONTINUIDAD LOCAL
+
+Abrir: doble clic en Abrir Launch Quest.cmd. El visor escucha solo en 127.0.0.1:4317.
+Cerrar: Cerrar Launch Quest.cmd. Actualizar: Actualizar Launch Quest.cmd.
+Los lanzadores CMD usan Node/Python directamente y no cambian ExecutionPolicy.
+No se registra un servicio, una tarea programada ni una publicación externa.
+
+ÚNICO REGISTRO DE ESTADO
+PROJECT_REGISTER.json es la autoridad. dist/progress.json y SOURCE_MAP.json son
+proyecciones generadas; no editarlas. handoff/CURRENT_STATE.json es una foto
+histórica. Los inventarios en sources describen fuentes, no otro estado de tareas.
+BASELINE_IDS.json conserva IDs y cobertura mínima; no guarda avances.
+checkpoints contiene fotos históricas, no una segunda autoridad operativa.
+
+PARA CONTINUAR EN OTRO CHAT CODEX
+1. Usar este Website root y leer AGENTS.md, handoff/START_HERE.txt, este README
+   y PROJECT_REGISTER.json. Leer la evidencia y límites de la tarea current.
+2. Elegir la acción current o justificar un cambio de foco con historia fechada.
+   IDs ACA-* son estables; no renumerar, borrar o reciclar IDs. Extender el
+   registro y el inventario de IDs explícitamente cuando crezca el alcance.
+3. Realizar trabajo acotado dentro de la autorización vigente. La lista de
+   tareas futuras no autoriza cambios en Wix/Drive ni mensajes/publicación.
+4. Guardar evidencia en evidence/ o enlazar un artefacto real del workspace.
+   Registrar fecha, entorno, actor/revisor, esperado/obtenido y límites.
+   Para marcar done: evidencia del resultado específico y de su fase. Diseño
+   no prueba implementación; CSV no prueba import; prueba no prueba revisión
+   humana ni publicación. Un criterio incumplido mantiene la tarea abierta.
+5. Actualizar el JSON: status, evidenceSummary, evidence, proofs, nextAction,
+   blockers e history. Mantener exactamente una current con dependencias done.
+   En toda transición anexar history con fecha ISO y nota; no borrar correcciones
+   humanas, evidencias ni historia. Confirmar owners/revisores propuestos antes
+   de atribuir autoridad institucional. Pruebas human_review requieren
+   humanApproval:true y la aprobación real identificada en la evidencia.
+6. Las pruebas privadas fijan path relativo al Website, SHA256, class,
+   reviewedBy, finding y assertions JSON Pointer con equals tipado, o contains
+   exacto para pasajes revisados. Clases por fase: source_review,
+   local_preparation, implementation, import, test, human_review, release.
+   sourceIdentityOnly se admite solo para fijar el PDF bloqueado por hash;
+   no acredita por sí solo una tarea de implementación/revisión/publicación.
+7. Actualizar asOf y checkpointSummary solo cuando cambie el contenido revisado.
+   Ejecutar Actualizar Launch Quest.cmd. Valida dependencias, evidencia y alcance;
+   construye la proyección y guarda checkpoint. Si falla, corregir el registro;
+   no forzar la proyección ni cambiar un hash sin revisar de nuevo la evidencia.
+8. Revisar el visor, enlaces, current y próximo gate. Conservar el receipt y
+   checkpoint. El navegador refresca la proyección cada 20s; refrescar no completa
+   tareas. Un fallo muestra una copia anterior claramente etiquetada.
+
+FUENTES Y MEDIDAS
+PDF bloqueado: SHA25647d2f15ef1dbb25e2d276c0d89e7265543640c81f90b88f374857c93e32f8275.
+Todas las páginas citadas son físicas, base1; la numeración impresa reinicia por TOMO.
+Los prefijos de archivos CSV son fases de importación, NO números globales01–77.
+Los ciclos opcionales y bootstrap requieren plan/ensayo de carga por pasadas.
+People requiere firstName, displayName, primaryEmail y referencias requeridas;
+no inventar contactos ni relajar el esquema para convertir candidatos en imports.
+
+El cociente visible cuenta objetivos done/objetivos registrados. No representa
+porcentaje de esfuerzo, tiempo ni preparación para lanzar. El denominador puede
+crecer al desglosar alcance. Las siete fases conservan significado independiente.
+Los roles de las tareas son responsables propuestos; ACCLAM debe confirmarlos.
+
+ESTADO INICIAL
+PDF bloqueado y lote preliminar locales verificados; cruce parcial de77
+colecciones/1,083campos/456referencias. Falta comparación integral XLSX/Help Text,
+índices/permisos y revisión semántica. No se ha inspeccionado Wix ni ejecutado
+importación o publicación. El lote preliminar no cubre todas las colecciones.
+
+OPERACIÓN TÉCNICA
+Sin npm install ni dependencias externas. Node y Python se resuelven del PATH
+o del runtime local de Codex. Los scripts no modifican fuentes bloqueadas.
+Validador/generador: scripts/quest.py validate | build
+Pruebas del registro: scripts/test_quest.py
+Servidor read-only: server.mjs (puerto ACCLAM_QUEST_PORT opcional).
+Solo sirve archivos UI y fuentes expresamente enlazadas por el registro.
+Si el registro o proyección cambian sin build válido, rechaza el feed para que
+el visor conserve su última copia buena con aviso. El servidor no guarda estado
+de tareas; localStorage conserva solamente copia/expansión del visor.

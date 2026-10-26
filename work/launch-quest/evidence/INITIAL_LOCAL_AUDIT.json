@@ -1,0 +1,30 @@
+{
+  "reviewedAt": "2026-10-26T10:37:54-07:00",
+  "meaning": "Local file inventory and preliminary output counts only; no accuracy approval, final V3 mapping, Wix import or publication is established.",
+  "lockedPdf": {
+    "path": "Website architecture/schema_v3_0/ACCLAM_V3_Compendio_Maestro_REV_DTP/Desarrollo e implementación de Plataforma Digital ACCLAM V3.0.pdf",
+    "sha256": "47d2f15ef1dbb25e2d276c0d89e7265543640c81f90b88f374857c93e32f8275",
+    "physicalPages": 252
+  },
+  "draftCounts": {
+    "speakers": 23,
+    "speakerApprovalColumn": "approvedForPublication",
+    "events": 3,
+    "sessions": 20,
+    "relationships": 23,
+    "evidence": 145,
+    "issues": 15,
+    "inventoryFiles": 455,
+    "inventoryFolders": 95,
+    "selectedTextSources": 13
+  },
+  "measuredFiles": {
+    "CMS/Draft preparation/outputs/01a17904-81c8-7fe3-8ac4-e3efb7e3fa16/CSV_preliminares/Ponentes.csv": "923da7f66b92f531c120a9a7649ba4839ee8d8871fe8a37f1508812f1026ce0f",
+    "CMS/Draft preparation/outputs/01a17904-81c8-7fe3-8ac4-e3efb7e3fa16/CSV_preliminares/Eventos.csv": "6d1a719126850ba6b37b2bd4202165154fb3784fb882ef34fd2ca61a41cb4f62",
+    "CMS/Draft preparation/outputs/01a17904-81c8-7fe3-8ac4-e3efb7e3fa16/CSV_preliminares/Sesiones.csv": "89b6c198ad2b954ef65679fc41c061be3b1e034c6ff4cd142c384e5024a2d461",
+    "CMS/Draft preparation/outputs/01a17904-81c8-7fe3-8ac4-e3efb7e3fa16/CSV_preliminares/Relaciones_sesion_ponente.csv": "d856703150af61ce270b8e13439a0fe1ee6327a209509205c200547995653576",
+    "CMS/Draft preparation/outputs/01a17904-81c8-7fe3-8ac4-e3efb7e3fa16/CSV_preliminares/Evidencia.csv": "ef7a1a7e2d819a323aba0b0e27ae4d2fb070fd8b0c956710c509eea7d35c30e3",
+    "CMS/Draft preparation/outputs/01a17904-81c8-7fe3-8ac4-e3efb7e3fa16/CSV_preliminares/Pendientes.csv": "988686233c71f613d882d5b210ea25369c3bb9977641adc88d4ec299a4ca6fbd"
+  },
+  "wixIndependentlyInspected": false
+}
