@@ -1,25 +1,28 @@
 {
   "schemaVersion": 1,
   "projectId": "appgprj_6adf9bd823d8819192478a8e756304ce",
-  "deploymentId": "appgdep_6adf9fffb41481919b6f3b8aee4e6a1d",
-  "versionId": "appgprj_6adf9bd823d8819192478a8e756304ce~appgver_afbe9106f0a081919f6706dfa8b81fe3",
+  "deploymentId": "appgdep_6adfa9e311a08191bfbc8adb282ab55a",
+  "versionId": "appgprj_6adf9bd823d8819192478a8e756304ce~appgver_dca2f701fca881918a3bede6ed1591e6",
   "status": "succeeded",
   "url": "https://acclam-launch-quest.leafycoin.chatgpt.site",
-  "deployedAt": "2026-10-26T18:46:34.020398+00:00",
-  "sourceCommit": "87c1ac8fffc32fb414418726720a3a94a62083bb",
-  "audience": "owner-private; existing default audience preserved",
+  "deployedAt": "2026-10-26T19:28:43.838630+00:00",
+  "sourceCommit": "5ed37071aa06b7fc330d7f1507557685ad5c3600",
+  "audience": "owner-private; existing audience preserved",
   "workingRepository": "clementepg/acclam",
   "authoritativeRegister": "work/launch-quest/PROJECT_REGISTER.json",
-  "registerSha256": "a53c8281f489fcc39545ce202c88226969115f1a1716199623326eb5f2273eb4",
-  "projectionRevision": "0e9c481559cafae76e47b2c56652a8d2f19ea29a6f8496ad4a9c6af7d8da3359",
-  "onlineRevision": "online-v1-dfa0494bea7584881f39",
+  "registerSha256": "a14cd23cbf2bb572360ed5da739ede3c0d5c424b360bacd093c07e9415ae697b",
+  "projectionRevision": "b0bd33bf825a58a356013ce185a6edbc33a72cef5081de57f641dd369d485644",
+  "onlineRevision": "online-v1-9dab1230e7ba3acff2b0",
   "objectiveCounts": {
     "total": 610,
-    "done": 4,
+    "done": 5,
     "current": 1,
-    "upcoming": 605
+    "upcoming": 604
   },
-  "currentObjective": "ACA-BOOTSTRAP",
+  "currentObjective": "ACA-WIX-INVENTORY",
+  "completedObjective": "ACA-BOOTSTRAP",
+  "completionScope": "Design and bounded symbolic local rehearsal only; real seed/import readiness remains false.",
+  "previousDeploymentReceipt": "online/history/deployment-appgdep_6adf9fffb41481919b6f3b8aee4e6a1d.json",
   "assets": [
     "index.html",
     "app.js",
@@ -27,7 +30,7 @@
     "progress.json",
     "source-notes.html"
   ],
-  "privacy": "Only the allowlisted read-only static projection was uploaded. Private source files, raw register, source maps, source hashes and proof bodies are excluded from Site assets.",
+  "privacy": "Only allowlisted read-only static assets uploaded. Private documents, detailed plans/matrices, raw register, source maps, source hashes and proof bodies excluded from Site assets.",
   "preservationAudit": {
     "originalQuestFilesChecked": 43,
     "lockedSchemaAndTemplateSourcesChecked": 82,
@@ -36,11 +39,15 @@
   },
   "verification": {
     "repositoryTransferOriginals": 27,
-    "privateDependenciesExcluded": 104,
-    "strictLocalProofsVerified": 7,
+    "privateDependenciesExcluded": 109,
+    "strictLocalProofsVerified": 11,
     "onlineTestsPassed": 11,
-    "browserQA": "Desktop, 390px mobile, current/done filters and source-notes navigation passed.",
-    "deployment": "Native Sites deployment succeeded; existing owner-private audience preserved."
+    "runtimeTestsPassed": 31,
+    "runtimeTestsSkipped": 1,
+    "runtimeSkipReason": "Windows account cannot create symbolic links",
+    "bootstrapSymbolicChecksPassed": 13,
+    "browserQA": "Updated task/counts, completed bootstrap evidence and error console checked in local browser. Viewer code/visual assets unchanged.",
+    "deployment": "Native Sites deployment succeeded; owner-private audience preserved."
   },
-  "scope": "This publishes the Quest viewer only. It does not implement or release the ACCLAM Wix website."
+  "scope": "Quest viewer publication only; no ACCLAM Wix implementation, import or release."
 }

@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "objective": "ACA-BOOTSTRAP",
+  "reviewedAt": "2026-10-26T12:25:35-07:00",
+  "result": "design_and_bounded_local_rehearsal_complete",
+  "phase": "design",
+  "scope": "Diseño de bootstrap y ensayo simbólico local de identidades/referencias. No acredita construcción, datos reales válidos, importación, permisos efectivos, aprobación institucional ni publicación de Wix.",
+  "collections": 77,
+  "fieldsCrosschecked": 1083,
+  "scalarFields": 627,
+  "referenceFields": 456,
+  "requiredReferences": 286,
+  "optionalReferences": 170,
+  "selfReferenceFields": 7,
+  "requiredGraphCycles": 0,
+  "requiredRecordWaves": 7,
+  "allReferenceCyclicComponents": 5,
+  "plannedPasses": 8,
+  "documentedExceptionsAndInterpretations": 7,
+  "plannedStagingAcceptanceChecks": 8,
+  "symbolicRecords": 152,
+  "registryWrappersReconciled": 70,
+  "adversarialAndRecoveryChecksPassed": 13,
+  "sourceHashesCheckedUnchanged": 85,
+  "sourceAuditChainVerified": true,
+  "requirednessRelaxations": 0,
+  "lockedOriginalsModified": false,
+  "originalPreservationAudit": {
+    "filesChecked": 125,
+    "unchanged": 125,
+    "failures": 0
+  },
+  "wixWrites": 0,
+  "realImports": 0,
+  "clientDataTransformed": 0,
+  "realSeedImportReady": false,
+  "loadingDesign": [
+    "Crear primero las 77 estructuras vacías y los campos exactos; añadir referencias después de existir todos los destinos.",
+    "Configurar catálogos aprobados, registrar el bootstrap y crear el primer ImportBatch antes de transformar fuentes reales.",
+    "Crear cada identidad de registro antes de su objeto y reconciliar el ID real de destino después de crearlo.",
+    "Cargar relaciones requeridas por orden comprobado y fusionar enlaces opcionales en una pasada posterior, conservando valores y correcciones humanas."
+  ],
+  "pendingExecutionGates": [
+    "Obtener valores y asignaciones de vocabulario controlado aprobados para tipos de entidad y tipos de fuente; las semillas actuales no los suministran.",
+    "Aceptar institucionalmente el diario de configuración anterior al primer lote y su conciliación posterior; no usarlo para omitir procedencia de datos reales.",
+    "Inspeccionar sitio y entorno Wix, respaldo, esquema, permisos y mecanismo de carga; ejecutar el ensayo completo de staging antes de datos de producción.",
+    "Validar valores escalares, reglas de negocio, jerarquías y fuentes reales; el modelo usa símbolos opacos que no son registros importables."
+  ],
+  "privateEvidence": "Plan por colección/campo, matrices, identidades simbólicas, diario, código y revisión de políticas permanecen en el archivo local privado."
+}

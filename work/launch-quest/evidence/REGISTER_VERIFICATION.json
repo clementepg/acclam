@@ -1,12 +1,12 @@
 {
   "result": "passed",
-  "registerSha256": "a53c8281f489fcc39545ce202c88226969115f1a1716199623326eb5f2273eb4",
-  "projectionRevision": "0e9c481559cafae76e47b2c56652a8d2f19ea29a6f8496ad4a9c6af7d8da3359",
-  "projectionSha256": "f014064f909bd21687a6436196732518abb46140f7a343138dc30b49cf63da32",
+  "registerSha256": "a14cd23cbf2bb572360ed5da739ede3c0d5c424b360bacd093c07e9415ae697b",
+  "projectionRevision": "b0bd33bf825a58a356013ce185a6edbc33a72cef5081de57f641dd369d485644",
+  "projectionSha256": "423ec85d8be6ad07b33a3151f92d0f0fcc638cd5cfaabd427539f3cbe64391f7",
   "objectives": 610,
   "milestones": 20,
-  "verifiedProofs": 7,
-  "done": 4,
+  "verifiedProofs": 11,
+  "done": 5,
   "cycles": 0,
   "errors": 0
 }

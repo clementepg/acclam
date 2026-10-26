@@ -1,6 +1,6 @@
 {
   "note": "Generated map; PROJECT_REGISTER.json is authoritative.",
-  "revision": "0e9c481559cafae76e47b2c56652a8d2f19ea29a6f8496ad4a9c6af7d8da3359",
+  "revision": "b0bd33bf825a58a356013ce185a6edbc33a72cef5081de57f641dd369d485644",
   "tasks": [
     {
       "id": "ACA-BASELINE",
@@ -212,7 +212,33 @@
           "locator": "/reconciliation"
         }
       ],
-      "evidence": []
+      "evidence": [
+        {
+          "path": "work/launch-quest/evidence/BOOTSTRAP_SUMMARY.json",
+          "label": "Resumen de bootstrap verificado",
+          "locator": "resultado, cobertura, ensayo simbólico y gates de ejecución"
+        },
+        {
+          "path": "work/launch-quest-private/bootstrap-20261026/plan/BOOTSTRAP_PLAN_PRIVATE.txt",
+          "label": "Plan privado de bootstrap por pasadas",
+          "locator": "orden concreto, pasadas P0–P7, excepciones y límites"
+        },
+        {
+          "path": "work/launch-quest-private/bootstrap-20261026/plan/bootstrap_plan_private.json",
+          "label": "Plan privado verificable",
+          "locator": "/collectionCreationOrder; /referenceMatrix; /destinationIdentityContract; /plannedWixStagingAcceptance"
+        },
+        {
+          "path": "work/launch-quest-private/bootstrap-20261026/plan/rehearsal_result_private.json",
+          "label": "Ensayo simbólico privado",
+          "locator": "/summary; /checks; /operationJournal"
+        },
+        {
+          "path": "work/launch-quest-private/bootstrap-20261026/policy/POLICY_REVIEW.json",
+          "label": "Revisión privada del plan bloqueado",
+          "locator": "/rules; /documentedOperationalInterpretations; /summary"
+        }
+      ]
     },
     {
       "id": "ACA-INTEGRATIONS",

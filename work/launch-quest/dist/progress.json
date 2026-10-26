@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "asOf": "2026-10-26T11:44:31-07:00",
+  "asOf": "2026-10-26T12:25:35-07:00",
   "project": {
     "title": "ACCLAM · Launch Quest",
     "subtitle": "De la arquitectura congelada a una oficina virtual operable.",
     "scopeNote": "El avance cuenta objetivos verificados del alcance registrado. No mide esfuerzo, tiempo transcurrido ni preparación para lanzar. Roles y revisores son propuestos hasta confirmación institucional. Wix no se ha inspeccionado en esta ejecución.",
-    "checkpointSummary": "Alineación de fuentes cerrada para 77 colecciones y 1,083 campos, con originales preservados. El siguiente trabajo es el bootstrap local; Wix continúa sin implementación ni pruebas verificadas.",
-    "nextGate": "Diseñar y ensayar el plan de bootstrap y referencias por pasadas antes de preparar importaciones finales.",
+    "checkpointSummary": "Bootstrap diseñado para 77 colecciones y ensayado como grafo simbólico. Cinco objetivos verificados; la carga real requiere vocabulario aprobado y staging. Wix sigue sin inspección ni implementación verificadas.",
+    "nextGate": "Inspeccionar el estado real de Wix con acceso autorizado antes de preparar staging; resolver vocabulario y diario de bootstrap antes de cualquier carga real.",
     "workspaceLabel": "clementepg/acclam · main · registro autoritativo",
     "continuityUrl": "/source/work%2Flaunch-quest%2FREADME.txt",
     "staleAfterDays": 7
@@ -272,7 +272,7 @@
         {
           "id": "ACA-WIX-INVENTORY",
           "title": "Inspeccionar el estado real de Wix",
-          "status": "upcoming",
+          "status": "current",
           "phase": "design",
           "owner": "Technical Admin / responsable propuesto",
           "reviewer": "Data Steward ACCLAM / por confirmar",
@@ -281,7 +281,7 @@
             "Inventario y capturas/exportaciones con fecha y sitio/entorno identificados.",
             "Distinguir ausente, diseñado, construido y probado; no inferir por archivos locales."
           ],
-          "nextAction": "Revisar la fuente indicada y preparar la evidencia del resultado descrito.",
+          "nextAction": "Obtener acceso autorizado e identificar sitio/entorno Wix; inventariar colecciones, campos, roles, páginas, backend y automations antes de proponer cambios. Contrastar con el plan de bootstrap local sin inferir implementación.",
           "blockers": [
             "Se requiere acceso autorizado a Wix para esta inspección futura."
           ],
@@ -291,6 +291,11 @@
               "date": "2026-10-26T10:37:54-07:00",
               "status": "upcoming",
               "note": "Alta inicial desde fuentes bloqueadas; estado sustentado únicamente por la evidencia explícita."
+            },
+            {
+              "date": "2026-10-26T12:25:35-07:00",
+              "status": "current",
+              "note": "Siguiente gate tras completar el diseño ACA-BOOTSTRAP. Se conserva el blocker de acceso autorizado; no se ha inspeccionado ni modificado Wix."
             }
           ],
           "dependencies": [
@@ -319,7 +324,8 @@
           "scope": "Respaldar/exportar datos críticos y definir entorno de ensayo y restauración antes de datos reales.",
           "acceptance": [
             "Backup identificable y restaurable, staging aislado y registros sintéticos.",
-            "Responsable técnico y procedimiento de restauración documentados."
+            "Responsable técnico y procedimiento de restauración documentados.",
+            "Antes de cargar semillas: confirmar vocabulario aprobado de tipos de entidad/fuente y aceptar el diario de configuración previo al primer ImportBatch; ejecutar las ocho pruebas de staging del plan de bootstrap privado."
           ],
           "nextAction": "Revisar la fuente indicada y preparar la evidencia del resultado descrito.",
           "blockers": [
@@ -331,13 +337,18 @@
               "date": "2026-10-26T10:37:54-07:00",
               "status": "upcoming",
               "note": "Alta inicial desde fuentes bloqueadas; estado sustentado únicamente por la evidencia explícita."
+            },
+            {
+              "date": "2026-10-26T12:25:35-07:00",
+              "status": "upcoming",
+              "note": "Handoff del diseño bootstrap: gates de catálogos, procedencia, identidad y preservación de valores pendientes de ejecución/ensayo."
             }
           ],
           "dependencies": [
             {
               "id": "ACA-WIX-INVENTORY",
               "title": "Inspeccionar el estado real de Wix",
-              "status": "upcoming"
+              "status": "current"
             }
           ],
           "sources": [
@@ -576,7 +587,7 @@
         {
           "id": "ACA-BOOTSTRAP",
           "title": "Diseñar bootstrap y pasadas de referencias",
-          "status": "current",
+          "status": "done",
           "phase": "design",
           "owner": "Technical Admin / responsable propuesto",
           "reviewer": "Data Steward ACCLAM / por confirmar",
@@ -585,9 +596,9 @@
             "Orden concreto de creación y carga por pasadas con identidad de destino, relaciones requeridas y autociclos; ensayo planificado.",
             "Cada excepción de bootstrap documentada sin relajar silenciosamente el esquema."
           ],
-          "nextAction": "Preparar en local el orden de creación y carga por pasadas: catálogos y campos requeridos primero, EntityRegistry/sourceItemId y enlaces opcionales después; conservar referencias y requiredness del esquema bloqueado.",
+          "nextAction": "Aplicar el plan al preparar staging, después de inspeccionar Wix y cerrar los gates de vocabulario, diario de bootstrap y validación real. No cargar datos de producción desde este ensayo simbólico.",
           "blockers": [],
-          "evidenceSummary": "Requisito del plan bloqueado; ejecución y resultado aún sin verificar.",
+          "evidenceSummary": "Diseño completo para 77 colecciones y 456 referencias: 286 requeridas sin ciclos y 170 opcionales en pasadas posteriores. Ensayo simbólico con 13 comprobaciones, 70 identidades de registro conciliadas y cero cambios de requiredness. Las fuentes y originales se preservaron. La carga real sigue bloqueada por vocabulario aprobado, revisión de entorno y ensayo Wix pendiente.",
           "history": [
             {
               "date": "2026-10-26T10:37:54-07:00",
@@ -598,6 +609,11 @@
               "date": "2026-10-26T11:36:11-07:00",
               "status": "current",
               "note": "Siguiente objetivo documental tras cerrar ACA-SCHEMA-ALIGN; todavía sin cambios en Wix."
+            },
+            {
+              "date": "2026-10-26T12:25:35-07:00",
+              "status": "done",
+              "note": "Diseño de bootstrap cerrado con orden de 77 colecciones, 286 referencias requeridas acíclicas, 170 opcionales y ensayo simbólico de 13 comprobaciones. Carga real no lista: falta vocabulario aprobado y verificación/ensayo Wix. Fuentes privadas locales y originales intactos."
             }
           ],
           "dependencies": [
@@ -619,7 +635,33 @@
               "url": "/source/work%2Flaunch-quest%2Fsources%2Fschema_inventory.json"
             }
           ],
-          "evidence": []
+          "evidence": [
+            {
+              "label": "Resumen de bootstrap verificado",
+              "locator": "resultado, cobertura, ensayo simbólico y gates de ejecución",
+              "url": "/source/work%2Flaunch-quest%2Fevidence%2FBOOTSTRAP_SUMMARY.json"
+            },
+            {
+              "label": "Plan privado de bootstrap por pasadas",
+              "locator": "orden concreto, pasadas P0–P7, excepciones y límites",
+              "url": "/source/work%2Flaunch-quest-private%2Fbootstrap-20261026%2Fplan%2FBOOTSTRAP_PLAN_PRIVATE.txt"
+            },
+            {
+              "label": "Plan privado verificable",
+              "locator": "/collectionCreationOrder; /referenceMatrix; /destinationIdentityContract; /plannedWixStagingAcceptance",
+              "url": "/source/work%2Flaunch-quest-private%2Fbootstrap-20261026%2Fplan%2Fbootstrap_plan_private.json"
+            },
+            {
+              "label": "Ensayo simbólico privado",
+              "locator": "/summary; /checks; /operationJournal",
+              "url": "/source/work%2Flaunch-quest-private%2Fbootstrap-20261026%2Fplan%2Frehearsal_result_private.json"
+            },
+            {
+              "label": "Revisión privada del plan bloqueado",
+              "locator": "/rules; /documentedOperationalInterpretations; /summary",
+              "url": "/source/work%2Flaunch-quest-private%2Fbootstrap-20261026%2Fpolicy%2FPOLICY_REVIEW.json"
+            }
+          ]
         },
         {
           "id": "ACA-INTEGRATIONS",
@@ -881,7 +923,7 @@
             {
               "id": "ACA-BOOTSTRAP",
               "title": "Diseñar bootstrap y pasadas de referencias",
-              "status": "current"
+              "status": "done"
             }
           ],
           "sources": [
@@ -1186,7 +1228,7 @@
             {
               "id": "ACA-BOOTSTRAP",
               "title": "Diseñar bootstrap y pasadas de referencias",
-              "status": "current"
+              "status": "done"
             }
           ],
           "sources": [
@@ -1497,7 +1539,7 @@
             {
               "id": "ACA-BOOTSTRAP",
               "title": "Diseñar bootstrap y pasadas de referencias",
-              "status": "current"
+              "status": "done"
             }
           ],
           "sources": [
@@ -1792,7 +1834,7 @@
             {
               "id": "ACA-BOOTSTRAP",
               "title": "Diseñar bootstrap y pasadas de referencias",
-              "status": "current"
+              "status": "done"
             }
           ],
           "sources": [
@@ -2087,7 +2129,7 @@
             {
               "id": "ACA-BOOTSTRAP",
               "title": "Diseñar bootstrap y pasadas de referencias",
-              "status": "current"
+              "status": "done"
             }
           ],
           "sources": [
@@ -2382,7 +2424,7 @@
             {
               "id": "ACA-BOOTSTRAP",
               "title": "Diseñar bootstrap y pasadas de referencias",
-              "status": "current"
+              "status": "done"
             }
           ],
           "sources": [
@@ -2677,7 +2719,7 @@
             {
               "id": "ACA-BOOTSTRAP",
               "title": "Diseñar bootstrap y pasadas de referencias",
-              "status": "current"
+              "status": "done"
             }
           ],
           "sources": [
@@ -2972,7 +3014,7 @@
             {
               "id": "ACA-BOOTSTRAP",
               "title": "Diseñar bootstrap y pasadas de referencias",
-              "status": "current"
+              "status": "done"
             }
           ],
           "sources": [
@@ -3267,7 +3309,7 @@
             {
               "id": "ACA-BOOTSTRAP",
               "title": "Diseñar bootstrap y pasadas de referencias",
-              "status": "current"
+              "status": "done"
             }
           ],
           "sources": [
@@ -3562,7 +3604,7 @@
             {
               "id": "ACA-BOOTSTRAP",
               "title": "Diseñar bootstrap y pasadas de referencias",
-              "status": "current"
+              "status": "done"
             }
           ],
           "sources": [
@@ -3865,7 +3907,7 @@
             {
               "id": "ACA-BOOTSTRAP",
               "title": "Diseñar bootstrap y pasadas de referencias",
-              "status": "current"
+              "status": "done"
             }
           ],
           "sources": [
@@ -4160,7 +4202,7 @@
             {
               "id": "ACA-BOOTSTRAP",
               "title": "Diseñar bootstrap y pasadas de referencias",
-              "status": "current"
+              "status": "done"
             }
           ],
           "sources": [
@@ -4455,7 +4497,7 @@
             {
               "id": "ACA-BOOTSTRAP",
               "title": "Diseñar bootstrap y pasadas de referencias",
-              "status": "current"
+              "status": "done"
             }
           ],
           "sources": [
@@ -4750,7 +4792,7 @@
             {
               "id": "ACA-BOOTSTRAP",
               "title": "Diseñar bootstrap y pasadas de referencias",
-              "status": "current"
+              "status": "done"
             }
           ],
           "sources": [
@@ -5045,7 +5087,7 @@
             {
               "id": "ACA-BOOTSTRAP",
               "title": "Diseñar bootstrap y pasadas de referencias",
-              "status": "current"
+              "status": "done"
             }
           ],
           "sources": [
@@ -5340,7 +5382,7 @@
             {
               "id": "ACA-BOOTSTRAP",
               "title": "Diseñar bootstrap y pasadas de referencias",
-              "status": "current"
+              "status": "done"
             }
           ],
           "sources": [
@@ -5635,7 +5677,7 @@
             {
               "id": "ACA-BOOTSTRAP",
               "title": "Diseñar bootstrap y pasadas de referencias",
-              "status": "current"
+              "status": "done"
             }
           ],
           "sources": [
@@ -5938,7 +5980,7 @@
             {
               "id": "ACA-BOOTSTRAP",
               "title": "Diseñar bootstrap y pasadas de referencias",
-              "status": "current"
+              "status": "done"
             }
           ],
           "sources": [
@@ -6233,7 +6275,7 @@
             {
               "id": "ACA-BOOTSTRAP",
               "title": "Diseñar bootstrap y pasadas de referencias",
-              "status": "current"
+              "status": "done"
             }
           ],
           "sources": [
@@ -6528,7 +6570,7 @@
             {
               "id": "ACA-BOOTSTRAP",
               "title": "Diseñar bootstrap y pasadas de referencias",
-              "status": "current"
+              "status": "done"
             }
           ],
           "sources": [
@@ -6823,7 +6865,7 @@
             {
               "id": "ACA-BOOTSTRAP",
               "title": "Diseñar bootstrap y pasadas de referencias",
-              "status": "current"
+              "status": "done"
             }
           ],
           "sources": [
@@ -7118,7 +7160,7 @@
             {
               "id": "ACA-BOOTSTRAP",
               "title": "Diseñar bootstrap y pasadas de referencias",
-              "status": "current"
+              "status": "done"
             }
           ],
           "sources": [
@@ -7413,7 +7455,7 @@
             {
               "id": "ACA-BOOTSTRAP",
               "title": "Diseñar bootstrap y pasadas de referencias",
-              "status": "current"
+              "status": "done"
             }
           ],
           "sources": [
@@ -7708,7 +7750,7 @@
             {
               "id": "ACA-BOOTSTRAP",
               "title": "Diseñar bootstrap y pasadas de referencias",
-              "status": "current"
+              "status": "done"
             }
           ],
           "sources": [
@@ -8003,7 +8045,7 @@
             {
               "id": "ACA-BOOTSTRAP",
               "title": "Diseñar bootstrap y pasadas de referencias",
-              "status": "current"
+              "status": "done"
             }
           ],
           "sources": [
@@ -8298,7 +8340,7 @@
             {
               "id": "ACA-BOOTSTRAP",
               "title": "Diseñar bootstrap y pasadas de referencias",
-              "status": "current"
+              "status": "done"
             }
           ],
           "sources": [
@@ -8593,7 +8635,7 @@
             {
               "id": "ACA-BOOTSTRAP",
               "title": "Diseñar bootstrap y pasadas de referencias",
-              "status": "current"
+              "status": "done"
             }
           ],
           "sources": [
@@ -8888,7 +8930,7 @@
             {
               "id": "ACA-BOOTSTRAP",
               "title": "Diseñar bootstrap y pasadas de referencias",
-              "status": "current"
+              "status": "done"
             }
           ],
           "sources": [
@@ -9183,7 +9225,7 @@
             {
               "id": "ACA-BOOTSTRAP",
               "title": "Diseñar bootstrap y pasadas de referencias",
-              "status": "current"
+              "status": "done"
             }
           ],
           "sources": [
@@ -9478,7 +9520,7 @@
             {
               "id": "ACA-BOOTSTRAP",
               "title": "Diseñar bootstrap y pasadas de referencias",
-              "status": "current"
+              "status": "done"
             }
           ],
           "sources": [
@@ -9781,7 +9823,7 @@
             {
               "id": "ACA-BOOTSTRAP",
               "title": "Diseñar bootstrap y pasadas de referencias",
-              "status": "current"
+              "status": "done"
             }
           ],
           "sources": [
@@ -10076,7 +10118,7 @@
             {
               "id": "ACA-BOOTSTRAP",
               "title": "Diseñar bootstrap y pasadas de referencias",
-              "status": "current"
+              "status": "done"
             }
           ],
           "sources": [
@@ -10371,7 +10413,7 @@
             {
               "id": "ACA-BOOTSTRAP",
               "title": "Diseñar bootstrap y pasadas de referencias",
-              "status": "current"
+              "status": "done"
             }
           ],
           "sources": [
@@ -10666,7 +10708,7 @@
             {
               "id": "ACA-BOOTSTRAP",
               "title": "Diseñar bootstrap y pasadas de referencias",
-              "status": "current"
+              "status": "done"
             }
           ],
           "sources": [
@@ -10961,7 +11003,7 @@
             {
               "id": "ACA-BOOTSTRAP",
               "title": "Diseñar bootstrap y pasadas de referencias",
-              "status": "current"
+              "status": "done"
             }
           ],
           "sources": [
@@ -11256,7 +11298,7 @@
             {
               "id": "ACA-BOOTSTRAP",
               "title": "Diseñar bootstrap y pasadas de referencias",
-              "status": "current"
+              "status": "done"
             }
           ],
           "sources": [
@@ -11559,7 +11601,7 @@
             {
               "id": "ACA-BOOTSTRAP",
               "title": "Diseñar bootstrap y pasadas de referencias",
-              "status": "current"
+              "status": "done"
             }
           ],
           "sources": [
@@ -11854,7 +11896,7 @@
             {
               "id": "ACA-BOOTSTRAP",
               "title": "Diseñar bootstrap y pasadas de referencias",
-              "status": "current"
+              "status": "done"
             }
           ],
           "sources": [
@@ -12149,7 +12191,7 @@
             {
               "id": "ACA-BOOTSTRAP",
               "title": "Diseñar bootstrap y pasadas de referencias",
-              "status": "current"
+              "status": "done"
             }
           ],
           "sources": [
@@ -12444,7 +12486,7 @@
             {
               "id": "ACA-BOOTSTRAP",
               "title": "Diseñar bootstrap y pasadas de referencias",
-              "status": "current"
+              "status": "done"
             }
           ],
           "sources": [
@@ -12739,7 +12781,7 @@
             {
               "id": "ACA-BOOTSTRAP",
               "title": "Diseñar bootstrap y pasadas de referencias",
-              "status": "current"
+              "status": "done"
             }
           ],
           "sources": [
@@ -13034,7 +13076,7 @@
             {
               "id": "ACA-BOOTSTRAP",
               "title": "Diseñar bootstrap y pasadas de referencias",
-              "status": "current"
+              "status": "done"
             }
           ],
           "sources": [
@@ -13329,7 +13371,7 @@
             {
               "id": "ACA-BOOTSTRAP",
               "title": "Diseñar bootstrap y pasadas de referencias",
-              "status": "current"
+              "status": "done"
             }
           ],
           "sources": [
@@ -13642,7 +13684,7 @@
             {
               "id": "ACA-BOOTSTRAP",
               "title": "Diseñar bootstrap y pasadas de referencias",
-              "status": "current"
+              "status": "done"
             }
           ],
           "sources": [
@@ -13937,7 +13979,7 @@
             {
               "id": "ACA-BOOTSTRAP",
               "title": "Diseñar bootstrap y pasadas de referencias",
-              "status": "current"
+              "status": "done"
             }
           ],
           "sources": [
@@ -14242,7 +14284,7 @@
             {
               "id": "ACA-BOOTSTRAP",
               "title": "Diseñar bootstrap y pasadas de referencias",
-              "status": "current"
+              "status": "done"
             }
           ],
           "sources": [
@@ -14547,7 +14589,7 @@
             {
               "id": "ACA-BOOTSTRAP",
               "title": "Diseñar bootstrap y pasadas de referencias",
-              "status": "current"
+              "status": "done"
             }
           ],
           "sources": [
@@ -14842,7 +14884,7 @@
             {
               "id": "ACA-BOOTSTRAP",
               "title": "Diseñar bootstrap y pasadas de referencias",
-              "status": "current"
+              "status": "done"
             }
           ],
           "sources": [
@@ -15137,7 +15179,7 @@
             {
               "id": "ACA-BOOTSTRAP",
               "title": "Diseñar bootstrap y pasadas de referencias",
-              "status": "current"
+              "status": "done"
             }
           ],
           "sources": [
@@ -15432,7 +15474,7 @@
             {
               "id": "ACA-BOOTSTRAP",
               "title": "Diseñar bootstrap y pasadas de referencias",
-              "status": "current"
+              "status": "done"
             }
           ],
           "sources": [
@@ -15727,7 +15769,7 @@
             {
               "id": "ACA-BOOTSTRAP",
               "title": "Diseñar bootstrap y pasadas de referencias",
-              "status": "current"
+              "status": "done"
             }
           ],
           "sources": [
@@ -16022,7 +16064,7 @@
             {
               "id": "ACA-BOOTSTRAP",
               "title": "Diseñar bootstrap y pasadas de referencias",
-              "status": "current"
+              "status": "done"
             }
           ],
           "sources": [
@@ -16317,7 +16359,7 @@
             {
               "id": "ACA-BOOTSTRAP",
               "title": "Diseñar bootstrap y pasadas de referencias",
-              "status": "current"
+              "status": "done"
             }
           ],
           "sources": [
@@ -16612,7 +16654,7 @@
             {
               "id": "ACA-BOOTSTRAP",
               "title": "Diseñar bootstrap y pasadas de referencias",
-              "status": "current"
+              "status": "done"
             }
           ],
           "sources": [
@@ -16907,7 +16949,7 @@
             {
               "id": "ACA-BOOTSTRAP",
               "title": "Diseñar bootstrap y pasadas de referencias",
-              "status": "current"
+              "status": "done"
             }
           ],
           "sources": [
@@ -17210,7 +17252,7 @@
             {
               "id": "ACA-BOOTSTRAP",
               "title": "Diseñar bootstrap y pasadas de referencias",
-              "status": "current"
+              "status": "done"
             }
           ],
           "sources": [
@@ -17505,7 +17547,7 @@
             {
               "id": "ACA-BOOTSTRAP",
               "title": "Diseñar bootstrap y pasadas de referencias",
-              "status": "current"
+              "status": "done"
             }
           ],
           "sources": [
@@ -17800,7 +17842,7 @@
             {
               "id": "ACA-BOOTSTRAP",
               "title": "Diseñar bootstrap y pasadas de referencias",
-              "status": "current"
+              "status": "done"
             }
           ],
           "sources": [
@@ -18095,7 +18137,7 @@
             {
               "id": "ACA-BOOTSTRAP",
               "title": "Diseñar bootstrap y pasadas de referencias",
-              "status": "current"
+              "status": "done"
             }
           ],
           "sources": [
@@ -18390,7 +18432,7 @@
             {
               "id": "ACA-BOOTSTRAP",
               "title": "Diseñar bootstrap y pasadas de referencias",
-              "status": "current"
+              "status": "done"
             }
           ],
           "sources": [
@@ -18685,7 +18727,7 @@
             {
               "id": "ACA-BOOTSTRAP",
               "title": "Diseñar bootstrap y pasadas de referencias",
-              "status": "current"
+              "status": "done"
             }
           ],
           "sources": [
@@ -18980,7 +19022,7 @@
             {
               "id": "ACA-BOOTSTRAP",
               "title": "Diseñar bootstrap y pasadas de referencias",
-              "status": "current"
+              "status": "done"
             }
           ],
           "sources": [
@@ -19275,7 +19317,7 @@
             {
               "id": "ACA-BOOTSTRAP",
               "title": "Diseñar bootstrap y pasadas de referencias",
-              "status": "current"
+              "status": "done"
             }
           ],
           "sources": [
@@ -19570,7 +19612,7 @@
             {
               "id": "ACA-BOOTSTRAP",
               "title": "Diseñar bootstrap y pasadas de referencias",
-              "status": "current"
+              "status": "done"
             }
           ],
           "sources": [
@@ -19865,7 +19907,7 @@
             {
               "id": "ACA-BOOTSTRAP",
               "title": "Diseñar bootstrap y pasadas de referencias",
-              "status": "current"
+              "status": "done"
             }
           ],
           "sources": [
@@ -20168,7 +20210,7 @@
             {
               "id": "ACA-BOOTSTRAP",
               "title": "Diseñar bootstrap y pasadas de referencias",
-              "status": "current"
+              "status": "done"
             }
           ],
           "sources": [
@@ -20463,7 +20505,7 @@
             {
               "id": "ACA-BOOTSTRAP",
               "title": "Diseñar bootstrap y pasadas de referencias",
-              "status": "current"
+              "status": "done"
             }
           ],
           "sources": [
@@ -20758,7 +20800,7 @@
             {
               "id": "ACA-BOOTSTRAP",
               "title": "Diseñar bootstrap y pasadas de referencias",
-              "status": "current"
+              "status": "done"
             }
           ],
           "sources": [
@@ -21053,7 +21095,7 @@
             {
               "id": "ACA-BOOTSTRAP",
               "title": "Diseñar bootstrap y pasadas de referencias",
-              "status": "current"
+              "status": "done"
             }
           ],
           "sources": [
@@ -21348,7 +21390,7 @@
             {
               "id": "ACA-BOOTSTRAP",
               "title": "Diseñar bootstrap y pasadas de referencias",
-              "status": "current"
+              "status": "done"
             }
           ],
           "sources": [
@@ -21651,7 +21693,7 @@
             {
               "id": "ACA-BOOTSTRAP",
               "title": "Diseñar bootstrap y pasadas de referencias",
-              "status": "current"
+              "status": "done"
             }
           ],
           "sources": [
@@ -21946,7 +21988,7 @@
             {
               "id": "ACA-BOOTSTRAP",
               "title": "Diseñar bootstrap y pasadas de referencias",
-              "status": "current"
+              "status": "done"
             }
           ],
           "sources": [
@@ -22241,7 +22283,7 @@
             {
               "id": "ACA-BOOTSTRAP",
               "title": "Diseñar bootstrap y pasadas de referencias",
-              "status": "current"
+              "status": "done"
             }
           ],
           "sources": [
@@ -22536,7 +22578,7 @@
             {
               "id": "ACA-BOOTSTRAP",
               "title": "Diseñar bootstrap y pasadas de referencias",
-              "status": "current"
+              "status": "done"
             }
           ],
           "sources": [
@@ -22831,7 +22873,7 @@
             {
               "id": "ACA-BOOTSTRAP",
               "title": "Diseñar bootstrap y pasadas de referencias",
-              "status": "current"
+              "status": "done"
             }
           ],
           "sources": [
@@ -23126,7 +23168,7 @@
             {
               "id": "ACA-BOOTSTRAP",
               "title": "Diseñar bootstrap y pasadas de referencias",
-              "status": "current"
+              "status": "done"
             }
           ],
           "sources": [
@@ -23421,7 +23463,7 @@
             {
               "id": "ACA-BOOTSTRAP",
               "title": "Diseñar bootstrap y pasadas de referencias",
-              "status": "current"
+              "status": "done"
             }
           ],
           "sources": [
@@ -23558,7 +23600,8 @@
           "scope": "Definir ImportBatch, claves canónicas, LegacyRecordMap, normalización, deduplicación, Documents/DocumentVersions/ContextLinks y DataQualityIssues.",
           "acceptance": [
             "Mapeo de origen, reglas de descarte, normalización de fechas/zonas y catálogos; coincidencias débiles no se fusionan automáticamente.",
-            "Algoritmo/pasadas ensayables y conservación de correcciones humanas; fuente=importado+fusionado+rechazado/cuestionado."
+            "Algoritmo/pasadas ensayables y conservación de correcciones humanas; fuente=importado+fusionado+rechazado/cuestionado.",
+            "Usar el orden/contrato de identidad del bootstrap, rechazar vocabulario o datos requeridos faltantes y preservar campos/correcciones al completar enlaces; verificar cualquier importación CSV completa frente a borrado de campos omitidos."
           ],
           "nextAction": "Revisar la fuente indicada y preparar la evidencia del resultado descrito.",
           "blockers": [],
@@ -23568,6 +23611,11 @@
               "date": "2026-10-26T10:37:54-07:00",
               "status": "upcoming",
               "note": "Alta inicial desde fuentes bloqueadas; estado sustentado únicamente por la evidencia explícita."
+            },
+            {
+              "date": "2026-10-26T12:25:35-07:00",
+              "status": "upcoming",
+              "note": "Handoff del diseño bootstrap: gates de catálogos, procedencia, identidad y preservación de valores pendientes de ejecución/ensayo."
             }
           ],
           "dependencies": [
@@ -23579,7 +23627,7 @@
             {
               "id": "ACA-BOOTSTRAP",
               "title": "Diseñar bootstrap y pasadas de referencias",
-              "status": "current"
+              "status": "done"
             }
           ],
           "sources": [
@@ -34958,15 +35006,15 @@
   ],
   "counts": {
     "total": 610,
-    "done": 4,
+    "done": 5,
     "current": 1,
-    "upcoming": 605,
+    "upcoming": 604,
     "byPhase": [
       {
         "id": "design",
         "label": "Diseño y esquema",
         "total": 20,
-        "done": 3
+        "done": 4
       },
       {
         "id": "preparation",
@@ -35006,5 +35054,5 @@
       }
     ]
   },
-  "revision": "0e9c481559cafae76e47b2c56652a8d2f19ea29a6f8496ad4a9c6af7d8da3359"
+  "revision": "b0bd33bf825a58a356013ce185a6edbc33a72cef5081de57f641dd369d485644"
 }

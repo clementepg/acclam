@@ -2,8 +2,16 @@
 
 Read-only Launch Quest for the locked ACCLAM v3.0 scope: **610 objectives,
 20 milestones, 77 collections**, with dependencies, evidence links and dated
-history. The current register records four verified source/preparation
-objectives; ACA-SCHEMA-ALIGN is complete and ACA-BOOTSTRAP is current. It makes no claim that Wix has been implemented, imported or released.
+history. The current register records five verified source/preparation
+objectives. ACA-BOOTSTRAP is complete as a design and bounded local rehearsal;
+ACA-WIX-INVENTORY is current. Wix construction, import and release remain unverified.
+
+The private bootstrap plan covers all 77 collection structures and 456 reference
+fields, with required links first and optional links in later passes. Thirteen
+symbolic failure/recovery checks passed. Real loading requires approved entity
+type/source type vocabulary, a reviewed setup journal and a full Wix staging
+rehearsal. See work/launch-quest/evidence/BOOTSTRAP_SUMMARY.json for the bounded
+result; detailed matrices, source text and rehearsal artifacts remain local.
 
 ## Run the saved dashboard
 

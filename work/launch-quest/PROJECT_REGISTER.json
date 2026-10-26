@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "asOf": "2026-10-26T11:44:31-07:00",
+  "asOf": "2026-10-26T12:25:35-07:00",
   "project": {
     "title": "ACCLAM · Launch Quest",
     "subtitle": "De la arquitectura congelada a una oficina virtual operable.",
     "scopeNote": "El avance cuenta objetivos verificados del alcance registrado. No mide esfuerzo, tiempo transcurrido ni preparación para lanzar. Roles y revisores son propuestos hasta confirmación institucional. Wix no se ha inspeccionado en esta ejecución.",
-    "checkpointSummary": "Alineación de fuentes cerrada para 77 colecciones y 1,083 campos, con originales preservados. El siguiente trabajo es el bootstrap local; Wix continúa sin implementación ni pruebas verificadas.",
-    "nextGate": "Diseñar y ensayar el plan de bootstrap y referencias por pasadas antes de preparar importaciones finales.",
+    "checkpointSummary": "Bootstrap diseñado para 77 colecciones y ensayado como grafo simbólico. Cinco objetivos verificados; la carga real requiere vocabulario aprobado y staging. Wix sigue sin inspección ni implementación verificadas.",
+    "nextGate": "Inspeccionar el estado real de Wix con acceso autorizado antes de preparar staging; resolver vocabulario y diario de bootstrap antes de cualquier carga real.",
     "workspaceLabel": "clementepg/acclam · main · registro autoritativo",
     "continuityUrl": "/source/work%2Flaunch-quest%2FREADME.txt",
     "staleAfterDays": 7
@@ -427,6 +427,26 @@
     {
       "path": "Website architecture/schema_v3_0/ACCLAM_V3_Compendio_Maestro_CONSTRUCCION_FINAL/ACCLAM_V3_FROZEN_Collection_Kit_CONSTRUCTION.xlsx",
       "sha256": "60dede56382098658232d85fc197b76d272eb81a6df623f11a3ada03fab82385"
+    },
+    {
+      "path": "work/launch-quest-private/bootstrap-20261026/plan/bootstrap_plan_private.json",
+      "sha256": "b6cbc5ddaaf6b9a7f8ca3ed91ac9a3d45f276ccf07ccb9ac4900e73f95db2995"
+    },
+    {
+      "path": "work/launch-quest-private/bootstrap-20261026/plan/rehearsal_result_private.json",
+      "sha256": "c7239e4262baf585263a27485aff3d1f63f4c79864c2307fcc7fcdabb8baf5d9"
+    },
+    {
+      "path": "work/launch-quest-private/bootstrap-20261026/plan/build_bootstrap_plan.py",
+      "sha256": "499ac3dc297ffedf702484013862dbbd5e447d0608ce3eb3cef610513787a52d"
+    },
+    {
+      "path": "work/launch-quest-private/bootstrap-20261026/plan/BOOTSTRAP_PLAN_PRIVATE.txt",
+      "sha256": "1d84e4930bfd94e54a7b5cc7190d075792154425fa49c31d7c46631ca73abe13"
+    },
+    {
+      "path": "work/launch-quest-private/bootstrap-20261026/policy/POLICY_REVIEW.json",
+      "sha256": "449c906d423a2af0d2b2c287236667685dc3e2bba8e7adb08dd8ce7834b5d6a4"
     }
   ],
   "milestones": [
@@ -833,7 +853,7 @@
           "id": "ACA-WIX-INVENTORY",
           "title": "Inspeccionar el estado real de Wix",
           "phase": "design",
-          "status": "upcoming",
+          "status": "current",
           "scope": "Obtener inventario fechado del sitio/entornos, colecciones, roles, páginas, backend y automations; contrastar con la declaración de colecciones no creadas.",
           "owner": "Technical Admin / responsable propuesto",
           "reviewer": "Data Steward ACCLAM / por confirmar",
@@ -841,7 +861,7 @@
             "Inventario y capturas/exportaciones con fecha y sitio/entorno identificados.",
             "Distinguir ausente, diseñado, construido y probado; no inferir por archivos locales."
           ],
-          "nextAction": "Revisar la fuente indicada y preparar la evidencia del resultado descrito.",
+          "nextAction": "Obtener acceso autorizado e identificar sitio/entorno Wix; inventariar colecciones, campos, roles, páginas, backend y automations antes de proponer cambios. Contrastar con el plan de bootstrap local sin inferir implementación.",
           "dependencies": [
             "ACA-BASELINE"
           ],
@@ -864,6 +884,11 @@
               "date": "2026-10-26T10:37:54-07:00",
               "status": "upcoming",
               "note": "Alta inicial desde fuentes bloqueadas; estado sustentado únicamente por la evidencia explícita."
+            },
+            {
+              "date": "2026-10-26T12:25:35-07:00",
+              "status": "current",
+              "note": "Siguiente gate tras completar el diseño ACA-BOOTSTRAP. Se conserva el blocker de acceso autorizado; no se ha inspeccionado ni modificado Wix."
             }
           ]
         },
@@ -877,7 +902,8 @@
           "reviewer": "Data Steward ACCLAM / por confirmar",
           "acceptance": [
             "Backup identificable y restaurable, staging aislado y registros sintéticos.",
-            "Responsable técnico y procedimiento de restauración documentados."
+            "Responsable técnico y procedimiento de restauración documentados.",
+            "Antes de cargar semillas: confirmar vocabulario aprobado de tipos de entidad/fuente y aceptar el diario de configuración previo al primer ImportBatch; ejecutar las ocho pruebas de staging del plan de bootstrap privado."
           ],
           "nextAction": "Revisar la fuente indicada y preparar la evidencia del resultado descrito.",
           "dependencies": [
@@ -902,6 +928,11 @@
               "date": "2026-10-26T10:37:54-07:00",
               "status": "upcoming",
               "note": "Alta inicial desde fuentes bloqueadas; estado sustentado únicamente por la evidencia explícita."
+            },
+            {
+              "date": "2026-10-26T12:25:35-07:00",
+              "status": "upcoming",
+              "note": "Handoff del diseño bootstrap: gates de catálogos, procedencia, identidad y preservación de valores pendientes de ejecución/ensayo."
             }
           ]
         },
@@ -1099,7 +1130,7 @@
           "id": "ACA-BOOTSTRAP",
           "title": "Diseñar bootstrap y pasadas de referencias",
           "phase": "design",
-          "status": "current",
+          "status": "done",
           "scope": "Resolver ciclos y auto referencias, EntityRegistry, TaxonomyTerms, People e ImportBatches. Crear estructuras vacías antes de sembrar catálogos y fijar requiredness.",
           "owner": "Technical Admin / responsable propuesto",
           "reviewer": "Data Steward ACCLAM / por confirmar",
@@ -1107,7 +1138,7 @@
             "Orden concreto de creación y carga por pasadas con identidad de destino, relaciones requeridas y autociclos; ensayo planificado.",
             "Cada excepción de bootstrap documentada sin relajar silenciosamente el esquema."
           ],
-          "nextAction": "Preparar en local el orden de creación y carga por pasadas: catálogos y campos requeridos primero, EntityRegistry/sourceItemId y enlaces opcionales después; conservar referencias y requiredness del esquema bloqueado.",
+          "nextAction": "Aplicar el plan al preparar staging, después de inspeccionar Wix y cerrar los gates de vocabulario, diario de bootstrap y validación real. No cargar datos de producción desde este ensayo simbólico.",
           "dependencies": [
             "ACA-SCHEMA-ALIGN"
           ],
@@ -1125,9 +1156,132 @@
               "locator": "/reconciliation"
             }
           ],
-          "evidence": [],
-          "proofs": [],
-          "evidenceSummary": "Requisito del plan bloqueado; ejecución y resultado aún sin verificar.",
+          "evidence": [
+            {
+              "path": "work/launch-quest/evidence/BOOTSTRAP_SUMMARY.json",
+              "label": "Resumen de bootstrap verificado",
+              "locator": "resultado, cobertura, ensayo simbólico y gates de ejecución"
+            },
+            {
+              "path": "work/launch-quest-private/bootstrap-20261026/plan/BOOTSTRAP_PLAN_PRIVATE.txt",
+              "label": "Plan privado de bootstrap por pasadas",
+              "locator": "orden concreto, pasadas P0–P7, excepciones y límites"
+            },
+            {
+              "path": "work/launch-quest-private/bootstrap-20261026/plan/bootstrap_plan_private.json",
+              "label": "Plan privado verificable",
+              "locator": "/collectionCreationOrder; /referenceMatrix; /destinationIdentityContract; /plannedWixStagingAcceptance"
+            },
+            {
+              "path": "work/launch-quest-private/bootstrap-20261026/plan/rehearsal_result_private.json",
+              "label": "Ensayo simbólico privado",
+              "locator": "/summary; /checks; /operationJournal"
+            },
+            {
+              "path": "work/launch-quest-private/bootstrap-20261026/policy/POLICY_REVIEW.json",
+              "label": "Revisión privada del plan bloqueado",
+              "locator": "/rules; /documentedOperationalInterpretations; /summary"
+            }
+          ],
+          "proofs": [
+            {
+              "path": "work/launch-quest/evidence/BOOTSTRAP_SUMMARY.json",
+              "sha256": "dc323f2c4f2d060bca33b7806f147afc98f5ad7fa350da55dcb923f14d9c6c0e",
+              "class": "source_review",
+              "reviewedBy": "Codex · revisión del diseño y ensayo simbólico local del 26 de octubre de 2026",
+              "finding": "Resumen acotado al diseño; no confunde modelo local con implementación o importación.",
+              "assertions": [
+                {
+                  "pointer": "/result",
+                  "equals": "design_and_bounded_local_rehearsal_complete"
+                },
+                {
+                  "pointer": "/requirednessRelaxations",
+                  "equals": 0
+                },
+                {
+                  "pointer": "/realSeedImportReady",
+                  "equals": false
+                },
+                {
+                  "pointer": "/lockedOriginalsModified",
+                  "equals": false
+                }
+              ]
+            },
+            {
+              "path": "work/launch-quest-private/bootstrap-20261026/plan/bootstrap_plan_private.json",
+              "sha256": "b6cbc5ddaaf6b9a7f8ca3ed91ac9a3d45f276ccf07ccb9ac4900e73f95db2995",
+              "class": "source_review",
+              "reviewedBy": "Codex · revisión del diseño y ensayo simbólico local del 26 de octubre de 2026",
+              "finding": "Orden concreto de estructuras y registros, contrato de identidad, excepciones y pruebas de staging documentados.",
+              "assertions": [
+                {
+                  "pointer": "/summary/collections",
+                  "equals": 77
+                },
+                {
+                  "pointer": "/summary/requiredGraphAcyclic",
+                  "equals": true
+                },
+                {
+                  "pointer": "/summary/requirednessRelaxations",
+                  "equals": 0
+                },
+                {
+                  "pointer": "/summary/realSeedImportReady",
+                  "equals": false
+                }
+              ]
+            },
+            {
+              "path": "work/launch-quest-private/bootstrap-20261026/plan/rehearsal_result_private.json",
+              "sha256": "c7239e4262baf585263a27485aff3d1f63f4c79864c2307fcc7fcdabb8baf5d9",
+              "class": "source_review",
+              "reviewedBy": "Codex · revisión del diseño y ensayo simbólico local del 26 de octubre de 2026",
+              "finding": "Se reprodujo el ensayo de grafo/identidades, recuperación y rechazo seguro; no prueba validez escalar ni comportamiento Wix.",
+              "assertions": [
+                {
+                  "pointer": "/result",
+                  "equals": "passed_bounded_symbolic_rehearsal"
+                },
+                {
+                  "pointer": "/summary/adversarialAndRecoveryChecksPassed",
+                  "equals": 13
+                },
+                {
+                  "pointer": "/summary/sourceAuditChainVerified",
+                  "equals": true
+                },
+                {
+                  "pointer": "/summary/wixWrites",
+                  "equals": 0
+                }
+              ]
+            },
+            {
+              "path": "work/launch-quest-private/bootstrap-20261026/policy/POLICY_REVIEW.json",
+              "sha256": "449c906d423a2af0d2b2c287236667685dc3e2bba8e7adb08dd8ce7834b5d6a4",
+              "class": "source_review",
+              "reviewedBy": "Codex · revisión del diseño y ensayo simbólico local del 26 de octubre de 2026",
+              "finding": "Las reglas del PDF se conservaron; la configuración inicial y vocabulario faltante quedan como gates explícitos.",
+              "assertions": [
+                {
+                  "pointer": "/summary/criticalFieldChecks",
+                  "equals": 20
+                },
+                {
+                  "pointer": "/summary/blockingSourceContradictionsForDesign",
+                  "equals": 0
+                },
+                {
+                  "pointer": "/summary/realSeedImportReady",
+                  "equals": false
+                }
+              ]
+            }
+          ],
+          "evidenceSummary": "Diseño completo para 77 colecciones y 456 referencias: 286 requeridas sin ciclos y 170 opcionales en pasadas posteriores. Ensayo simbólico con 13 comprobaciones, 70 identidades de registro conciliadas y cero cambios de requiredness. Las fuentes y originales se preservaron. La carga real sigue bloqueada por vocabulario aprobado, revisión de entorno y ensayo Wix pendiente.",
           "history": [
             {
               "date": "2026-10-26T10:37:54-07:00",
@@ -1138,6 +1292,11 @@
               "date": "2026-10-26T11:36:11-07:00",
               "status": "current",
               "note": "Siguiente objetivo documental tras cerrar ACA-SCHEMA-ALIGN; todavía sin cambios en Wix."
+            },
+            {
+              "date": "2026-10-26T12:25:35-07:00",
+              "status": "done",
+              "note": "Diseño de bootstrap cerrado con orden de 77 colecciones, 286 referencias requeridas acíclicas, 170 opcionales y ensayo simbólico de 13 comprobaciones. Carga real no lista: falta vocabulario aprobado y verificación/ensayo Wix. Fuentes privadas locales y originales intactos."
             }
           ]
         },
@@ -21744,7 +21903,8 @@
           "reviewer": "Data Steward ACCLAM / por confirmar",
           "acceptance": [
             "Mapeo de origen, reglas de descarte, normalización de fechas/zonas y catálogos; coincidencias débiles no se fusionan automáticamente.",
-            "Algoritmo/pasadas ensayables y conservación de correcciones humanas; fuente=importado+fusionado+rechazado/cuestionado."
+            "Algoritmo/pasadas ensayables y conservación de correcciones humanas; fuente=importado+fusionado+rechazado/cuestionado.",
+            "Usar el orden/contrato de identidad del bootstrap, rechazar vocabulario o datos requeridos faltantes y preservar campos/correcciones al completar enlaces; verificar cualquier importación CSV completa frente a borrado de campos omitidos."
           ],
           "nextAction": "Revisar la fuente indicada y preparar la evidencia del resultado descrito.",
           "dependencies": [
@@ -21768,6 +21928,11 @@
               "date": "2026-10-26T10:37:54-07:00",
               "status": "upcoming",
               "note": "Alta inicial desde fuentes bloqueadas; estado sustentado únicamente por la evidencia explícita."
+            },
+            {
+              "date": "2026-10-26T12:25:35-07:00",
+              "status": "upcoming",
+              "note": "Handoff del diseño bootstrap: gates de catálogos, procedencia, identidad y preservación de valores pendientes de ejecución/ensayo."
             }
           ]
         },
@@ -30060,9 +30225,14 @@
     {
       "date": "2026-10-26T11:44:31-07:00",
       "note": "Alcance de autorización actualizado según la instrucción vigente del usuario: repositorio clementepg/acclam, actualizaciones de main y visor en línea de solo lectura. Fuentes privadas locales y originales bloqueados preservados; sin cambios de estado, pruebas o autorización de acciones Wix/institucionales."
+    },
+    {
+      "date": "2026-10-26T12:25:35-07:00",
+      "note": "ACA-BOOTSTRAP cerrado como diseño con ensayo local simbólico y gates explícitos. ACA-WIX-INVENTORY pasa a current conservando su blocker de acceso. La publicación del Quest no acredita implementación de Wix."
     }
   ],
   "initialAuditApplied": true,
   "spanishPresentationApplied": true,
-  "schemaAlignmentRecorded": true
+  "schemaAlignmentRecorded": true,
+  "bootstrapDesignRecorded": true
 }

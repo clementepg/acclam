@@ -499,6 +499,31 @@
       "reason": "private_client_source"
     },
     {
+      "path": "work/launch-quest-private/bootstrap-20261026/plan/BOOTSTRAP_PLAN_PRIVATE.txt",
+      "sha256": "1d84e4930bfd94e54a7b5cc7190d075792154425fa49c31d7c46631ca73abe13",
+      "reason": "private_client_source"
+    },
+    {
+      "path": "work/launch-quest-private/bootstrap-20261026/plan/bootstrap_plan_private.json",
+      "sha256": "b6cbc5ddaaf6b9a7f8ca3ed91ac9a3d45f276ccf07ccb9ac4900e73f95db2995",
+      "reason": "private_client_source"
+    },
+    {
+      "path": "work/launch-quest-private/bootstrap-20261026/plan/build_bootstrap_plan.py",
+      "sha256": "499ac3dc297ffedf702484013862dbbd5e447d0608ce3eb3cef610513787a52d",
+      "reason": "private_client_source"
+    },
+    {
+      "path": "work/launch-quest-private/bootstrap-20261026/plan/rehearsal_result_private.json",
+      "sha256": "c7239e4262baf585263a27485aff3d1f63f4c79864c2307fcc7fcdabb8baf5d9",
+      "reason": "private_client_source"
+    },
+    {
+      "path": "work/launch-quest-private/bootstrap-20261026/policy/POLICY_REVIEW.json",
+      "sha256": "449c906d423a2af0d2b2c287236667685dc3e2bba8e7adb08dd8ce7834b5d6a4",
+      "reason": "private_client_source"
+    },
+    {
       "path": "work/launch-quest-private/schema-align-20261026/controls/controls_audit.json",
       "sha256": "68aec6c99bc586e6e4746152b38ee6593ad4afbddbb7328cc1d35deddf1239b4",
       "reason": "private_client_source"
